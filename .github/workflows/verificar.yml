@@ -17,7 +17,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/verificar_publicado.py
+      - env:
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
+        run: python scripts/verificar_publicado.py
       - if: always()
         run: |
           git config user.name "calendarios-bot"

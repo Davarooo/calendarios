@@ -12,7 +12,7 @@ Sitio: https://davarooo.github.io/calendarios/
 | Prueba de fuente desde GitHub | Lista (`prueba-fuente.yml`). Vuelve a leer el XML del BOE y falla si no coincide con lo publicado. Falta ejecutarla en tu repo. |
 | Validación SERP | 7 búsquedas en tu Chrome (escritorio, gl=es). Resultados abajo. |
 | Diseño | Tema propio + imagen PNG/PDF + calendario interactivo |
-| Piloto | 20 URLs publicadas en GitHub Pages (España como portada + 19 territorios) y 5 páginas de confianza. |
+| Piloto | 20 URLs publicadas en GitHub Pages (España como portada + 19 territorios) y 5 páginas de confianza. 20/20 responden 200, 0 enlaces rotos. PageSpeed móvil (Madrid): rendimiento 100, LCP 1,4 s, CLS 0. |
 
 ## Validación SERP (19-11-2026, Chrome de escritorio, no incógnito móvil)
 

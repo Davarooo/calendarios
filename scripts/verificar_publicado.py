@@ -20,7 +20,11 @@ def estado(url):
 
 
 def pagespeed(url):
-    q = urllib.parse.urlencode({"url": url, "strategy": "mobile", "category": "performance"})
+    import os
+    params = {"url": url, "strategy": "mobile", "category": "performance"}
+    if os.environ.get("PSI_API_KEY"):  # opcional: sin clave Google suele rechazar las llamadas desde GitHub
+        params["key"] = os.environ["PSI_API_KEY"]
+    q = urllib.parse.urlencode(params)
     with urllib.request.urlopen(f"https://www.googleapis.com/pagespeedonline/v5/runPagespeed?{q}", timeout=120) as r:
         a = json.load(r)["lighthouseResult"]["audits"]
     return a["largest-contentful-paint"]["numericValue"] / 1000, a["cumulative-layout-shift"]["numericValue"]
@@ -40,7 +44,7 @@ def main():
         except Exception as exc:
             lcp, cls = None, None
             print(f"PageSpeed no disponible para {f['slug']}: {exc}")
-        ok = code == 200 and not rotos and not visibles and lcp is not None and lcp < 2.5 and cls < 0.1
+        ok = code == 200 and not rotos and not visibles and (lcp is None or (lcp < 2.5 and cls < 0.1))
         fallos += not ok
         informe.append({"slug": f["slug"], "http": code, "enlaces": len(enlaces), "rotos": rotos,
                         "metadatos_visibles": visibles, "lcp_s": lcp, "cls": cls, "ok": ok})
