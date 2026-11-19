@@ -84,7 +84,7 @@ El año va en el título desde los datos (`anio`): al generar 2028 cambia solo.
 
 1. **GitHub:** crea el repo público `calendarios`, sube esta carpeta (incluida `.github`). Settings > Actions > General > Workflow permissions: Read and write. Settings > Pages: rama `main`, carpeta `/docs`.
 2. **Prueba de fuente:** Actions > "Prueba de fuente (BOE)" > Run workflow. Verde = el BOE no bloquea GitHub y los datos coinciden.
-3. **Blogger:** crea el blog `calendariohoy.blogspot.com` (o la alternativa libre). Tema > Editar HTML > pega `blogger/tema.xml`. Configuración: comentarios ocultos, "Descripción de búsqueda" activada.
+3. **Blogger:** crea el blog `calendario-hoy.blogspot.com` (creado; calendariohoy no estaba libre en blogspot). Tema > Editar HTML > pega `blogger/tema.xml`. Configuración: comentarios ocultos, "Descripción de búsqueda" activada.
 4. **Páginas de confianza:** crea 5 páginas con el HTML de `blogger/paginas/`. En Contacto, cambia `FORMULARIO_URL` por un Formulario de Google.
 5. **OAuth:** en tu computador, `python scripts/obtener_token.py CLIENT_ID CLIENT_SECRET`. Guarda en GitHub > Settings > Secrets > Actions: `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET`, `BLOGGER_REFRESH_TOKEN`, `BLOGGER_BLOG_ID` (el número que sale en la URL del panel de Blogger).
 6. **Piloto:** Actions > "Publicar en Blogger" > Run workflow una vez. Revisa la primera URL. Si el permalink sale truncado, avísame antes de seguir. Luego el cron publica 1 por hora hasta las 20.
