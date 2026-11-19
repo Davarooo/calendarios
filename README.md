@@ -103,3 +103,8 @@ Los umbrales de Imágenes, CTR y RPM son iniciales, sin datos propios todavía: 
 | AdSense | RPM de página e impresiones por visita | RPM menor de 2 € en noviembre o diciembre → revisar posición de anuncios, nunca junto a la herramienta. |
 | informes/verificacion.json | URLs con LCP mayor de 2,5 s o enlaces rotos | Cualquier fallo bloquea la publicación de nuevas URLs hasta corregirlo. |
 | Semana 8 | URLs sin indexar | Fusionar con su vecina o marcar noindex. |
+
+## Lecciones de la instalación (Blogger)
+
+- Si al pegar `tema.xml` la página sale vacía (`no-items` en la sección), la causa fue `showaddelement='false'` en un blog nuevo: con `'true'` Blogger vuelve a pintar el gadget de entradas. También conviene `showInlineAds=false`.
+- La dirección `calendariohoy.blogspot.com` estaba ocupada: el blog es `calendario-hoy.blogspot.com`. El dominio propio sigue siendo `calendariohoy.com`.

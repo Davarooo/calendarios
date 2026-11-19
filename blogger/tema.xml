@@ -101,8 +101,14 @@ footer a{color:var(--grafito)}
 <nav><a expr:href='data:blog.homepageUrl + &quot;p/calendario-laboral-2027-espana.html&quot;'>Laboral</a></nav>
 </header>
 <main>
-<b:section class='main' id='page_body' name='Cuerpo de la página' showaddelement='false'>
+<b:section class='main' id='page_body' name='Cuerpo de la página' showaddelement='true'>
 <b:widget id='Blog1' locked='true' title='Calendarios' type='Blog' version='2' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='showInlineAds'>false</b:widget-setting>
+<b:widget-setting name='showDateHeader'>false</b:widget-setting>
+<b:widget-setting name='showAuthor'>false</b:widget-setting>
+<b:widget-setting name='showLabels'>false</b:widget-setting>
+</b:widget-settings>
 <b:includable id='main' var='top'>
 <b:loop values='data:posts' var='post'>
 <b:if cond='data:view.isMultipleItems'>
