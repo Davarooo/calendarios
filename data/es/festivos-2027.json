@@ -1,0 +1,513 @@
+{
+ "anio": 2027,
+ "regiones": [
+  "Andalucía",
+  "Aragón",
+  "Asturias",
+  "Illes Balears",
+  "Canarias (1)",
+  "Cantabria",
+  "Castilla-La Mancha",
+  "Castilla y León",
+  "Cataluña (2)",
+  "Extremadura",
+  "Galicia",
+  "Com. de Madrid",
+  "Región Murcia",
+  "C. Foral Navarra",
+  "País Vasco",
+  "La Rioja",
+  "Comunitat Valenciana",
+  "Ciudad de Ceuta",
+  "Ciudad de Melilla"
+ ],
+ "leyenda": {
+  "*": "Fiesta Nacional no sustituible",
+  "**": "Fiesta Nacional respecto de la que no se ha ejercido la facultad de sustitución",
+  "***": "Fiesta de Comunidad Autónoma"
+ },
+ "fiestas": [
+  {
+   "fecha": "2027-01-01",
+   "nombre": "Año Nuevo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-01-06",
+   "nombre": "Epifanía del Señor",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Illes Balears": "**",
+    "Canarias (1)": "**",
+    "Cantabria": "**",
+    "Castilla-La Mancha": "**",
+    "Castilla y León": "**",
+    "Cataluña (2)": "**",
+    "Extremadura": "**",
+    "Galicia": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "País Vasco": "**",
+    "La Rioja": "**",
+    "Comunitat Valenciana": "**",
+    "Ciudad de Ceuta": "**",
+    "Ciudad de Melilla": "**"
+   }
+  },
+  {
+   "fecha": "2027-03-01",
+   "nombre": "Día de Andalucía",
+   "marcas": {
+    "Andalucía": "***"
+   }
+  },
+  {
+   "fecha": "2027-03-01",
+   "nombre": "Día de les Illes Balears",
+   "marcas": {
+    "Illes Balears": "***"
+   }
+  },
+  {
+   "fecha": "2027-03-10",
+   "nombre": "Fiesta del Eid Fitr",
+   "marcas": {
+    "Ciudad de Melilla": "***"
+   }
+  },
+  {
+   "fecha": "2027-03-19",
+   "nombre": "San José",
+   "marcas": {
+    "Galicia": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "Comunitat Valenciana": "**"
+   }
+  },
+  {
+   "fecha": "2027-03-25",
+   "nombre": "Jueves Santo",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Illes Balears": "**",
+    "Canarias (1)": "**",
+    "Cantabria": "**",
+    "Castilla-La Mancha": "**",
+    "Castilla y León": "**",
+    "Extremadura": "**",
+    "Galicia": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "País Vasco": "**",
+    "La Rioja": "**",
+    "Ciudad de Ceuta": "**",
+    "Ciudad de Melilla": "**"
+   }
+  },
+  {
+   "fecha": "2027-03-26",
+   "nombre": "Viernes Santo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-03-29",
+   "nombre": "Lunes de Pascua",
+   "marcas": {
+    "Illes Balears": "***",
+    "Cataluña (2)": "***",
+    "C. Foral Navarra": "***",
+    "País Vasco": "***",
+    "La Rioja": "***",
+    "Comunitat Valenciana": "***"
+   }
+  },
+  {
+   "fecha": "2027-04-23",
+   "nombre": "San Jorge/Día de Aragón",
+   "marcas": {
+    "Aragón": "***"
+   }
+  },
+  {
+   "fecha": "2027-04-23",
+   "nombre": "Fiesta de Castilla y León",
+   "marcas": {
+    "Castilla y León": "***"
+   }
+  },
+  {
+   "fecha": "2027-05-01",
+   "nombre": "Fiesta del Trabajo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-05-17",
+   "nombre": "Día de las Letras Gallegas",
+   "marcas": {
+    "Galicia": "***"
+   }
+  },
+  {
+   "fecha": "2027-05-17",
+   "nombre": "Eidul Adha-Fiesta Sacrificio",
+   "marcas": {
+    "Ciudad de Ceuta": "***"
+   }
+  },
+  {
+   "fecha": "2027-05-17",
+   "nombre": "Fiesta Sacrificio-Aid Al Adha",
+   "marcas": {
+    "Ciudad de Melilla": "***"
+   }
+  },
+  {
+   "fecha": "2027-05-27",
+   "nombre": "Corpus Christi",
+   "marcas": {
+    "Castilla-La Mancha": "***"
+   }
+  },
+  {
+   "fecha": "2027-05-31",
+   "nombre": "Día de Castilla-La Mancha",
+   "marcas": {
+    "Castilla-La Mancha": "***"
+   }
+  },
+  {
+   "fecha": "2027-06-09",
+   "nombre": "Día de la Región de Murcia",
+   "marcas": {
+    "Región Murcia": "***"
+   }
+  },
+  {
+   "fecha": "2027-06-09",
+   "nombre": "Día de La Rioja",
+   "marcas": {
+    "La Rioja": "***"
+   }
+  },
+  {
+   "fecha": "2027-06-24",
+   "nombre": "Día de San Juan",
+   "marcas": {
+    "Cataluña (2)": "***"
+   }
+  },
+  {
+   "fecha": "2027-07-28",
+   "nombre": "Día de las Instituciones de Cantabria",
+   "marcas": {
+    "Cantabria": "***"
+   }
+  },
+  {
+   "fecha": "2027-08-05",
+   "nombre": "Nuestra Señora de África",
+   "marcas": {
+    "Ciudad de Ceuta": "***"
+   }
+  },
+  {
+   "fecha": "2027-08-16",
+   "nombre": "Lunes siguiente a asunción de la Virgen",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Canarias (1)": "**",
+    "Castilla y León": "**",
+    "Com. de Madrid": "**"
+   }
+  },
+  {
+   "fecha": "2027-09-08",
+   "nombre": "Día de Asturias",
+   "marcas": {
+    "Asturias": "***"
+   }
+  },
+  {
+   "fecha": "2027-09-08",
+   "nombre": "Día de Extremadura",
+   "marcas": {
+    "Extremadura": "***"
+   }
+  },
+  {
+   "fecha": "2027-09-11",
+   "nombre": "Fiesta Nacional de Cataluña",
+   "marcas": {
+    "Cataluña (2)": "***"
+   }
+  },
+  {
+   "fecha": "2027-09-15",
+   "nombre": "La Bien Aparecida",
+   "marcas": {
+    "Cantabria": "***"
+   }
+  },
+  {
+   "fecha": "2027-10-07",
+   "nombre": "Aniversario 1er Gobierno Euskadi",
+   "marcas": {
+    "País Vasco": "***"
+   }
+  },
+  {
+   "fecha": "2027-10-09",
+   "nombre": "Día de la Comunitat Valenciana",
+   "marcas": {
+    "Comunitat Valenciana": "***"
+   }
+  },
+  {
+   "fecha": "2027-10-11",
+   "nombre": "Sustitución 15 de agosto",
+   "marcas": {
+    "Extremadura": "***"
+   }
+  },
+  {
+   "fecha": "2027-10-12",
+   "nombre": "Fiesta Nacional de España",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-11-01",
+   "nombre": "Todos los Santos",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-12-06",
+   "nombre": "Día de la Constitución Española",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-12-08",
+   "nombre": "Inmaculada Concepción",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2027-12-25",
+   "nombre": "Natividad del Señor",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  }
+ ],
+ "notas": {
+  "Canarias (1)": {
+   "texto": "Decreto 115/2026, de 29 de junio (BOC de 3 de julio de 2026): fiestas insulares adicionales.",
+   "islas": {
+    "El Hierro": [
+     "2027-09-24",
+     "Nuestra Señora de los Reyes"
+    ],
+    "Fuerteventura": [
+     "2027-09-17",
+     "Nuestra Señora de la Peña"
+    ],
+    "Gran Canaria": [
+     "2027-09-08",
+     "Nuestra Señora del Pino"
+    ],
+    "La Gomera": [
+     "2027-10-04",
+     "Nuestra Señora de Guadalupe"
+    ],
+    "La Palma": [
+     "2027-08-05",
+     "Nuestra Señora de Las Nieves"
+    ],
+    "Lanzarote y La Graciosa": [
+     "2027-09-15",
+     "Nuestra Señora de los Volcanes"
+    ],
+    "Tenerife": [
+     "2027-02-02",
+     "Virgen de la Candelaria"
+    ]
+   }
+  },
+  "Cataluña (2)": {
+   "texto": "Orden EMT/52/2026, de 25 de marzo (DOGC de 1 de abril de 2026): en el territorio de Arán, la fiesta del 29 de marzo (Pasqua Florida) queda sustituida por la de 17 de junio (Fiesta de Arán), jueves."
+  }
+ },
+ "fuente": {
+  "id": "BOE-A-2026-21254",
+  "titulo": "Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo, por la que se publica relación de fiestas laborales para el año 2027",
+  "boe": "BOE núm. 254, de 13 de octubre de 2026",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+ },
+ "transcrito": "2026-11-19 desde el XML oficial; se re-verifica en cada ejecucion de prueba-fuente"
+}

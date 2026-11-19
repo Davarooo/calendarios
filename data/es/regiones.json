@@ -1,0 +1,325 @@
+{
+ "Andalucía": {
+  "nombre": "Andalucía",
+  "slug": "andalucia",
+  "vecinos": [
+   "extremadura",
+   "castilla-la-mancha",
+   "murcia",
+   "ceuta",
+   "melilla",
+   "comunitat-valenciana"
+  ],
+  "colores": [
+   "#007A33",
+   "#FFFFFF",
+   "#007A33"
+  ]
+ },
+ "Aragón": {
+  "nombre": "Aragón",
+  "slug": "aragon",
+  "vecinos": [
+   "cataluna",
+   "navarra",
+   "la-rioja",
+   "castilla-la-mancha",
+   "comunitat-valenciana",
+   "castilla-y-leon"
+  ],
+  "colores": [
+   "#FCDD09",
+   "#DA121A",
+   "#FCDD09"
+  ]
+ },
+ "Asturias": {
+  "nombre": "Asturias",
+  "slug": "asturias",
+  "vecinos": [
+   "galicia",
+   "cantabria",
+   "castilla-y-leon",
+   "pais-vasco",
+   "la-rioja",
+   "madrid"
+  ],
+  "colores": [
+   "#0066CC",
+   "#FFCC00",
+   "#0066CC"
+  ]
+ },
+ "Illes Balears": {
+  "nombre": "Illes Balears",
+  "slug": "baleares",
+  "vecinos": [
+   "cataluna",
+   "comunitat-valenciana",
+   "canarias",
+   "murcia",
+   "madrid",
+   "andalucia"
+  ],
+  "colores": [
+   "#FCDD09",
+   "#DA121A",
+   "#5B2A86"
+  ]
+ },
+ "Canarias (1)": {
+  "nombre": "Canarias",
+  "slug": "canarias",
+  "vecinos": [
+   "baleares",
+   "andalucia",
+   "ceuta",
+   "melilla",
+   "madrid",
+   "extremadura"
+  ],
+  "colores": [
+   "#FFFFFF",
+   "#0768A9",
+   "#FFCC00"
+  ]
+ },
+ "Cantabria": {
+  "nombre": "Cantabria",
+  "slug": "cantabria",
+  "vecinos": [
+   "asturias",
+   "pais-vasco",
+   "castilla-y-leon",
+   "la-rioja",
+   "navarra",
+   "galicia"
+  ],
+  "colores": [
+   "#FFFFFF",
+   "#ED1C24",
+   "#ED1C24"
+  ]
+ },
+ "Castilla-La Mancha": {
+  "nombre": "Castilla-La Mancha",
+  "slug": "castilla-la-mancha",
+  "vecinos": [
+   "madrid",
+   "andalucia",
+   "extremadura",
+   "comunitat-valenciana",
+   "murcia",
+   "aragon"
+  ],
+  "colores": [
+   "#A2002C",
+   "#FFFFFF",
+   "#A2002C"
+  ]
+ },
+ "Castilla y León": {
+  "nombre": "Castilla y León",
+  "slug": "castilla-y-leon",
+  "vecinos": [
+   "madrid",
+   "galicia",
+   "asturias",
+   "cantabria",
+   "la-rioja",
+   "extremadura"
+  ],
+  "colores": [
+   "#C8102E",
+   "#6A1B6A",
+   "#C8102E"
+  ]
+ },
+ "Cataluña (2)": {
+  "nombre": "Cataluña",
+  "slug": "cataluna",
+  "vecinos": [
+   "aragon",
+   "comunitat-valenciana",
+   "baleares",
+   "navarra",
+   "pais-vasco",
+   "madrid"
+  ],
+  "colores": [
+   "#FCDD09",
+   "#DA121A",
+   "#FCDD09"
+  ]
+ },
+ "Extremadura": {
+  "nombre": "Extremadura",
+  "slug": "extremadura",
+  "vecinos": [
+   "andalucia",
+   "castilla-la-mancha",
+   "castilla-y-leon",
+   "madrid",
+   "galicia",
+   "canarias"
+  ],
+  "colores": [
+   "#00843D",
+   "#FFFFFF",
+   "#111111"
+  ]
+ },
+ "Galicia": {
+  "nombre": "Galicia",
+  "slug": "galicia",
+  "vecinos": [
+   "asturias",
+   "castilla-y-leon",
+   "cantabria",
+   "extremadura",
+   "pais-vasco",
+   "madrid"
+  ],
+  "colores": [
+   "#FFFFFF",
+   "#0099CC",
+   "#FFFFFF"
+  ]
+ },
+ "Com. de Madrid": {
+  "nombre": "Comunidad de Madrid",
+  "slug": "madrid",
+  "vecinos": [
+   "castilla-la-mancha",
+   "castilla-y-leon",
+   "andalucia",
+   "comunitat-valenciana",
+   "cataluna",
+   "extremadura"
+  ],
+  "colores": [
+   "#C8102E",
+   "#FFFFFF",
+   "#C8102E"
+  ]
+ },
+ "Región Murcia": {
+  "nombre": "Región de Murcia",
+  "slug": "murcia",
+  "vecinos": [
+   "comunitat-valenciana",
+   "andalucia",
+   "castilla-la-mancha",
+   "madrid",
+   "baleares",
+   "aragon"
+  ],
+  "colores": [
+   "#9B1B30",
+   "#F6C700",
+   "#9B1B30"
+  ]
+ },
+ "C. Foral Navarra": {
+  "nombre": "Navarra",
+  "slug": "navarra",
+  "vecinos": [
+   "pais-vasco",
+   "la-rioja",
+   "aragon",
+   "cantabria",
+   "castilla-y-leon",
+   "cataluna"
+  ],
+  "colores": [
+   "#D52B1E",
+   "#F4C430",
+   "#D52B1E"
+  ]
+ },
+ "País Vasco": {
+  "nombre": "País Vasco",
+  "slug": "pais-vasco",
+  "vecinos": [
+   "navarra",
+   "cantabria",
+   "la-rioja",
+   "castilla-y-leon",
+   "asturias",
+   "aragon"
+  ],
+  "colores": [
+   "#D52B1E",
+   "#009B48",
+   "#FFFFFF"
+  ]
+ },
+ "La Rioja": {
+  "nombre": "La Rioja",
+  "slug": "la-rioja",
+  "vecinos": [
+   "navarra",
+   "pais-vasco",
+   "castilla-y-leon",
+   "aragon",
+   "cantabria",
+   "madrid"
+  ],
+  "colores": [
+   "#D52B1E",
+   "#FFFFFF",
+   "#009B48"
+  ]
+ },
+ "Comunitat Valenciana": {
+  "nombre": "Comunitat Valenciana",
+  "slug": "comunitat-valenciana",
+  "vecinos": [
+   "murcia",
+   "cataluna",
+   "aragon",
+   "castilla-la-mancha",
+   "baleares",
+   "andalucia"
+  ],
+  "colores": [
+   "#FCDD09",
+   "#DA121A",
+   "#0057B8"
+  ]
+ },
+ "Ciudad de Ceuta": {
+  "nombre": "Ceuta",
+  "slug": "ceuta",
+  "vecinos": [
+   "melilla",
+   "andalucia",
+   "canarias",
+   "extremadura",
+   "murcia",
+   "madrid"
+  ],
+  "colores": [
+   "#111111",
+   "#FFFFFF",
+   "#111111"
+  ]
+ },
+ "Ciudad de Melilla": {
+  "nombre": "Melilla",
+  "slug": "melilla",
+  "vecinos": [
+   "ceuta",
+   "andalucia",
+   "murcia",
+   "canarias",
+   "comunitat-valenciana",
+   "madrid"
+  ],
+  "colores": [
+   "#5DADE2",
+   "#FFFFFF",
+   "#5DADE2"
+  ]
+ }
+}

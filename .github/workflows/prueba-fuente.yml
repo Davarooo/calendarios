@@ -1,0 +1,30 @@
+name: Prueba de fuente (BOE)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "17 6 * * 1"   # lunes 6:17 UTC: detecta si el BOE cambia de formato o bloquea
+
+permissions:
+  contents: write
+
+jobs:
+  boe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Pruebas del lector y del generador
+        run: python -m unittest discover -s tests -v
+      - name: Descargar y leer la resolucion de fiestas 2027
+        run: python scripts/boe_festivos.py 2027
+      - name: Guardar datos si cambiaron
+        run: |
+          git config user.name "calendarios-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || { git commit -m "Festivos BOE $(date -u +%F)"; git push; }
