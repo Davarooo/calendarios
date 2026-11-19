@@ -67,8 +67,8 @@ background-image:radial-gradient(circle,var(--mesa) 1.6px,transparent 2px);backg
 .ch-grid a{display:flex;align-items:center;min-height:48px;padding:.4rem .8rem;border:1px solid var(--linea);border-left:7px solid var(--c,var(--rojo));border-radius:0 8px 8px 0;
 color:var(--tinta);font-weight:600;text-decoration:none;background:#fff}
 .ch-grid a:hover{background:var(--mesa)}
-.lista article{padding:.8rem 0;border-bottom:1px solid var(--linea)}
-.lista h2{margin:0;font-size:1.25rem}.lista a{color:var(--tinta);text-decoration:none}
+.item{padding:.8rem 0;border-bottom:1px solid var(--linea)}
+.item h2{margin:0;font-size:1.25rem}.item a{color:var(--tinta);text-decoration:none}
 footer{max-width:800px;margin:0 auto;padding:0 1rem 2rem;font-size:.9rem;color:var(--grafito);display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
 footer a{color:var(--grafito)}
 @media (max-width:420px){h1{font-size:1.7rem}.ch-taco{grid-template-columns:88px 1fr;gap:.8rem}.ch-num{font-size:3rem}}
@@ -101,21 +101,17 @@ footer a{color:var(--grafito)}
 <nav><a expr:href='data:blog.homepageUrl + &quot;p/calendario-laboral-2027-espana.html&quot;'>Laboral</a></nav>
 </header>
 <main>
-<b:section class='main' id='main' maxwidgets='1' showaddelement='no'>
+<b:section class='main' id='page_body' name='Cuerpo de la página' showaddelement='false'>
 <b:widget id='Blog1' locked='true' title='Calendarios' type='Blog' version='2' visible='true'>
-<b:includable id='main'>
-<b:if cond='data:view.isSingleItem'>
+<b:includable id='main' var='top'>
 <b:loop values='data:posts' var='post'>
-<article><h1><data:post.title/></h1><data:post.body/></article>
-</b:loop>
+<b:if cond='data:view.isMultipleItems'>
+<article class='item'><h2><a expr:href='data:post.url'><data:post.title/></a></h2></article>
 <b:else/>
-<div class='lista'>
-<b:loop values='data:posts' var='post'>
-<article><h2><a expr:href='data:post.url'><data:post.title/></a></h2></article>
-</b:loop>
-<b:if cond='data:olderPageUrl'><p><a expr:href='data:olderPageUrl'>Más calendarios</a></p></b:if>
-</div>
+<article><h1><data:post.title/></h1><data:post.body/></article>
 </b:if>
+</b:loop>
+<b:if cond='data:view.isMultipleItems and data:olderPageUrl'><p><a expr:href='data:olderPageUrl'>Más calendarios</a></p></b:if>
 </b:includable>
 </b:widget>
 </b:section>
