@@ -86,7 +86,13 @@ El año va en el título desde los datos (`anio`): al generar 2028 cambia solo.
 2. **Prueba de fuente:** Actions > "Prueba de fuente (BOE)" > Run workflow. Verde = el BOE no bloquea GitHub y los datos coinciden.
 3. **Blogger:** crea el blog `calendario-hoy.blogspot.com` (creado; calendariohoy no estaba libre en blogspot). Tema > Editar HTML > pega `blogger/tema.xml`. Configuración: comentarios ocultos, "Descripción de búsqueda" activada.
 4. **Páginas de confianza:** crea 5 páginas con el HTML de `blogger/paginas/`. En Contacto, cambia `FORMULARIO_URL` por un Formulario de Google.
-5. **OAuth:** en tu computador, `python scripts/obtener_token.py CLIENT_ID CLIENT_SECRET`. Guarda en GitHub > Settings > Secrets > Actions: `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET`, `BLOGGER_REFRESH_TOKEN`, `BLOGGER_BLOG_ID` (el número que sale en la URL del panel de Blogger).
+5. **OAuth (lo único que queda de tu parte):**
+   1. console.cloud.google.com > proyecto nuevo `calendario-hoy` > APIs y servicios > Biblioteca > **Blogger API v3** > Habilitar.
+   2. Pantalla de consentimiento OAuth: tipo Externo, nombre "Calendario Hoy", tu correo. Al terminar pulsa **Publicar app** (en modo Prueba el token caduca a los 7 días).
+   3. Credenciales > Crear ID de cliente OAuth > **App de escritorio**.
+   4. En tu computador: `python scripts/obtener_token.py CLIENT_ID CLIENT_SECRET` (autoriza con la cuenta dueña del blog).
+   5. GitHub > Settings > Secrets > Actions: crea `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET` y `BLOGGER_REFRESH_TOKEN`. `BLOGGER_BLOG_ID` ya está creado (128605218859443069).
+   Mientras falten, el robot de publicación termina en verde sin publicar.
 6. **Piloto:** Actions > "Publicar en Blogger" > Run workflow una vez. Revisa la primera URL. Si el permalink sale truncado, avísame antes de seguir. Luego el cron publica 1 por hora hasta las 20.
 7. **Verificación:** Actions > "Verificar publicadas". Mide enlaces 200 y LCP/CLS móvil con PageSpeed.
 

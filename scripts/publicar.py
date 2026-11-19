@@ -88,6 +88,10 @@ def publicadas_hoy(filas):
 
 
 def main():
+    faltan = [k for k in ("BLOGGER_CLIENT_ID", "BLOGGER_CLIENT_SECRET", "BLOGGER_REFRESH_TOKEN", "BLOGGER_BLOG_ID") if not os.environ.get(k)]
+    if faltan:
+        print(f"::warning::Faltan secretos {faltan}: no se publica nada todavia")
+        return
     filas = leer_cola()
     for f in filas:
         f.setdefault("fecha_publicacion", "")
