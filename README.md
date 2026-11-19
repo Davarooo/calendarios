@@ -110,4 +110,4 @@ Los umbrales de Imágenes, CTR y RPM son iniciales, sin datos propios todavía: 
 
 ## Nota sobre Blogger
 
-Se probó Blogger (calendario-hoy.blogspot.com). Publicar desde la nube exigía credenciales OAuth, así que el sitio pasó a GitHub Pages. La carpeta `blogger/` guarda el tema y las páginas de confianza por si se vuelve a usar.
+Se probó Blogger (calendario-hoy.blogspot.com). Publicar desde la nube exigía credenciales OAuth, así que el sitio pasó a GitHub Pages. La carpeta `blogger/` guarda el tema y las páginas de confianza por si se vuelve a usar. El blog redirige al sitio nuevo: la portada a la portada y cada `/p/<pagina>.html` a `/<pagina>/`.
