@@ -51,8 +51,35 @@ def tejas(texto, n=5):
     return {" ".join(w[i:i + n]) for i in range(len(w) - n + 1)}
 
 
+def enlaces_docs():
+    """Todo enlace interno del sitio publicado apunta a un archivo que existe (equivale al 200)."""
+    cfg = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
+    sitio = cfg["sitio"].rstrip("/")
+    rotos = []
+    for pag in (RAIZ / "docs").rglob("*.html"):
+        for href in re.findall(r'(?:href|src)="([^"]+)"', pag.read_text(encoding="utf-8")):
+            if href.startswith(sitio):
+                rel = href[len(sitio):].lstrip("/")
+                destino = RAIZ / "docs" / rel
+                if href.endswith("/") or not rel:
+                    destino = destino / "index.html"
+                if not destino.exists():
+                    rotos.append(f"{pag.relative_to(RAIZ)} -> {href}")
+            elif "@@URL" in href:
+                rotos.append(f"{pag.relative_to(RAIZ)} -> {href}")
+    return rotos
+
+
 def main():
     fallos, textos = [], {}
+    if "--docs" in sys.argv:
+        rotos = enlaces_docs()
+        for r in rotos:
+            print("ENLACE ROTO:", r)
+        if rotos:
+            sys.exit(1)
+        print("OK: todos los enlaces internos del sitio existen")
+        return
     for ruta in sorted((OUT / "html").glob("*.html")):
         slug = ruta.stem
         ficha = json.loads((OUT / "fichas" / f"{slug}.json").read_text(encoding="utf-8"))

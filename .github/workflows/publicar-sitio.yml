@@ -1,0 +1,43 @@
+name: Publicar sitio (GitHub Pages)
+
+on:
+  schedule:
+    - cron: "37 5 * * *"   # una vez al dia: hasta 24 URLs nuevas
+  workflow_dispatch:
+    inputs:
+      cantidad:
+        description: "URLs nuevas a publicar ahora"
+        default: "24"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-sitio
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Pruebas y chequeos de calidad (si fallan, no se publica nada)
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/generar.py 2027
+          python scripts/chequeos.py
+      - name: Armar el sitio y publicar las siguientes URLs
+        run: |
+          python scripts/sitio.py --publicar "${{ github.event.inputs.cantidad || '24' }}"
+          python scripts/chequeos.py --docs
+      - name: Guardar (GitHub Pages despliega solo)
+        run: |
+          git config user.name "calendarios-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add queue.csv docs/
+          git diff --cached --quiet || { git commit -m "Sitio $(date -u +'%F %H:%M')"; git pull --rebase; git push; }

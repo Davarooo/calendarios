@@ -1,6 +1,8 @@
 # Calendario Hoy: calendarios laborales y escolares de España
 
-Sitio en Blogger alimentado por GitHub Actions. Los datos salen de boletines oficiales, las páginas se generan con plantillas en Python y un robot las publica por la API de Blogger.
+Sitio estático en GitHub Pages construido por GitHub Actions. Los datos salen de boletines oficiales, las páginas se generan con plantillas en Python y el robot publica hasta 24 URLs nuevas al día. No hay credenciales ni servidores: todo corre en la nube con el permiso del propio repositorio.
+
+Sitio: https://davarooo.github.io/calendarios/
 
 ## Estado (19 nov 2026)
 
@@ -9,8 +11,8 @@ Sitio en Blogger alimentado por GitHub Actions. Los datos salen de boletines ofi
 | Fuente oficial 2027 | Ubicada y transcrita: **BOE-A-2026-21254** (BOE n.º 254, 13-10-2026). 35 fiestas, 19 territorios. Coherencia comprobada: 12 por comunidad, Canarias 11 + 1 insular. |
 | Prueba de fuente desde GitHub | Lista (`prueba-fuente.yml`). Vuelve a leer el XML del BOE y falla si no coincide con lo publicado. Falta ejecutarla en tu repo. |
 | Validación SERP | 7 búsquedas en tu Chrome (escritorio, gl=es). Resultados abajo. |
-| Diseño | Tema Blogger propio + imagen PNG/PDF + calendario interactivo. Vista previa: https://claude.ai/artifact/M8fY74QV4XufwDsD3qgga4 |
-| Piloto | 20 URLs generadas (España + 19 territorios) en `out/`. Pasan los chequeos automáticos. Sin publicar: faltan tus credenciales. |
+| Diseño | Tema propio + imagen PNG/PDF + calendario interactivo |
+| Piloto | 20 URLs publicadas en GitHub Pages (España como portada + 19 territorios) y 5 páginas de confianza. |
 
 ## Validación SERP (19-11-2026, Chrome de escritorio, no incógnito móvil)
 
@@ -35,10 +37,8 @@ plantillas/entrada.html      plantilla de la entrada (placeholders {var})
 scripts/boe_festivos.py      prueba de fuente: lee el XML del BOE y compara
 scripts/generar.py           genera HTML, PNG, PDF, fichas de datos y queue.csv
 scripts/chequeos.py          criterios de aceptación automatizables
-scripts/publicar.py          publica 1 URL por ejecución (Blogger API v3)
+scripts/sitio.py             arma docs/: páginas completas, sitemap, robots y 404
 scripts/verificar_publicado.py  enlaces 200 + PageSpeed móvil de lo publicado
-scripts/copia.py             copia mensual de todo lo publicado
-scripts/obtener_token.py     saca el refresh token OAuth en TU computador
 blogger/tema.xml             plantilla del sitio (sin fechas, autor ni etiquetas)
 blogger/paginas/*.html       Acerca, Metodología, Privacidad, Contacto, Aviso legal
 docs/                        GitHub Pages: imágenes PNG/PDF y config.json
@@ -80,21 +80,19 @@ El año va en el título desde los datos (`anio`): al generar 2028 cambia solo.
 
 `slug, titulo, meta_descripcion, tipo, seccion, anio, region, prioridad, template_version, estado (pendiente/publicado/actualizar/error), clave_duplicado, url_publicada, post_id, intentos, ultimo_error, fecha_publicacion, enlaces_pendientes`
 
-## Instalación (tu parte, unos 40 minutos)
+## Cómo funciona
 
-1. **GitHub:** crea el repo público `calendarios`, sube esta carpeta (incluida `.github`). Settings > Actions > General > Workflow permissions: Read and write. Settings > Pages: rama `main`, carpeta `/docs`.
-2. **Prueba de fuente:** Actions > "Prueba de fuente (BOE)" > Run workflow. Verde = el BOE no bloquea GitHub y los datos coinciden.
-3. **Blogger:** crea el blog `calendario-hoy.blogspot.com` (creado; calendariohoy no estaba libre en blogspot). Tema > Editar HTML > pega `blogger/tema.xml`. Configuración: comentarios ocultos, "Descripción de búsqueda" activada.
-4. **Páginas de confianza:** crea 5 páginas con el HTML de `blogger/paginas/`. En Contacto, cambia `FORMULARIO_URL` por un Formulario de Google.
-5. **OAuth (lo único que queda de tu parte):**
-   1. console.cloud.google.com > proyecto nuevo `calendario-hoy` > APIs y servicios > Biblioteca > **Blogger API v3** > Habilitar.
-   2. Pantalla de consentimiento OAuth: tipo Externo, nombre "Calendario Hoy", tu correo. Al terminar pulsa **Publicar app** (en modo Prueba el token caduca a los 7 días).
-   3. Credenciales > Crear ID de cliente OAuth > **App de escritorio**.
-   4. En tu computador: `python scripts/obtener_token.py CLIENT_ID CLIENT_SECRET` (autoriza con la cuenta dueña del blog).
-   5. GitHub > Settings > Secrets > Actions: crea `BLOGGER_CLIENT_ID`, `BLOGGER_CLIENT_SECRET` y `BLOGGER_REFRESH_TOKEN`. `BLOGGER_BLOG_ID` ya está creado (128605218859443069).
-   Mientras falten, el robot de publicación termina en verde sin publicar.
-6. **Piloto:** Actions > "Publicar en Blogger" > Run workflow una vez. Revisa la primera URL. Si el permalink sale truncado, avísame antes de seguir. Luego el cron publica 1 por hora hasta las 20.
-7. **Verificación:** Actions > "Verificar publicadas". Mide enlaces 200 y LCP/CLS móvil con PageSpeed.
+1. `publicar-sitio.yml` corre cada día (y a mano con "Run workflow"): pruebas, genera las páginas, pasa los chequeos y publica las siguientes URLs de `queue.csv` en `docs/`.
+2. GitHub Pages despliega `docs/` sola en uno o dos minutos.
+3. `prueba-fuente.yml` revisa cada lunes que el BOE siga diciendo lo mismo; si cambia, falla y avisa por correo.
+4. `verificar.yml` mide enlaces y PageSpeed móvil de las URLs publicadas.
+
+Para cambiar al dominio propio: compra `calendariohoy.com`, ponlo en Settings > Pages > Custom domain y cambia `sitio` y `assets` en `config.json`. GitHub redirige las URLs viejas.
+
+## Pendiente de tu parte (solo cuando quieras)
+
+- Search Console: añade la propiedad de prefijo de URL `https://davarooo.github.io/calendarios/`, verifícala con el archivo HTML que da Google (súbelo a `docs/` o pásamelo) y envía `sitemap.xml`.
+- AdSense pide un dominio propio: no acepta `github.io`. Se conecta al comprar el dominio.
 
 ## Plan de medición (cada lunes)
 
@@ -110,7 +108,6 @@ Los umbrales de Imágenes, CTR y RPM son iniciales, sin datos propios todavía: 
 | informes/verificacion.json | URLs con LCP mayor de 2,5 s o enlaces rotos | Cualquier fallo bloquea la publicación de nuevas URLs hasta corregirlo. |
 | Semana 8 | URLs sin indexar | Fusionar con su vecina o marcar noindex. |
 
-## Lecciones de la instalación (Blogger)
+## Nota sobre Blogger
 
-- Si al pegar `tema.xml` la página sale vacía (`no-items` en la sección), la causa fue `showaddelement='false'` en un blog nuevo: con `'true'` Blogger vuelve a pintar el gadget de entradas. También conviene `showInlineAds=false`.
-- La dirección `calendariohoy.blogspot.com` estaba ocupada: el blog es `calendario-hoy.blogspot.com`. El dominio propio sigue siendo `calendariohoy.com`.
+Se probó Blogger (calendario-hoy.blogspot.com). Publicar desde la nube exigía credenciales OAuth, así que el sitio pasó a GitHub Pages. La carpeta `blogger/` guarda el tema y las páginas de confianza por si se vuelve a usar.
