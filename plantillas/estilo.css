@@ -125,3 +125,4 @@ background:radial-gradient(circle at 0 0,transparent 30px,#DCE5FA 31px,#DCE5FA 3
 .ch-munis a{font-weight:700;color:var(--cob);text-decoration:none}.ch-munis a:hover{text-decoration:underline}
 .ch-munis span{font-size:.9rem;color:var(--gris)}
 .ch-difs li>strong{display:block;color:var(--tinta);margin-bottom:4px}
+.ch-munis em{font-style:normal;font-size:.8rem;color:var(--gris);margin-top:2px}

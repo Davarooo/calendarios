@@ -1,0 +1,1264 @@
+{
+ "anio": 2027,
+ "region_clave": "Canarias (1)",
+ "region_slug": "canarias",
+ "region_nombre": "Canarias",
+ "region_en": "Canarias",
+ "fuente": {
+  "id": "BOC n.º 168, anuncio 3035",
+  "titulo": "Orden de 7 de agosto de 2026, por la que se determinan las fiestas locales propias de cada municipio de la Comunidad Autónoma de Canarias para el año 2027",
+  "boletin": "BOC n.º 168, de 21 de agosto de 2026",
+  "url": "https://www.gobiernodecanarias.org/boc/2026/168/3035.html",
+  "pdf": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-168-3035.pdf"
+ },
+ "transcrito": "2026-11-20: anexo leído de la versión HTML oficial del BOC y convertido por script (88 municipios, 2 fechas cada uno). En Garachico el boletín omite los dos puntos en '26 de julio Festividad de Santa Ana'; se comprobó en el texto que pertenece a Garachico. La isla de cada municipio se asignó a mano y se comprobó el recuento por isla (31, 21, 7, 6, 14, 6, 3).",
+ "destacados": [
+  "santa-cruz-de-tenerife",
+  "las-palmas-de-gran-canaria",
+  "san-cristobal-de-la-laguna",
+  "telde",
+  "arona",
+  "santa-lucia-de-tirajana",
+  "arrecife"
+ ],
+ "municipios": [
+  {
+   "nombre": "Adeje",
+   "slug": "adeje",
+   "isla": "Tenerife",
+   "borm": "ADEJE",
+   "fechas": [
+    "2027-01-20",
+    "2027-10-11"
+   ],
+   "nombres": [
+    "Festividad de San Sebastián",
+    "Festividad de Santa Úrsula"
+   ]
+  },
+  {
+   "nombre": "Agaete",
+   "slug": "agaete",
+   "isla": "Gran Canaria",
+   "borm": "AGAETE",
+   "fechas": [
+    "2027-06-29",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "Festividad de San Pedro Apóstol",
+    "Festividad de Nuestra Señora de las Nieves"
+   ]
+  },
+  {
+   "nombre": "Agüimes",
+   "slug": "aguimes",
+   "isla": "Gran Canaria",
+   "borm": "AGÜIMES",
+   "fechas": [
+    "2027-01-20",
+    "2027-02-11"
+   ],
+   "nombres": [
+    "Festividad de San Sebastián",
+    "Jueves de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Agulo",
+   "slug": "agulo",
+   "isla": "La Gomera",
+   "borm": "AGULO",
+   "fechas": [
+    "2027-04-26",
+    "2027-09-24"
+   ],
+   "nombres": [
+    "Festividad de San Marcos Evangelista",
+    "Festividad de Nuestra Señora de las Mercedes"
+   ]
+  },
+  {
+   "nombre": "Alajeró",
+   "slug": "alajero",
+   "isla": "La Gomera",
+   "borm": "ALAJERÓ",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-15"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora del Carmen",
+    "Festividad de Nuestra Señora la Virgen de El Paso"
+   ]
+  },
+  {
+   "nombre": "Antigua",
+   "slug": "antigua",
+   "isla": "Fuerteventura",
+   "borm": "ANTIGUA",
+   "fechas": [
+    "2027-02-01",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Carnavales",
+    "Festividad de Nuestra Señora de Antigua"
+   ]
+  },
+  {
+   "nombre": "Arafo",
+   "slug": "arafo",
+   "isla": "Tenerife",
+   "borm": "ARAFO",
+   "fechas": [
+    "2027-02-23",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Bernardo"
+   ]
+  },
+  {
+   "nombre": "Arico",
+   "slug": "arico",
+   "isla": "Tenerife",
+   "borm": "ARICO",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Nuestra Señora de Abona"
+   ]
+  },
+  {
+   "nombre": "Arona",
+   "slug": "arona",
+   "isla": "Tenerife",
+   "borm": "ARONA",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-04"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad del Santísimo Cristo de la Salud"
+   ]
+  },
+  {
+   "nombre": "Arrecife",
+   "slug": "arrecife",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "ARRECIFE",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-25"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Ginés"
+   ]
+  },
+  {
+   "nombre": "Artenara",
+   "slug": "artenara",
+   "isla": "Gran Canaria",
+   "borm": "ARTENARA",
+   "fechas": [
+    "2027-08-30",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "Festividad de la Virgen de la Cuevita",
+    "Festividad del Cristo de Acusa"
+   ]
+  },
+  {
+   "nombre": "Arucas",
+   "slug": "arucas",
+   "isla": "Gran Canaria",
+   "borm": "ARUCAS",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Juan Bautista"
+   ]
+  },
+  {
+   "nombre": "Barlovento",
+   "slug": "barlovento",
+   "isla": "La Palma",
+   "borm": "BARLOVENTO",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-07"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Nuestra Señora del Rosario"
+   ]
+  },
+  {
+   "nombre": "Betancuria",
+   "slug": "betancuria",
+   "isla": "Fuerteventura",
+   "borm": "BETANCURIA",
+   "fechas": [
+    "2027-07-14",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Festividad de San Buenaventura",
+    "Festividad de San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "Breña Alta",
+   "slug": "brena-alta",
+   "isla": "La Palma",
+   "borm": "BREÑA ALTA",
+   "fechas": [
+    "2027-05-03",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Festividad de Santa Cruz",
+    "Festividad de San Pedro Apóstol"
+   ]
+  },
+  {
+   "nombre": "Breña Baja",
+   "slug": "brena-baja",
+   "isla": "La Palma",
+   "borm": "BREÑA BAJA",
+   "fechas": [
+    "2027-05-03",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Día de la Cruz",
+    "Festividad de Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Buenavista del Norte",
+   "slug": "buenavista-del-norte",
+   "isla": "Tenerife",
+   "borm": "BUENAVISTA DEL NORTE",
+   "fechas": [
+    "2027-08-24",
+    "2027-10-25"
+   ],
+   "nombres": [
+    "Festividad de San Bartolomé",
+    "Festividad de Nuestra Señora de los Remedios. Patrona de la Villa"
+   ]
+  },
+  {
+   "nombre": "Candelaria",
+   "slug": "candelaria",
+   "isla": "Tenerife",
+   "borm": "CANDELARIA",
+   "fechas": [
+    "2027-02-23",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Santa Ana"
+   ]
+  },
+  {
+   "nombre": "El Paso",
+   "slug": "el-paso",
+   "isla": "La Palma",
+   "borm": "EL PASO",
+   "fechas": [
+    "2027-08-21",
+    "2027-09-03"
+   ],
+   "nombres": [
+    "Romería de la bajada de Nuestra Señora del Pino",
+    "Viernes anterior a la Festividad del Pino"
+   ]
+  },
+  {
+   "nombre": "El Pinar de El Hierro",
+   "slug": "el-pinar-de-el-hierro",
+   "isla": "El Hierro",
+   "borm": "EL PINAR DE EL HIERRO",
+   "fechas": [
+    "2027-05-03",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Festividad de la Cruz",
+    "Festividad de Nuestra Señora de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "El Rosario",
+   "slug": "el-rosario",
+   "isla": "Tenerife",
+   "borm": "EL ROSARIO",
+   "fechas": [
+    "2027-02-23",
+    "2027-08-02"
+   ],
+   "nombres": [
+    "Festividad Local de Santa Cruz de Tenerife",
+    "Festividad de Nuestra Señora de La Esperanza"
+   ]
+  },
+  {
+   "nombre": "El Sauzal",
+   "slug": "el-sauzal",
+   "isla": "Tenerife",
+   "borm": "EL SAUZAL",
+   "fechas": [
+    "2027-02-23",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Pedro Apóstol"
+   ]
+  },
+  {
+   "nombre": "El Tanque",
+   "slug": "el-tanque",
+   "isla": "Tenerife",
+   "borm": "EL TANQUE",
+   "fechas": [
+    "2027-08-31",
+    "2027-10-18"
+   ],
+   "nombres": [
+    "Festividad Nuestra Señora de Buen Viaje",
+    "Festividad del Santísimo Cristo del Calvario"
+   ]
+  },
+  {
+   "nombre": "Fasnia",
+   "slug": "fasnia",
+   "isla": "Tenerife",
+   "borm": "FASNIA",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Fiestas Patronales"
+   ]
+  },
+  {
+   "nombre": "Firgas",
+   "slug": "firgas",
+   "isla": "Gran Canaria",
+   "borm": "FIRGAS",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Roque"
+   ]
+  },
+  {
+   "nombre": "Fuencaliente de La Palma",
+   "slug": "fuencaliente-de-la-palma",
+   "isla": "La Palma",
+   "borm": "FUENCALIENTE DE LA PALMA",
+   "fechas": [
+    "2027-02-09",
+    "2027-02-19"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Día del Municipio"
+   ]
+  },
+  {
+   "nombre": "Gáldar",
+   "slug": "galdar",
+   "isla": "Gran Canaria",
+   "borm": "GÁLDAR",
+   "fechas": [
+    "2027-05-15",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Festividad de San Isidro Labrador",
+    "Festividad de Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Garachico",
+   "slug": "garachico",
+   "isla": "Tenerife",
+   "borm": "GARACHICO",
+   "fechas": [
+    "2027-06-24",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Festividad de San Juan",
+    "Festividad de Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Garafía",
+   "slug": "garafia",
+   "isla": "La Palma",
+   "borm": "GARAFÍA",
+   "fechas": [
+    "2027-06-14",
+    "2027-08-20"
+   ],
+   "nombres": [
+    "Festividad de San Antonio del Monte",
+    "Festividad de Nuestra Señora de la Luz"
+   ]
+  },
+  {
+   "nombre": "Granadilla de Abona",
+   "slug": "granadilla-de-abona",
+   "isla": "Tenerife",
+   "borm": "GRANADILLA DE ABONA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-14"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Antonio de Padua"
+   ]
+  },
+  {
+   "nombre": "Guía de Isora",
+   "slug": "guia-de-isora",
+   "isla": "Tenerife",
+   "borm": "GUÍA DE ISORA",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "Festividad de San Juan Bautista",
+    "Festividad del Santísimo Cristo de la Dulce Muerte"
+   ]
+  },
+  {
+   "nombre": "Güímar",
+   "slug": "guimar",
+   "isla": "Tenerife",
+   "borm": "GÜÍMAR",
+   "fechas": [
+    "2027-06-29",
+    "2027-09-07"
+   ],
+   "nombres": [
+    "Festividad de San Pedro Apóstol",
+    "Festividad de Nuestra Señora del Socorro"
+   ]
+  },
+  {
+   "nombre": "Haría",
+   "slug": "haria",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "HARÍA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Juan"
+   ]
+  },
+  {
+   "nombre": "Hermigua",
+   "slug": "hermigua",
+   "isla": "La Gomera",
+   "borm": "HERMIGUA",
+   "fechas": [
+    "2027-08-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Festividad de Santo Domingo de Guzmán",
+    "Festividad de Nuestra Señora de la Encarnación"
+   ]
+  },
+  {
+   "nombre": "Icod de los Vinos",
+   "slug": "icod-de-los-vinos",
+   "isla": "Tenerife",
+   "borm": "ICOD DE LOS VINOS",
+   "fechas": [
+    "2027-02-23",
+    "2027-04-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes posterior a la Festividad de San Marcos Evangelista"
+   ]
+  },
+  {
+   "nombre": "Ingenio",
+   "slug": "ingenio",
+   "isla": "Gran Canaria",
+   "borm": "INGENIO",
+   "fechas": [
+    "2027-02-02",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora de la Candelaria",
+    "Festividad del Apóstol San Pedro"
+   ]
+  },
+  {
+   "nombre": "La Aldea de San Nicolás",
+   "slug": "la-aldea-de-san-nicolas",
+   "isla": "Gran Canaria",
+   "borm": "LA ALDEA DE SAN NICOLÁS",
+   "fechas": [
+    "2027-09-10",
+    "2027-09-11"
+   ],
+   "nombres": [
+    "Festividad del Santo Patrono San Nicolás de Tolentino",
+    "Día del Charco"
+   ]
+  },
+  {
+   "nombre": "La Frontera",
+   "slug": "la-frontera",
+   "isla": "El Hierro",
+   "borm": "LA FRONTERA",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "La Guancha",
+   "slug": "la-guancha",
+   "isla": "Tenerife",
+   "borm": "LA GUANCHA",
+   "fechas": [
+    "2027-01-18",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Festividad del XVIII de enero en honor a la Virgen de la Esperanza",
+    "Fiestas Patronales en honor de la Virgen de la Esperanza"
+   ]
+  },
+  {
+   "nombre": "La Matanza de Acentejo",
+   "slug": "la-matanza-de-acentejo",
+   "isla": "Tenerife",
+   "borm": "LA MATANZA DE ACENTEJO",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-06"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de El Salvador"
+   ]
+  },
+  {
+   "nombre": "La Oliva",
+   "slug": "la-oliva",
+   "isla": "Fuerteventura",
+   "borm": "LA OLIVA",
+   "fechas": [
+    "2027-02-02",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Festividad Nuestra Señora de la Candelaria",
+    "Festividad Nuestra Señora del Carmen"
+   ]
+  },
+  {
+   "nombre": "La Orotava",
+   "slug": "la-orotava",
+   "isla": "Tenerife",
+   "borm": "LA OROTAVA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Infraoctava del Corpus Christi"
+   ]
+  },
+  {
+   "nombre": "La Victoria de Acentejo",
+   "slug": "la-victoria-de-acentejo",
+   "isla": "Tenerife",
+   "borm": "LA VICTORIA DE ACENTEJO",
+   "fechas": [
+    "2027-02-23",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día posterior a la Festividad de Nuestra Señora de la Encarnación"
+   ]
+  },
+  {
+   "nombre": "Las Palmas de Gran Canaria",
+   "slug": "las-palmas-de-gran-canaria",
+   "isla": "Gran Canaria",
+   "borm": "LAS PALMAS DE GRAN CANARIA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Conmemoración de la Fundación de la Ciudad"
+   ]
+  },
+  {
+   "nombre": "Los Llanos de Aridane",
+   "slug": "los-llanos-de-aridane",
+   "isla": "La Palma",
+   "borm": "LOS LLANOS DE ARIDANE",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Nuestra Señora de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Los Realejos",
+   "slug": "los-realejos",
+   "isla": "Tenerife",
+   "borm": "LOS REALEJOS",
+   "fechas": [
+    "2027-01-22",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Festividad de San Vicente",
+    "Exaltación de la Santa Cruz"
+   ]
+  },
+  {
+   "nombre": "Los Silos",
+   "slug": "los-silos",
+   "isla": "Tenerife",
+   "borm": "LOS SILOS",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Festividad de San Juan",
+    "Festividad de Nuestra Señora de la Luz"
+   ]
+  },
+  {
+   "nombre": "Mogán",
+   "slug": "mogan",
+   "isla": "Gran Canaria",
+   "borm": "MOGÁN",
+   "fechas": [
+    "2027-06-14",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Festividad de San Antonio de Padua en Domingo",
+    "Festividad de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Moya",
+   "slug": "moya",
+   "isla": "Gran Canaria",
+   "borm": "MOYA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-14"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Antonio de Padua"
+   ]
+  },
+  {
+   "nombre": "Pájara",
+   "slug": "pajara",
+   "isla": "Fuerteventura",
+   "borm": "PÁJARA",
+   "fechas": [
+    "2027-07-02",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora de Regla",
+    "Festividad de Nuestra Señora del Carmen"
+   ]
+  },
+  {
+   "nombre": "Puerto de la Cruz",
+   "slug": "puerto-de-la-cruz",
+   "isla": "Tenerife",
+   "borm": "PUERTO DE LA CRUZ",
+   "fechas": [
+    "2027-05-03",
+    "2027-07-13"
+   ],
+   "nombres": [
+    "Festividad de la Exaltación de la Santa Cruz",
+    "Festividad de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Puerto del Rosario",
+   "slug": "puerto-del-rosario",
+   "isla": "Fuerteventura",
+   "borm": "PUERTO DEL ROSARIO",
+   "fechas": [
+    "2027-02-16",
+    "2027-10-07"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Nuestra Señora del Rosario"
+   ]
+  },
+  {
+   "nombre": "Puntagorda",
+   "slug": "puntagorda",
+   "isla": "La Palma",
+   "borm": "PUNTAGORDA",
+   "fechas": [
+    "2027-01-15",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "Festividad de San Mauro Abad",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Puntallana",
+   "slug": "puntallana",
+   "isla": "La Palma",
+   "borm": "PUNTALLANA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Juan Bautista"
+   ]
+  },
+  {
+   "nombre": "San Andrés y Sauces",
+   "slug": "san-andres-y-sauces",
+   "isla": "La Palma",
+   "borm": "SAN ANDRÉS Y SAUCES",
+   "fechas": [
+    "2027-04-27",
+    "2027-11-30"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora de Montserrat",
+    "Festividad de San Andrés"
+   ]
+  },
+  {
+   "nombre": "San Bartolomé",
+   "slug": "san-bartolome",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "SAN BARTOLOMÉ",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "San Bartolomé de Tirajana",
+   "slug": "san-bartolome-de-tirajana",
+   "isla": "Gran Canaria",
+   "borm": "SAN BARTOLOMÉ DE TIRAJANA",
+   "fechas": [
+    "2027-03-12",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Día del Turista",
+    "Festividad de San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "San Cristóbal de La Laguna",
+   "slug": "san-cristobal-de-la-laguna",
+   "isla": "Tenerife",
+   "borm": "SAN CRISTÓBAL DE LA LAGUNA",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad del Santísimo Cristo de La Laguna"
+   ]
+  },
+  {
+   "nombre": "San Juan de la Rambla",
+   "slug": "san-juan-de-la-rambla",
+   "isla": "Tenerife",
+   "borm": "SAN JUAN DE LA RAMBLA",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Festividad de San Juan Bautista",
+    "Festividad de San José"
+   ]
+  },
+  {
+   "nombre": "San Miguel de Abona",
+   "slug": "san-miguel-de-abona",
+   "isla": "Tenerife",
+   "borm": "SAN MIGUEL DE ABONA",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Miguel Arcángel"
+   ]
+  },
+  {
+   "nombre": "San Sebastián de La Gomera",
+   "slug": "san-sebastian-de-la-gomera",
+   "isla": "La Gomera",
+   "borm": "SAN SEBASTIÁN DE LA GOMERA",
+   "fechas": [
+    "2027-01-20",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "Festividad de San Sebastián",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Santa Brígida",
+   "slug": "santa-brigida",
+   "isla": "Gran Canaria",
+   "borm": "SANTA BRÍGIDA",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-14"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes siguiente a la Festividad de San Antonio de Padua"
+   ]
+  },
+  {
+   "nombre": "Santa Cruz de La Palma",
+   "slug": "santa-cruz-de-la-palma",
+   "isla": "La Palma",
+   "borm": "SANTA CRUZ DE LA PALMA",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de la Santa Cruz"
+   ]
+  },
+  {
+   "nombre": "Santa Cruz de Tenerife",
+   "slug": "santa-cruz-de-tenerife",
+   "isla": "Tenerife",
+   "borm": "SANTA CRUZ DE TENERIFE",
+   "fechas": [
+    "2027-02-23",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad del Día de la Cruz"
+   ]
+  },
+  {
+   "nombre": "Santa Lucía de Tirajana",
+   "slug": "santa-lucia-de-tirajana",
+   "isla": "Gran Canaria",
+   "borm": "SANTA LUCÍA DE TIRAJANA",
+   "fechas": [
+    "2027-02-09",
+    "2027-12-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Santa Lucía"
+   ]
+  },
+  {
+   "nombre": "Santa María de Guía de Gran Canaria",
+   "slug": "santa-maria-de-guia-de-gran-canaria",
+   "isla": "Gran Canaria",
+   "borm": "SANTA MARÍA DE GUÍA DE GRAN CANARIA",
+   "fechas": [
+    "2027-03-19",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "Festividad de San José",
+    "Lunes posterior a la Festividad de Las Marías"
+   ]
+  },
+  {
+   "nombre": "Santa Úrsula",
+   "slug": "santa-ursula",
+   "isla": "Tenerife",
+   "borm": "SANTA ÚRSULA",
+   "fechas": [
+    "2027-02-23",
+    "2027-10-21"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Santa Úrsula"
+   ]
+  },
+  {
+   "nombre": "Santiago del Teide",
+   "slug": "santiago-del-teide",
+   "isla": "Tenerife",
+   "borm": "SANTIAGO DEL TEIDE",
+   "fechas": [
+    "2027-07-16",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora de la Virgen del Carmen",
+    "Festividad de Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Tacoronte",
+   "slug": "tacoronte",
+   "isla": "Tenerife",
+   "borm": "TACORONTE",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-25"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de Santa Catalina"
+   ]
+  },
+  {
+   "nombre": "Tazacorte",
+   "slug": "tazacorte",
+   "isla": "La Palma",
+   "borm": "TAZACORTE",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "Festividad de Nuestra Señora del Carmen",
+    "Festividad de San Miguel Arcángel"
+   ]
+  },
+  {
+   "nombre": "Tegueste",
+   "slug": "tegueste",
+   "isla": "Tenerife",
+   "borm": "TEGUESTE",
+   "fechas": [
+    "2027-04-26",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Festividad de San Marcos Evangelista",
+    "Festividad de Nuestra Señora de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Teguise",
+   "slug": "teguise",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "TEGUISE",
+   "fechas": [
+    "2027-07-16",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "Festividad Nuestra Señora del Carmen",
+    "Festividad Nuestra Señora de Las Nieves"
+   ]
+  },
+  {
+   "nombre": "Tejeda",
+   "slug": "tejeda",
+   "isla": "Gran Canaria",
+   "borm": "TEJEDA",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de la Virgen del Socorro"
+   ]
+  },
+  {
+   "nombre": "Telde",
+   "slug": "telde",
+   "isla": "Gran Canaria",
+   "borm": "TELDE",
+   "fechas": [
+    "2027-06-24",
+    "2027-11-17"
+   ],
+   "nombres": [
+    "Festividad de San Juan Bautista",
+    "Festividad de San Gregorio Taumaturgo"
+   ]
+  },
+  {
+   "nombre": "Teror",
+   "slug": "teror",
+   "isla": "Gran Canaria",
+   "borm": "TEROR",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-04"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad del Sagrado Corazón de Jesús"
+   ]
+  },
+  {
+   "nombre": "Tías",
+   "slug": "tias",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "TÍAS",
+   "fechas": [
+    "2027-02-02",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "Festividad Nuestra Señora la Candelaria",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Tijarafe",
+   "slug": "tijarafe",
+   "isla": "La Palma",
+   "borm": "TIJARAFE",
+   "fechas": [
+    "2027-02-02",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Presentación de Jesús en el Templo",
+    "Festividad de la Natividad de la Virgen"
+   ]
+  },
+  {
+   "nombre": "Tinajo",
+   "slug": "tinajo",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "TINAJO",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad de San Roque"
+   ]
+  },
+  {
+   "nombre": "Tuineje",
+   "slug": "tuineje",
+   "isla": "Fuerteventura",
+   "borm": "TUINEJE",
+   "fechas": [
+    "2027-10-13",
+    "2027-11-13"
+   ],
+   "nombres": [
+    "Fiestas juradas en honor a San Miguel Arcángel y Conmemoración de las batallas del Cuchillete y Tamasite",
+    "Festividad de San Diego"
+   ]
+  },
+  {
+   "nombre": "Valle Gran Rey",
+   "slug": "valle-gran-rey",
+   "isla": "La Gomera",
+   "borm": "VALLE GRAN REY",
+   "fechas": [
+    "2027-01-07",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Día posterior a la Festividad de Nuestra Señora Virgen de Los Reyes",
+    "Festividad de San Juan Bautista"
+   ]
+  },
+  {
+   "nombre": "Vallehermoso",
+   "slug": "vallehermoso",
+   "isla": "La Gomera",
+   "borm": "VALLEHERMOSO",
+   "fechas": [
+    "2027-06-24",
+    "2027-07-23"
+   ],
+   "nombres": [
+    "Festividad de San Juan Bautista",
+    "Festividad Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Valleseco",
+   "slug": "valleseco",
+   "isla": "Gran Canaria",
+   "borm": "VALLESECO",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-17"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Fiesta del Patrón del Municipio"
+   ]
+  },
+  {
+   "nombre": "Valsequillo de Gran Canaria",
+   "slug": "valsequillo-de-gran-canaria",
+   "isla": "Gran Canaria",
+   "borm": "VALSEQUILLO DE GRAN CANARIA",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "Festividad de San Juan Bautista",
+    "Festividad de San Miguel"
+   ]
+  },
+  {
+   "nombre": "Valverde",
+   "slug": "valverde",
+   "isla": "El Hierro",
+   "borm": "VALVERDE",
+   "fechas": [
+    "2027-05-15",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Festividad de San Isidro Labrador",
+    "Festividad de San Pedro"
+   ]
+  },
+  {
+   "nombre": "Vega de San Mateo",
+   "slug": "vega-de-san-mateo",
+   "isla": "Gran Canaria",
+   "borm": "VEGA DE SAN MATEO",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-21"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Festividad en Honor al Apóstol San Mateo"
+   ]
+  },
+  {
+   "nombre": "Vilaflor de Chasna",
+   "slug": "vilaflor-de-chasna",
+   "isla": "Tenerife",
+   "borm": "VILAFLOR DE CHASNA",
+   "fechas": [
+    "2027-04-23",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "Festividad del Santo Hermano Pedro",
+    "Festividad de San Roque y San Agustín"
+   ]
+  },
+  {
+   "nombre": "Villa de Mazo",
+   "slug": "villa-de-mazo",
+   "isla": "La Palma",
+   "borm": "VILLA DE MAZO",
+   "fechas": [
+    "2027-05-03",
+    "2027-05-27"
+   ],
+   "nombres": [
+    "Día de la Cruz",
+    "Festividad del Corpus Christi"
+   ]
+  },
+  {
+   "nombre": "Yaiza",
+   "slug": "yaiza",
+   "isla": "Lanzarote y La Graciosa",
+   "borm": "YAIZA",
+   "fechas": [
+    "2027-07-07",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Festividad de San Marcial del Rubicón",
+    "Festividad de Nuestra Señora de los Remedios"
+   ]
+  }
+ ],
+ "agrupar": {
+  "arucas": "las-palmas-de-gran-canaria",
+  "moya": "santa-brigida",
+  "arafo": "la-victoria-de-acentejo"
+ },
+ "agrupar_motivo": "Mismas fechas festivas y misma isla en 2027: sus páginas serían casi idénticas. Se publica la del municipio más poblado y la otra enlaza a ella."
+}
