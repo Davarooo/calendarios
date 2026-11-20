@@ -104,7 +104,7 @@ i.n{background:var(--cob)}i.a{background:var(--ocre)}i.l{background:var(--verde)
 .pie .w{display:flex;flex-wrap:wrap;gap:8px 22px;padding-top:26px;padding-bottom:30px}.pie a{color:#fff}
 @media (min-width:1000px){.ch-lay{grid-template-columns:minmax(0,1fr) 330px;align-items:start}.ch-lay>*{grid-column:1}.ch-lay>.ch-lat{grid-column:2;grid-row:1/span 20;position:sticky;top:16px;display:grid;gap:20px}}
 @media (max-width:999px){.ch-lat{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.ch-fig img{max-width:260px}}
-@media (max-width:719px){.w{padding:0 14px}.ch-hero,.ch-bloque{padding:18px}.ch-fichas b{font-size:1.6rem}
+@media (max-width:719px){.w{padding-left:14px;padding-right:14px}.cab{padding-bottom:70px}main.w{margin-top:-52px}.ch-fichas{grid-template-columns:1fr;gap:6px}.ch-fichas li{display:flex;align-items:baseline;gap:10px;padding:8px 12px}.ch-fichas b{min-width:2.4ch}.ch-modos span{flex-basis:100%}.ch-hero,.ch-bloque{padding:18px}.ch-fichas b{font-size:1.5rem}
 .ch-anio{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:8px}
 .ch-mes{flex:0 0 86%;scroll-snap-align:start}.ch-dias button{font-size:.95rem}.ch-propias li{grid-template-columns:1fr}.ch-borrar{margin-left:0}}
 @media print{.top::before,.barra nav,.pie,.ch-ad,.ch-lat,.ch-barra,.ch-estado{display:none}main.w{margin-top:0}}
