@@ -122,7 +122,10 @@ def calcular_puentes(anio, festivos):
                     res.append({"tipo": "puente", "dia_puente": d.isoformat(), "desde": desde.isoformat(), "hasta": hasta.isoformat(),
                                 "dias": izq + der + 1, "fiestas": fi})
             d += timedelta(days=1)
-    return sorted(res, key=lambda p: p.get("dia_puente", p.get("desde")))
+    # Un bloque largo que ya queda dentro de un puente no se repite
+    pts = [p for p in res if p["tipo"] == "puente"]
+    res = [p for p in res if p["tipo"] == "puente" or not any(q["desde"] <= p["desde"] and p["hasta"] <= q["hasta"] for q in pts)]
+    return sorted(res, key=lambda p: p["desde"])
 
 
 def slug_url(d):
@@ -203,6 +206,13 @@ def nota_region(d, base, regiones):
     return f"<p class=\"ch-nota\">{html.escape(n['texto'])}</p>"
 
 
+def rango(a, b):
+    x, y = date.fromisoformat(a), date.fromisoformat(b)
+    if x.month == y.month:
+        return f"del {x.day} al {y.day} de {MESES[y.month - 1]}"
+    return f"del {fecha_larga(a)} al {fecha_larga(b)}"
+
+
 def lista_puentes(d):
     if not d["puentes"]:
         return "<li>Ningún festivo se junta con un fin de semana este año.</li>"
@@ -210,9 +220,9 @@ def lista_puentes(d):
     for p in d["puentes"]:
         nombres = html.escape(", ".join(p["fiestas"]))
         if p["tipo"] == "largo":
-            out.append(f"<li><b class=\"ch-num\">{p['dias']}</b><span><strong>Del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])}</strong>días seguidos sin trabajar por {nombres}.</span></li>")
+            out.append(f"<li><b class=\"ch-num\">{p['dias']}</b><span><strong>{rango(p['desde'], p['hasta']).capitalize()}</strong>{p['dias']} días seguidos sin trabajar por {nombres}.</span></li>")
         else:
-            out.append(f"<li class=\"ch-pte\"><b class=\"ch-num\">{p['dias']}</b><span><strong>Puente: pide el {DIAS[date.fromisoformat(p['dia_puente']).weekday()]} {fecha_larga(p['dia_puente'])}</strong>y tienes libre del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])} por {nombres}.</span></li>")
+            out.append(f"<li class=\"ch-pte\"><b class=\"ch-num\">{p['dias']}</b><span><strong>Puente: pide el {DIAS[date.fromisoformat(p['dia_puente']).weekday()]} {fecha_larga(p['dia_puente'])}</strong>y tienes libres {p['dias']} días seguidos, {rango(p['desde'], p['hasta'])}, por {nombres}.</span></li>")
     return "".join(out)
 
 

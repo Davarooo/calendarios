@@ -104,6 +104,7 @@ function calc(){var a=$("ch-d1").value,b=$("ch-d2").value;if(!a||!b||a>b){$("ch-
 function guarda(){try{localStorage.setItem(D.K,JSON.stringify(E))}catch(e){}}
 $("ch-anio").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var x=b.getAttribute("data-d"),k=D.f.indexOf(x);
  if(k>=0){$("ch-msg").textContent=fecha(x)+": "+D.n[k]+". Ya es festivo.";return}
+ if(MO=="v"&&b.classList.contains("f")){$("ch-msg").textContent=fecha(x)+" es fin de semana: no gasta días de vacaciones.";return}
  var L=E[MO],j=L.indexOf(x),O=E[MO=="l"?"v":"l"],q=O.indexOf(x);
  if(j>=0){L.splice(j,1);$("ch-msg").textContent=fecha(x)+" ya no está marcado."}
  else{if(MO=="l"&&L.length>=2){$("ch-msg").textContent="Ya marcaste 2 fiestas locales. Toca una de ellas para quitarla.";return}
