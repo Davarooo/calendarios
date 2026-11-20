@@ -15,7 +15,7 @@ radial-gradient(circle at 100% 100%,transparent 10px,rgba(255,255,255,.28) 10.5p
 .barra nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;margin-left:18px;opacity:.9}
 .cab{padding-top:18px;padding-bottom:84px}
 .miga{margin:0 0 8px;font-size:.9rem;color:#C9D5F5}.miga a{color:#fff}
-.cab h1{font-size:clamp(1.65rem,3.4vw,2.6rem);max-width:24ch}
+.cab h1{font-size:clamp(1.65rem,3.4vw,2.5rem);max-width:32ch}
 main.w{margin-top:-64px;padding-bottom:48px}
 .ch-hero,.ch-bloque,.ch-tarjeta,.texto{background:#fff;border:1px solid var(--junta);border-radius:14px}
 .ch-hero{padding:22px 24px;position:relative}

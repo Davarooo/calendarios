@@ -432,7 +432,7 @@ def main():
         faq_html, qs = faq(d)
         resp, sub = texto_respuesta(d)
         valores = {
-            "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"], "slug": slug,
+            "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"], "slug": slug, "entre_semana": d["entre_semana"],
             "franja": franja((regiones.get(clave) or {}).get("colores") or ["#AA151B", "#F1BF00", "#AA151B"]), "region": html.escape(d["region"]),
             "respuesta": html.escape(resp), "subrespuesta": html.escape(sub),
             "img_png": f"{cfg['assets']}/img/{slug}.png", "img_pdf": f"{cfg['assets']}/img/{slug}.pdf",

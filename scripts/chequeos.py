@@ -90,6 +90,10 @@ def main():
         sobran = sorted(set(str(int(n)) for n in re.findall(r"\d+", texto)) - set(ficha["permitidos"]))
         if sobran:
             fallos.append(f"{slug}: cifras sin respaldo en datos {sobran}")
+        # 1b. Ningun placeholder sin reemplazar
+        sueltos = re.findall(r"\{[a-z_0-9]+\}", texto)
+        if sueltos:
+            fallos.append(f"{slug}: placeholders sin reemplazar {sorted(set(sueltos))}")
         # 2. JSON-LD valido y con los tipos esperados
         try:
             tipos = {b["@type"] for b in json.loads(ld[0])}
