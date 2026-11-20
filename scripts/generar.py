@@ -565,7 +565,28 @@ def azulejo(g, x, y, t, fondo, trazo, w):
     g.ellipse((x + m - w, y + m - w, x + m + w, y + m + w), fill=trazo)
 
 
+IMG_VERSION = "1"  # subir si cambia el diseno de la imagen
+_HUELLAS = None
+
+
 def dibujar(d, ruta_png, ruta_pdf, colores=None):
+    """Solo redibuja si cambian los datos que salen en la imagen: evita subir miles de PNG identicos cada dia."""
+    global _HUELLAS
+    import hashlib
+    ruta_h = ruta_png.parent / "huellas.json"
+    if _HUELLAS is None:
+        _HUELLAS = json.loads(ruta_h.read_text()) if ruta_h.exists() else {}
+    datos = [IMG_VERSION, d["anio"], d["region"], d.get("comunidad"), d["total"], d["fuente"].get("boe"), d["fuente"].get("id"),
+             (d.get("fuente_local") or {}).get("boletin"), [[f["fecha"], f["tipo"]] for f in d["fiestas"]]]
+    h = hashlib.sha1(json.dumps(datos, ensure_ascii=False).encode()).hexdigest()[:16]
+    if _HUELLAS.get(ruta_png.name) == h and ruta_png.exists() and ruta_pdf.exists():
+        return
+    _dibujar(d, ruta_png, ruta_pdf, colores)
+    _HUELLAS[ruta_png.name] = h
+    ruta_h.write_text(json.dumps(_HUELLAS, sort_keys=True, indent=0))
+
+
+def _dibujar(d, ruta_png, ruta_pdf, colores=None):
     S = 2
     W, H = 1240 * S, 1754 * S
     im = Image.new("RGB", (W, H), LOZA)
