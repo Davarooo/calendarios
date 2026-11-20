@@ -59,7 +59,7 @@ def enlaces_docs():
     for pag in (RAIZ / "docs").rglob("*.html"):
         for href in re.findall(r'(?:href|src)="([^"]+)"', pag.read_text(encoding="utf-8")):
             if href.startswith(sitio):
-                rel = href[len(sitio):].lstrip("/")
+                rel = href[len(sitio):].lstrip("/").split("?")[0]
                 destino = RAIZ / "docs" / rel
                 if href.endswith("/") or not rel:
                     destino = destino / "index.html"
@@ -104,17 +104,17 @@ def main():
         if '"f":["' not in html:
             fallos.append(f"{slug}: sin datos locales de respaldo")
         # 5. Anuncios fuera de la herramienta y de los botones
-        for bloque in re.findall(r'<section class="ch-tool".*?</section>|<figcaption>.*?</figcaption>', html, re.S):
+        for bloque in re.findall(r'<div class="ch-barra">.*?</div>\s*</div>|<div class="ch-botones">.*?</div>|<div class="ch-form">.*?</div>|<div class="ch-estado">.*?</div>', html, re.S):
             if "ANUNCIO" in bloque:
                 fallos.append(f"{slug}: anuncio dentro de la herramienta o junto a botones")
         # 6. Fuente oficial enlazada y aviso legal
-        if "boe.es" not in html or "ch-legal" not in html:
+        if "boe.es" not in html or "Aviso legal" not in html:
             fallos.append(f"{slug}: falta fuente oficial o aviso legal")
         # 7. Respuesta arriba del todo
-        if not re.search(r'<div class="ch"[^>]*>\s*<div class="ch-taco">.{0,300}?<p class="ch-resp">', html, re.S):
+        if not re.search(r'<div class="ch"[^>]*>\s*<section class="ch-hero">\s*<p class="ch-resp">', html):
             fallos.append(f"{slug}: la respuesta no es lo primero")
         # 8. Rejilla de 6 a 8 enlaces vecinos (el indice enlaza a todas)
-        n = len(re.findall(r"@@URL:", html.split('class="ch-grid"')[1].split("</nav>")[0]))
+        n = len(re.findall(r"@@URL:", html.split('class="ch-regiones"')[1].split("</ul>")[0]))
         if not slug.endswith("espana") and not 6 <= n <= 8:
             fallos.append(f"{slug}: {n} enlaces vecinos")
     # 9. Similitud de texto entre URLs

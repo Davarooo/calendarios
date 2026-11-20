@@ -29,6 +29,13 @@ CONFIANZA = {
 }
 
 
+def minificar(css):
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{};:,>])\s*", r"\1", css)
+    return css.replace(";}", "}").strip()
+
+
 def url_de(sitio, slug):
     return f"{sitio}/" if slug == INDICE else f"{sitio}/{slug}/"
 
@@ -43,19 +50,22 @@ def resolver(cuerpo, urls):
     return re.sub(r"@@URL:([a-z0-9-]+)@@", lambda m: urls.get(m.group(1), ""), cuerpo)
 
 
-def pagina(css, sitio, titulo, desc, canonical, cuerpo, imagen=None, h1=None):
+def pagina(css, sitio, titulo, desc, canonical, cuerpo, imagen=None, h1=None, miga="", texto=False):
     og = f'<meta property="og:image" content="{imagen}">' if imagen else ""
+    if texto:
+        cuerpo = f'<div class="texto">{cuerpo}</div>'
     return f"""<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(titulo)}</title><meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{canonical}"><meta name="theme-color" content="#E0262E">
+<link rel="canonical" href="{canonical}"><meta name="theme-color" content="#1D3FA5">
 <meta property="og:type" content="website"><meta property="og:title" content="{html.escape(titulo)}"><meta property="og:url" content="{canonical}">{og}
-<style>{css}</style></head><body>
-<header class="top"><a class="marca" href="{sitio}/">Calendario<b>Hoy</b></a><nav><a href="{sitio}/">Laboral</a></nav></header>
-<main><article><h1>{html.escape(h1 or titulo)}</h1>
+<link rel="stylesheet" href="{css}"></head><body>
+<header class="top"><div class="w barra"><a class="marca" href="{sitio}/"><i aria-hidden="true"></i>Calendario Hoy</a><nav><a href="{sitio}/">Festivos 2027</a></nav></div>
+<div class="w cab">{miga}<h1>{html.escape(h1 or titulo)}</h1></div></header>
+<main class="w">
 {cuerpo}
-</article></main>
-<footer><a href="{sitio}/acerca/">Acerca de</a><a href="{sitio}/metodologia/">Metodología</a><a href="{sitio}/privacidad/">Privacidad</a><a href="{sitio}/contacto/">Contacto</a><a href="{sitio}/aviso-legal/">Aviso legal</a></footer>
+</main>
+<footer class="pie"><div class="w"><a href="{sitio}/acerca/">Acerca de</a><a href="{sitio}/metodologia/">Metodología</a><a href="{sitio}/privacidad/">Privacidad</a><a href="{sitio}/contacto/">Contacto</a><a href="{sitio}/aviso-legal/">Aviso legal</a><span>Datos oficiales del BOE y de los boletines autonómicos.</span></div></footer>
 </body></html>
 """
 
@@ -66,7 +76,10 @@ def main():
     args = ap.parse_args()
     cfg = json.loads((RAIZ / "config.json").read_text(encoding="utf-8"))
     sitio = cfg["sitio"].rstrip("/")
-    css = (RAIZ / "plantillas/estilo.css").read_text(encoding="utf-8")
+    import hashlib
+    hoja = minificar((RAIZ / "plantillas/estilo.css").read_text(encoding="utf-8"))
+    (DOCS / "estilo.css").write_text(hoja, encoding="utf-8")
+    css = f"{sitio}/estilo.css?v={hashlib.sha1(hoja.encode()).hexdigest()[:8]}"
     with COLA.open(encoding="utf-8") as fh:
         filas = list(csv.DictReader(fh))
     ahora = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -85,14 +98,15 @@ def main():
         destino = ruta_de(f["slug"])
         destino.parent.mkdir(parents=True, exist_ok=True)
         imagen = f"{sitio}/img/{f['slug']}.png"
-        destino.write_text(pagina(css, sitio, f["titulo"], f["meta_descripcion"], urls[f["slug"]], cuerpo, imagen), encoding="utf-8")
+        miga = "" if f["slug"] == INDICE else f'<p class="miga"><a href="{sitio}/">España</a> / {html.escape(f["region"])}</p>'
+        destino.write_text(pagina(css, sitio, f["titulo"], f["meta_descripcion"], urls[f["slug"]], cuerpo, imagen, miga=miga), encoding="utf-8")
         f["url_publicada"], f["estado"] = urls[f["slug"]], "publicado"
         f["enlaces_pendientes"] = str(cuerpo.count("@@URL:"))
     # Paginas de confianza
     for slug, (titulo, desc) in CONFIANZA.items():
         cuerpo = re.sub(r"<!--.*?-->\n?", "", (RAIZ / "blogger/paginas" / f"{slug}.html").read_text(encoding="utf-8"), flags=re.S)
         (DOCS / slug).mkdir(parents=True, exist_ok=True)
-        (DOCS / slug / "index.html").write_text(pagina(css, sitio, f"{titulo} | Calendario Hoy", desc, urls[slug], resolver(cuerpo, urls), h1=titulo), encoding="utf-8")
+        (DOCS / slug / "index.html").write_text(pagina(css, sitio, f"{titulo} | Calendario Hoy", desc, urls[slug], resolver(cuerpo, urls), h1=titulo, texto=True), encoding="utf-8")
     # Paginas que ya no estan en la cola: se retiran
     validas = {ruta_de(f["slug"]).parent for f in publicadas} | {DOCS / s for s in CONFIANZA}
     for d in DOCS.iterdir():
@@ -100,7 +114,7 @@ def main():
             shutil.rmtree(d)
     # 404, sitemap y robots
     (DOCS / "404.html").write_text(pagina(css, sitio, "Página no encontrada | Calendario Hoy", "La página no existe.", f"{sitio}/404.html",
-                                          f'<p>Esta página no existe. <a href="{sitio}/">Ver el calendario laboral</a>.</p>', h1="Página no encontrada"), encoding="utf-8")
+                                          f'<p>Esta página no existe. <a href="{sitio}/">Ver el calendario laboral</a>.</p>', h1="Página no encontrada", texto=True), encoding="utf-8")
     hoy = ahora[:10]
     entradas = [(urls[f["slug"]], (f["fecha_publicacion"] or ahora)[:10]) for f in publicadas] + [(urls[s], hoy) for s in CONFIANZA]
     (DOCS / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 RAIZ = Path(__file__).resolve().parent.parent
 OUT = RAIZ / "out"
 IMG = RAIZ / "docs" / "img"  # GitHub Pages sirve /docs
-TEMPLATE_VERSION = "1"
+TEMPLATE_VERSION = "2"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
@@ -63,11 +63,12 @@ def datos_region(base, clave, cfg, regiones):
     diferencias = []
     if clave != "ES":
         mias = fechas_de(clave)
-        for vs in meta["vecinos"][:3]:
+        for vs in meta["vecinos"][:4]:
             suyas = fechas_de(clave_de[vs])
             diferencias.append({"vecina": regiones[clave_de[vs]]["nombre"], "slug": vs,
                                 "solo_aqui": sorted((f, mias[f]) for f in set(mias) - set(suyas)),
                                 "solo_alli": sorted((f, suyas[f]) for f in set(suyas) - set(mias))})
+    totales = {r["slug"]: sum(1 for f in base["fiestas"] if k in f["marcas"]) for k, r in regiones.items()}
     por_comunidad = {}
     if clave == "ES":
         por_comunidad = {r["nombre"]: [[f["fecha"], f["nombre"]] for f in base["fiestas"] if f["marcas"].get(k) == "***"]
@@ -87,7 +88,7 @@ def datos_region(base, clave, cfg, regiones):
         "en_sabado": [f["fecha"] for f in fiestas if date.fromisoformat(f["fecha"]).weekday() == 5],
         "meses": meses, "laborables_anio": sum(m["laborables"] for m in meses),
         "puentes": puentes, "nota": extras, "fuente": fuente,
-        "diferencias": diferencias, "por_comunidad": por_comunidad,
+        "diferencias": diferencias, "por_comunidad": por_comunidad, "totales": totales,
         "sitio": cfg["sitio"], "assets": cfg["assets"],
     }
 
@@ -154,11 +155,34 @@ def texto_respuesta(d):
             f"{d['entre_semana']} de esos festivos caen de lunes a viernes.")
 
 
+MES3 = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+
+
+def resumen_anio(d):
+    """Frase con datos propios de la region: fiestas propias, mes mas cargado y puentes."""
+    propias = [f for f in d["fiestas"] if f["tipo"] == "autonómica"]
+    top = max(d["meses"], key=lambda m: (m["festivos_entre_semana"], -m["mes"]))
+    pts = [p for p in d["puentes"] if p["tipo"] == "puente"]
+    largos = [p for p in d["puentes"] if p["tipo"] == "largo"]
+    mayor = max(d["puentes"], key=lambda p: p["dias"]) if d["puentes"] else None
+    partes = []
+    if propias:
+        partes.append(f"Las fiestas propias de {html.escape(d['region'])} en {d['anio']} son: " + ", ".join(f"{fecha_larga(f['fecha'])} ({html.escape(f['nombre'])})" for f in propias) + ".")
+    elif d["clave"] != "ES":
+        partes.append(f"En {d['anio']}, {html.escape(d['region'])} no tiene fiestas autonómicas propias en día laborable: todos sus festivos son de ámbito nacional.")
+    partes.append(f"{MESES[top['mes'] - 1].capitalize()} es el mes con más festivos entre semana ({top['festivos_entre_semana']}).")
+    if mayor:
+        partes.append(f"Salen {len(largos)} fines de semana largos y {len(pts)} puentes posibles; el descanso más largo es de {mayor['dias']} días.")
+    return "<p class=\"ch-resumen\">" + " ".join(partes) + "</p>"
+
+
 def filas_festivos(d):
     out = []
     for f in d["fiestas"]:
-        w = DIAS[date.fromisoformat(f["fecha"]).weekday()]
-        out.append(f"<tr><td>{fecha_larga(f['fecha'])}</td><td>{w}</td><td>{html.escape(f['nombre'])}</td><td><span class=\"ch-tipo ch-{'nac' if f['tipo'] == 'nacional' else 'aut'}\">{f['tipo']}</span></td></tr>")
+        x = date.fromisoformat(f["fecha"])
+        c = "n" if f["tipo"] == "nacional" else "a"
+        out.append(f'<li><span class="ch-baldosa {c}"><b>{x.day}</b>{MES3[x.month - 1]}</span>'
+                   f'<span class="ch-fx"><strong>{html.escape(f["nombre"])}</strong><em>{DIAS[x.weekday()]}, festivo {f["tipo"]}</em></span></li>')
     return "".join(out)
 
 
@@ -168,15 +192,14 @@ def nota_region(d, base, regiones):
         filas = []
         for clave, meta in regiones.items():
             propias = [f for f in base["fiestas"] if f["marcas"].get(clave) == "***"]
-            txt = "; ".join(f"{fecha_larga(f['fecha'])} ({html.escape(f['nombre'])})" for f in propias) or "sin fiestas autonómicas propias"
-            filas.append(f"<tr><td><a href=\"@@URL:calendario-laboral-{d['anio']}-{meta['slug']}@@\">{meta['nombre']}</a></td><td>{txt}</td></tr>")
-        return ("<h2>Fiestas propias de cada comunidad</h2><table class=\"ch-tab\"><thead><tr><th>Comunidad</th><th>Fiestas autonómicas</th></tr></thead><tbody>"
-                + "".join(filas) + "</tbody></table>")
+            chips = "".join(f"<span class=\"ch-chip\">{fecha_larga(f['fecha'])}: {html.escape(f['nombre'])}</span>" for f in propias) or "<span class=\"ch-chip ch-vacio\">sin fiestas autonómicas propias</span>"
+            filas.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{meta['slug']}@@\">{meta['nombre']}</a><div>{chips}</div></li>")
+        return "<h3 class=\"ch-sub\">Fiestas propias de cada comunidad</h3><ul class=\"ch-propias\">" + "".join(filas) + "</ul>"
     if not n:
         return ""
     if "islas" in n:
         items = "".join(f"<li>{isla}: {fecha_larga(f)} ({html.escape(nom)})</li>" for isla, (f, nom) in n["islas"].items())
-        return f"<p class=\"ch-nota\">Cada isla suma una fiesta insular. {html.escape(n['texto'])}</p><ul class=\"ch-list\">{items}</ul>"
+        return f"<p class=\"ch-nota\">Cada isla suma una fiesta insular. {html.escape(n['texto'])}</p><ul class=\"ch-islas\">{items}</ul>"
     return f"<p class=\"ch-nota\">{html.escape(n['texto'])}</p>"
 
 
@@ -187,27 +210,32 @@ def lista_puentes(d):
     for p in d["puentes"]:
         nombres = html.escape(", ".join(p["fiestas"]))
         if p["tipo"] == "largo":
-            out.append(f"<li><strong>Del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])}</strong>: {p['dias']} días seguidos sin trabajar ({nombres}).</li>")
+            out.append(f"<li><b class=\"ch-num\">{p['dias']}</b><span><strong>Del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])}</strong>días seguidos sin trabajar por {nombres}.</span></li>")
         else:
-            out.append(f"<li><strong>Puente del {fecha_larga(p['dia_puente'])}</strong> ({DIAS[date.fromisoformat(p['dia_puente']).weekday()]}): pidiendo ese día salen {p['dias']} días libres, del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])} ({nombres}).</li>")
+            out.append(f"<li class=\"ch-pte\"><b class=\"ch-num\">{p['dias']}</b><span><strong>Puente: pide el {DIAS[date.fromisoformat(p['dia_puente']).weekday()]} {fecha_larga(p['dia_puente'])}</strong>y tienes libre del {fecha_larga(p['desde'])} al {fecha_larga(p['hasta'])} por {nombres}.</span></li>")
     return "".join(out)
 
 
 def bloque_diferencias(d):
     if not d["diferencias"]:
         return ""
-    out = [f"<h2>Qué cambia respecto a las comunidades vecinas</h2><ul class=\"ch-list\">"]
+    out = [f"<section class=\"ch-bloque\"><h2>Qué cambia respecto a las comunidades vecinas</h2><ul class=\"ch-difs\">"]
     for v in d["diferencias"]:
         aqui = ", ".join(f"{fecha_larga(f)} ({html.escape(n)})" for f, n in v["solo_aqui"]) or "ninguno"
         alli = ", ".join(f"{fecha_larga(f)} ({html.escape(n)})" for f, n in v["solo_alli"]) or "ninguno"
-        out.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{v['slug']}@@\">{html.escape(v['vecina'])}</a>: "
-                   f"festivo en {html.escape(d['region'])} y laborable allí: {aqui}. Festivo allí y laborable en {html.escape(d['region'])}: {alli}.</li>")
-    out.append("</ul>")
+        out.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{v['slug']}@@\">{html.escape(v['vecina'])}</a>"
+                   f"<p><span>Festivo aquí y laborable allí</span>{aqui}</p><p><span>Festivo allí y laborable aquí</span>{alli}</p></li>")
+    out.append("</ul></section>")
     return "".join(out)
 
 
 def filas_meses(d):
-    return "".join(f"<tr><td>{MESES[m['mes'] - 1].capitalize()}</td><td>{m['laborables']}</td><td>{m['festivos_entre_semana']}</td></tr>" for m in d["meses"])
+    out = []
+    for m in d["meses"]:
+        fs = m["festivos_entre_semana"]
+        nota = f"{fs} festivo" + ("s" if fs != 1 else "") if fs else "sin festivos"
+        out.append(f"<li><span>{MESES[m['mes'] - 1].capitalize()}</span><b>{m['laborables']}</b><em>{nota}</em></li>")
+    return "".join(out)
 
 
 def faq(d):
@@ -243,19 +271,24 @@ def jsonld(d, qs, url):
 
 
 def enlaces_vecinos(d, regiones):
-    """Pestanas de indice con la franja de color de cada comunidad."""
+    """Lista uniforme de comunidades con su numero de festivos."""
     por_slug = {r["slug"]: r for r in regiones.values()}
-    items = [("España", "espana", "#AA151B")] if d["clave"] != "ES" else []
-    items += [(por_slug[s]["nombre"], s, por_slug[s]["colores"][0] if por_slug[s]["colores"][0] != "#FFFFFF" else por_slug[s]["colores"][1]) for s in d["vecinos"]]
-    return "".join(f"<a href=\"@@URL:calendario-laboral-{d['anio']}-{s}@@\" style=\"--c:{c}\">{html.escape(t)}</a>" for t, s, c in items[:8 if d['clave'] != 'ES' else 19])
+    slugs = list(por_slug) if d["clave"] == "ES" else d["vecinos"]
+    items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><span>Toda España</span><b>festivos comunes</b></a></li>"]
+    for s_ in slugs:
+        items.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\"><span>{html.escape(por_slug[s_]['nombre'])}</span><b>{d['totales'][s_]} festivos</b></a></li>")
+    return "".join(items)
 
 
-TINTA, ROJO, AMARILLO, AZUL, GRAFITO, MESA = (24, 35, 63), (224, 38, 46), (255, 214, 10), (36, 72, 168), (120, 128, 140), (238, 241, 246)
+COBALTO, TINTA, OCRE, VERDE, GRIS, CAL, LOZA, JUNTA = (29, 63, 165), (20, 33, 61), (224, 160, 42), (47, 125, 91), (110, 119, 138), (238, 242, 248), (255, 255, 255), (221, 227, 237)
 FUENTES = RAIZ / "fonts"
 
 
-def fuente(nombre, px):
-    return ImageFont.truetype(str(FUENTES / nombre), px)
+def fuente(nombre, px, peso=None):
+    f = ImageFont.truetype(str(FUENTES / nombre), px)
+    if peso:
+        f.set_variation_by_name(peso)
+    return f
 
 
 def hex_rgb(h):
@@ -263,107 +296,87 @@ def hex_rgb(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def circulo_rotulador(g, cx, cy, r, semilla, grosor):
-    """Circulo a mano alzada: radio con ruido, cierre que se pasa de largo y doble trazo."""
-    import math
-    import random
-    rnd = random.Random(semilla)
-    for pasada in range(2):
-        a0 = rnd.uniform(0, math.tau)
-        fase, amp = rnd.uniform(0, math.tau), r * 0.06
-        pts = []
-        for i in range(60):
-            t = a0 + (math.tau + 0.55) * i / 59
-            rr = r * (1.0 + 0.05 * pasada) + amp * math.sin(2 * t + fase) + rnd.uniform(-1, 1) * r * 0.015
-            pts.append((cx + rr * 1.08 * math.cos(t), cy + rr * 0.94 * math.sin(t)))
-        g.line(pts, fill=ROJO + (235 - 70 * pasada,), width=grosor - pasada * grosor // 3, joint="curve")
+def azulejo(g, x, y, t, fondo, trazo, w):
+    """Motivo de azulejo: cuartos de circulo en las esquinas y rombo central."""
+    g.rectangle((x, y, x + t, y + t), fill=fondo)
+    r = t * 0.42
+    for cx, cy, a0 in ((x, y, 0), (x + t, y, 90), (x + t, y + t, 180), (x, y + t, 270)):
+        g.arc((cx - r, cy - r, cx + r, cy + r), a0, a0 + 90, fill=trazo, width=w)
+    m = t / 2
+    d = t * 0.2
+    g.polygon([(x + m, y + m - d), (x + m + d, y + m), (x + m, y + m + d), (x + m - d, y + m)], outline=trazo, width=w)
+    g.ellipse((x + m - w, y + m - w, x + m + w, y + m + w), fill=trazo)
 
 
-def subrayado(capa, x, y, w, h, semilla):
-    import random
-    rnd = random.Random(semilla)
-    sk = rnd.uniform(-0.06, 0.06) * h
-    ImageDraw.Draw(capa).polygon([(x, y + sk), (x + w, y - sk), (x + w + 3, y + h - sk), (x - 2, y + h + sk)], fill=AMARILLO + (235,))
-
-
-def dibujar(d, ruta_png, ruta_pdf, colores):
-    S = 2  # se dibuja al doble y se reduce: trazos suaves
+def dibujar(d, ruta_png, ruta_pdf, colores=None):
+    S = 2
     W, H = 1240 * S, 1754 * S
-    im = Image.new("RGBA", (W, H), (255, 255, 255, 255))
-    capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))   # subrayador (debajo de los numeros)
-    tinta = Image.new("RGBA", (W, H), (0, 0, 0, 0))  # rotulador (encima)
-    g, gt = ImageDraw.Draw(im), ImageDraw.Draw(tinta)
-    # Franja con los colores de la comunidad
-    franja = 22 * S
-    colores = [c if c.upper() != "#FFFFFF" else "#E3E7EE" for c in colores]
-    for i, c in enumerate(colores):
-        g.rectangle((i * W // len(colores), 0, (i + 1) * W // len(colores), franja), fill=hex_rgb(c))
-    g.line((0, franja, W, franja), fill=MESA, width=2 * S)
-    # Cabecera: ano enorme, titulo y hoja de taco con el total
-    g.text((70 * S, 52 * S), str(d["anio"]), font=fuente("Anton-Regular.ttf", 190 * S), fill=TINTA)
-    g.text((74 * S, 300 * S), "Calendario laboral", font=fuente("FiraSans-Medium.ttf", 40 * S), fill=GRAFITO)
-    g.text((74 * S, 350 * S), d["region"], font=fuente("FiraSans-SemiBold.ttf", 54 * S), fill=TINTA)
-    tx, ty, tw, th = 905 * S, 70 * S, 265 * S, 300 * S
-    g.rounded_rectangle((tx, ty, tx + tw, ty + th), 14 * S, fill=(255, 255, 255), outline=TINTA, width=3 * S)
-    g.rectangle((tx + 3 * S, ty + 3 * S, tx + tw - 3 * S, ty + 62 * S), fill=ROJO)
-    for k in range(14):  # perforado
-        g.ellipse((tx + 14 * S + k * 17 * S, ty + 66 * S, tx + 20 * S + k * 17 * S, ty + 72 * S), fill=MESA)
-    for ax in (tx + 70 * S, tx + tw - 70 * S):  # anillas
-        g.rounded_rectangle((ax - 9 * S, ty - 26 * S, ax + 9 * S, ty + 22 * S), 9 * S, fill=GRAFITO)
-    g.text((tx + tw / 2, ty + 33 * S), "festivos", font=fuente("FiraSans-SemiBold.ttf", 30 * S), fill="white", anchor="mm")
-    g.text((tx + tw / 2, ty + 172 * S), str(d["total"]), font=fuente("Anton-Regular.ttf", 150 * S), fill=TINTA, anchor="mm")
-    g.text((tx + tw / 2, ty + 268 * S), "sin contar locales", font=fuente("FiraSans-Regular.ttf", 22 * S), fill=GRAFITO, anchor="mm")
+    im = Image.new("RGB", (W, H), LOZA)
+    g = ImageDraw.Draw(im)
+    serif = lambda px: fuente("YoungSerif-Regular.ttf", px * S)
+    sans = lambda px, p="Regular": fuente("Figtree[wght].ttf", px * S, p)
+    # Banda de cobalto con cenefa de azulejos
+    banda = 380 * S
+    g.rectangle((0, 0, W, banda), fill=COBALTO)
+    t = 62 * S
+    for i in range(W // t + 1):
+        azulejo(g, i * t, 0, t, COBALTO, (165, 183, 232), 2 * S)
+    g.line((0, t, W, t), fill=(165, 183, 232), width=2 * S)
+    g.text((70 * S, 84 * S), str(d["anio"]), font=serif(150), fill=LOZA)
+    g.text((74 * S, 268 * S), "Calendario laboral", font=sans(28, "Medium"), fill=(196, 208, 240))
+    g.text((74 * S, 330 * S), d["region"], font=sans(40, "Bold"), fill=LOZA, anchor="lm")
+    # Ficha con el total
+    fx, fy, fw, fh = 930 * S, 112 * S, 240 * S, 220 * S
+    g.rounded_rectangle((fx, fy, fx + fw, fy + fh), 18 * S, fill=LOZA)
+    g.text((fx + fw / 2, fy + 100 * S), str(d["total"]), font=serif(120), fill=COBALTO, anchor="mm")
+    g.text((fx + fw / 2, fy + 172 * S), "festivos", font=sans(28, "SemiBold"), fill=TINTA, anchor="mm")
+    g.text((fx + fw / 2, fy + 200 * S), "sin contar locales", font=sans(18), fill=GRIS, anchor="mm")
     # Meses
     tipos = {f["fecha"]: f["tipo"] for f in d["fiestas"]}
-    f_mes, f_dia, f_ini = fuente("Anton-Regular.ttf", 38 * S), fuente("FiraSans-Medium.ttf", 25 * S), fuente("FiraSans-Regular.ttf", 19 * S)
-    cw, ch, x_ini, y_ini = 360 * S, 270 * S, 70 * S, 445 * S
-    paso = 50 * S
+    cw, ch, gx, gy = 350 * S, 280 * S, 45 * S, 18 * S
+    x_ini, y_ini = 70 * S, 420 * S
+    paso, alto = 48 * S, 34 * S
     for m in range(12):
-        x0, y0 = x_ini + (m % 3) * (cw + 30 * S), y_ini + (m // 3) * (ch + 12 * S)
-        g.text((x0, y0), MESES[m].capitalize(), font=f_mes, fill=TINTA)
+        x0, y0 = x_ini + (m % 3) * (cw + gx), y_ini + (m // 3) * (ch + gy)
+        g.text((x0, y0), MESES[m].capitalize(), font=serif(32), fill=COBALTO)
         for i, ini in enumerate("LMXJVSD"):
-            g.text((x0 + i * paso + paso / 2, y0 + 58 * S), ini, font=f_ini, fill=GRAFITO if i > 4 else TINTA, anchor="mm")
-        g.line((x0, y0 + 74 * S, x0 + 7 * paso, y0 + 74 * S), fill=MESA, width=2 * S)
+            g.text((x0 + i * paso + paso / 2, y0 + 62 * S), ini, font=sans(17, "SemiBold"), fill=GRIS, anchor="mm")
         primero = date(d["anio"], m + 1, 1).weekday()
         for dia in range(1, calendar.monthrange(d["anio"], m + 1)[1] + 1):
             pos = primero + dia - 1
-            cx, cy = x0 + (pos % 7) * paso + paso / 2, y0 + 98 * S + (pos // 7) * 31 * S
+            cx, cy = x0 + (pos % 7) * paso, y0 + 80 * S + (pos // 7) * alto
             iso = date(d["anio"], m + 1, dia).isoformat()
-            t = tipos.get(iso)
-            if t == "autonómica":
-                subrayado(capa, cx - 21 * S, cy - 13 * S, 42 * S, 26 * S, iso)
-            elif t == "nacional":
-                circulo_rotulador(gt, cx, cy, 16.5 * S, iso, 4 * S)
-            color = TINTA if t else (GRAFITO if pos % 7 > 4 else TINTA)
-            g.text((cx, cy), str(dia), font=fuente("FiraSans-SemiBold.ttf", 25 * S) if t else f_dia, fill=color, anchor="mm")
-    # Leyenda y casillas para escribir a mano las fiestas locales
+            tp = tipos.get(iso)
+            caja = (cx + 3 * S, cy + 2 * S, cx + paso - 3 * S, cy + alto - 2 * S)
+            if tp == "nacional":
+                g.rounded_rectangle(caja, 6 * S, fill=COBALTO)
+                color, fnt = LOZA, sans(19, "Bold")
+            elif tp == "autonómica":
+                g.rounded_rectangle(caja, 6 * S, fill=OCRE)
+                color, fnt = TINTA, sans(19, "Bold")
+            elif pos % 7 > 4:
+                g.rounded_rectangle(caja, 6 * S, fill=CAL)
+                color, fnt = GRIS, sans(19)
+            else:
+                color, fnt = TINTA, sans(19, "Medium")
+            g.text((cx + paso / 2, cy + alto / 2), str(dia), font=fnt, fill=color, anchor="mm")
+    # Pie: leyenda, casillas para las fiestas locales y fuente
     yl = H - 150 * S
-    circulo_rotulador(gt, 92 * S, yl + 18 * S, 18 * S, "leyenda", 4 * S)
-    g.text((126 * S, yl + 18 * S), "Festivo nacional", font=f_ini, fill=TINTA, anchor="lm")
-    subrayado(capa, 360 * S, yl + 4 * S, 44 * S, 28 * S, "leyenda")
-    g.text((418 * S, yl + 18 * S), "Festivo autonómico", font=f_ini, fill=TINTA, anchor="lm")
-    g.text((700 * S, yl + 18 * S), "Mis fiestas locales:", font=f_ini, fill=TINTA, anchor="lm")
+    g.line((70 * S, yl - 24 * S, W - 70 * S, yl - 24 * S), fill=JUNTA, width=2 * S)
+    items = (("Festivo nacional", COBALTO), ("Festivo autonómico", OCRE))
+    x = 70 * S
+    for txt, col in items:
+        g.rounded_rectangle((x, yl, x + 34 * S, yl + 26 * S), 6 * S, fill=col)
+        g.text((x + 46 * S, yl + 13 * S), txt, font=sans(20, "Medium"), fill=TINTA, anchor="lm")
+        x += 300 * S
+    g.text((x, yl + 13 * S), "Mis fiestas locales", font=sans(20, "Medium"), fill=TINTA, anchor="lm")
     for k in range(2):
-        bx = 905 * S + k * 140 * S
-        for z in range(0, 120 * S, 14 * S):
-            g.line((bx + z, yl + 36 * S, bx + z + 8 * S, yl + 36 * S), fill=GRAFITO, width=2 * S)
-    g.text((70 * S, H - 62 * S), f"Fuente: {d['fuente']['id']} ({d['fuente']['boe']})",
-           font=fuente("FiraSans-Regular.ttf", 19 * S), fill=GRAFITO)
-    g.text((W - 70 * S, H - 66 * S), "calendariohoy", font=fuente("Anton-Regular.ttf", 26 * S), fill=ROJO, anchor="ra")
-    final = Image.alpha_composite(Image.alpha_composite(im, capa), tinta)
-    # Los numeros van encima del subrayado: se repintan sobre la capa amarilla
-    g2 = ImageDraw.Draw(final)
-    for m in range(12):
-        x0, y0 = x_ini + (m % 3) * (cw + 30 * S), y_ini + (m // 3) * (ch + 12 * S)
-        primero = date(d["anio"], m + 1, 1).weekday()
-        for dia in range(1, calendar.monthrange(d["anio"], m + 1)[1] + 1):
-            iso = date(d["anio"], m + 1, dia).isoformat()
-            if tipos.get(iso) == "autonómica":
-                pos = primero + dia - 1
-                g2.text((x0 + (pos % 7) * paso + paso / 2, y0 + 98 * S + (pos // 7) * 31 * S), str(dia),
-                        font=fuente("FiraSans-SemiBold.ttf", 25 * S), fill=TINTA, anchor="mm")
-    final = final.convert("RGB").resize((W // S, H // S), Image.LANCZOS)
-    final.quantize(colors=64, method=Image.Quantize.MEDIANCUT).save(ruta_png, optimize=True)
+        bx = x + 200 * S + k * 70 * S
+        g.rounded_rectangle((bx, yl - 4 * S, bx + 52 * S, yl + 30 * S), 6 * S, outline=VERDE, width=3 * S)
+    g.text((70 * S, H - 70 * S), f"Fuente: {d['fuente']['boe']} ({d['fuente']['id']})", font=sans(18), fill=GRIS, anchor="lm")
+    g.text((W - 70 * S, H - 70 * S), "calendariohoy", font=serif(26), fill=COBALTO, anchor="rm")
+    final = im.resize((W // S, H // S), Image.LANCZOS)
+    final.quantize(colors=128, method=Image.Quantize.MEDIANCUT).save(ruta_png, optimize=True)
     final.save(ruta_pdf, "PDF", resolution=150)
 
 
@@ -419,14 +432,14 @@ def main():
         faq_html, qs = faq(d)
         resp, sub = texto_respuesta(d)
         valores = {
-            "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"],
+            "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"], "slug": slug,
             "franja": franja((regiones.get(clave) or {}).get("colores") or ["#AA151B", "#F1BF00", "#AA151B"]), "region": html.escape(d["region"]),
             "respuesta": html.escape(resp), "subrespuesta": html.escape(sub),
             "img_png": f"{cfg['assets']}/img/{slug}.png", "img_pdf": f"{cfg['assets']}/img/{slug}.pdf",
             "img_alt": html.escape(f"Calendario laboral {anio} de {d['region']} con los festivos marcados, para imprimir"),
             "proximo_txt": "", "laborables_anio": d["laborables_anio"],
             "filas_festivos": filas_festivos(d), "nota_region": nota_region(d, base, regiones),
-            "lista_puentes": lista_puentes(d), "diferencias": bloque_diferencias(d), "filas_meses": filas_meses(d),
+            "lista_puentes": lista_puentes(d), "resumen": resumen_anio(d), "diferencias": bloque_diferencias(d), "filas_meses": filas_meses(d),
             "faq_html": faq_html, "enlaces_vecinos": enlaces_vecinos(d, regiones),
             "fuente_url": d["fuente"]["url"], "fuente_titulo": html.escape(d["fuente"]["titulo"]),
             "fuente_boe": d["fuente"]["boe"], "sitio": cfg["sitio"], "jsonld": jsonld(d, qs, url),
@@ -455,7 +468,7 @@ def main():
         w.writeheader()
         for fila in cola:
             vieja = previa.get(fila["clave_duplicado"])
-            if vieja and vieja["estado"] == "publicado":
+            if vieja and vieja["estado"] in ("publicado", "actualizar"):
                 fila.update({k: vieja.get(k, "") for k in ("estado", "url_publicada", "post_id", "fecha_publicacion", "enlaces_pendientes")})
                 if vieja["template_version"] != fila["template_version"]:
                     fila["estado"] = "actualizar"
