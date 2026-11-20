@@ -3,9 +3,9 @@
 <section class="ch-hero">
 <p class="ch-resp">{respuesta}</p>
 <ul class="ch-fichas">
-<li><b>{total}</b><span>festivos laborales</span></li>
-<li><b>{laborables_anio}</b><span>días laborables de lunes a viernes</span></li>
-<li><b>{entre_semana}</b><span>festivos que caen entre semana</span></li>
+<li><b>{total}</b><span>{etq_total}</span></li>
+<li><b>{laborables_anio}</b><span>{etq_laborables}</span></li>
+<li><b>{entre_semana}</b><span>caen de lunes a viernes</span></li>
 </ul>
 <p class="ch-prox" id="ch-prox"></p>
 </section>
@@ -14,9 +14,16 @@
 <section class="ch-bloque ch-cal" aria-labelledby="ch-t1">
 <h2 id="ch-t1">Calendario {anio}</h2>
 <div class="ch-barra">
-<ul class="ch-leyenda"><li><i class="n"></i>Nacional</li><li><i class="a"></i>Autonómico</li><li><i class="l"></i>Mi fiesta local</li><li><i class="v"></i>Mis vacaciones</li></ul>
-<div class="ch-modos" role="radiogroup" aria-label="Qué marcar al tocar un día"><span>Al tocar un día marco:</span><button type="button" class="ch-modo" data-m="l" role="radio" aria-checked="true"><i class="l"></i>Fiesta local</button><button type="button" class="ch-modo" data-m="v" role="radio" aria-checked="false"><i class="v"></i>Vacaciones</button></div>
+<ul class="ch-leyenda"><li><i class="n"></i>Festivo nacional</li><li><i class="a"></i>Festivo autonómico</li><li><i class="fs"></i>Fin de semana</li></ul>
+<button type="button" class="ch-planbtn" id="ch-planbtn" aria-expanded="false">Planificar mis vacaciones</button>
 </div>
+<div class="ch-plan" id="ch-plan" hidden>
+<p>Marca tus días y te calculo cuántos días de trabajo te quedan en el año. Se guarda solo en este dispositivo.</p>
+<div class="ch-modos" role="radiogroup" aria-label="Qué marcar al tocar un día"><button type="button" class="ch-modo" data-m="l" role="radio" aria-checked="true"><i class="l"></i>Mis 2 fiestas locales</button><button type="button" class="ch-modo" data-m="v" role="radio" aria-checked="false"><i class="v"></i>Mis vacaciones</button></div>
+<p id="ch-cuenta"></p>
+<button type="button" class="ch-borrar" id="ch-borrar">Borrar mis marcas</button>
+</div>
+<p class="ch-info" id="ch-msg" aria-live="polite">Toca cualquier día para ver qué es.</p>
 <div class="ch-anio" id="ch-anio"></div>
 <script>
 var CH={datos_js};
@@ -24,13 +31,14 @@ var CH={datos_js};
 try{var g=JSON.parse(localStorage.getItem(K));if(g&&g.l&&g.v)E=g}catch(e){}
 D.E=E;D.K=K;function z(n){return(n<10?"0":"")+n}
 var hoy=new Date(),hi=hoy.getFullYear()+"-"+z(hoy.getMonth()+1)+"-"+z(hoy.getDate()),s="";
-for(var m=0;m<12;m++){var o=(new Date(Date.UTC(D.anio,m,1)).getUTCDay()+6)%7,u=new Date(Date.UTC(D.anio,m+1,0)).getUTCDate();
+for(var m=0;m<12;m++){var o=(new Date(Date.UTC(D.anio,m,1)).getUTCDay()+6)%7,u=new Date(Date.UTC(D.anio,m+1,0)).getUTCDate(),fm="";
 s+='<div class="ch-mes" data-m="'+m+'"><h3>'+MS[m]+'</h3><div class="ch-dias"><b>L</b><b>M</b><b>X</b><b>J</b><b>V</b><b>S</b><b>D</b>';
-for(var c=0;c<42;c++){var d=c-o+1;if(d<1||d>u){s+="<span></span>";continue}var iso=D.anio+"-"+z(m+1)+"-"+z(d);
-s+='<button type="button" data-d="'+iso+'" class="'+((c%7)>4?"f":"")+(iso==hi?" hoy":"")+'">'+d+"</button>"}s+="</div></div>"}
+for(var c=0;c<42;c++){var d=c-o+1;if(d<1||d>u){s+="<span></span>";continue}var iso=D.anio+"-"+z(m+1)+"-"+z(d),k=D.f.indexOf(iso);
+if(k>=0)fm+='<li><i class="'+(D.t[k]?"n":"a")+'"></i>'+d+" "+D.n[k]+"</li>";
+s+='<button type="button" data-d="'+iso+'" class="'+((c%7)>4?"f":"")+(iso==hi?" hoy":"")+'">'+d+"</button>"}
+s+='</div><ul class="ch-mfest">'+(fm||"<li class=\"ch-sin\">Sin festivos</li>")+"</ul></div>"}
 document.getElementById("ch-anio").innerHTML=s})();
 </script>
-<div class="ch-estado"><p id="ch-msg" aria-live="polite">Elige qué marcar y toca un día del calendario.</p><p id="ch-cuenta"></p><button type="button" class="ch-borrar" id="ch-borrar">Borrar mis marcas</button></div>
 </section>
 
 <aside class="ch-lat">
@@ -78,7 +86,7 @@ document.getElementById("ch-anio").innerHTML=s})();
 
 <section class="ch-bloque" aria-labelledby="ch-t8">
 <h2 id="ch-t8">Calendario laboral {anio} de otras comunidades</h2>
-<ul class="ch-regiones">{enlaces_vecinos}</ul>
+<ul class="ch-mosaico">{enlaces_vecinos}</ul>
 </section>
 
 <footer class="ch-pie">
@@ -90,10 +98,11 @@ document.getElementById("ch-anio").innerHTML=s})();
 <script type="application/ld+json">{jsonld}</script>
 <script>
 (function(){
-var D=CH,E=D.E,MO="l",C={festivos_extra:{}};
+var D=CH,E=D.E,MO="",C={festivos_extra:{}},DS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],MN=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 function $(i){return document.getElementById(i)}
 function iso(d){return d.toISOString().slice(0,10)}
 function fecha(x){return x.split("-").reverse().join("/")}
+function largo(x){var d=new Date(x+"T12:00:00Z");return DS[d.getUTCDay()]+" "+d.getUTCDate()+" de "+MN[d.getUTCMonth()]}
 function lab(a,b,conVac){var n=0,d=new Date(a+"T12:00:00Z"),f=new Date(b+"T12:00:00Z"),fx=D.f.concat(C.festivos_extra[D.r]||[],E.l,conVac?E.v:[]);
  for(;d<=f;d.setUTCDate(d.getUTCDate()+1)){var w=d.getUTCDay();if(w&&w<6&&fx.indexOf(iso(d))<0)n++}return n}
 function pinta(){[].forEach.call(document.querySelectorAll("#ch-anio button"),function(b){var x=b.getAttribute("data-d"),k=D.f.indexOf(x);
@@ -102,17 +111,23 @@ function pinta(){[].forEach.call(document.querySelectorAll("#ch-anio button"),fu
 function calc(){var a=$("ch-d1").value,b=$("ch-d2").value;if(!a||!b||a>b){$("ch-res").textContent="La fecha de inicio tiene que ser anterior a la final.";return}
  $("ch-res").textContent=lab(a,b)+" días laborables de lunes a viernes"+(E.l.length?", descontando tus fiestas locales.":", sin contar las fiestas locales.")}
 function guarda(){try{localStorage.setItem(D.K,JSON.stringify(E))}catch(e){}}
-$("ch-anio").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var x=b.getAttribute("data-d"),k=D.f.indexOf(x);
- if(k>=0){$("ch-msg").textContent=fecha(x)+": "+D.n[k]+". Ya es festivo.";return}
- if(MO=="v"&&b.classList.contains("f")){$("ch-msg").textContent=fecha(x)+" es fin de semana: no gasta días de vacaciones.";return}
+function info(x,b){var k=D.f.indexOf(x),t=largo(x);t=t.charAt(0).toUpperCase()+t.slice(1);
+ if(k>=0)return t+": "+D.n[k]+" (festivo "+(D.t[k]?"nacional":"autonómico")+").";
+ if(E.l.indexOf(x)>=0)return t+": tu fiesta local.";if(E.v.indexOf(x)>=0)return t+": día de vacaciones.";
+ return t+(b.classList.contains("f")?": fin de semana.":": día laborable.")}
+$("ch-anio").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var x=b.getAttribute("data-d");
+ if(!MO||D.f.indexOf(x)>=0){$("ch-msg").textContent=info(x,b);return}
+ if(MO=="v"&&b.classList.contains("f")){$("ch-msg").textContent=info(x,b)+" No gasta días de vacaciones.";return}
  var L=E[MO],j=L.indexOf(x),O=E[MO=="l"?"v":"l"],q=O.indexOf(x);
  if(j>=0){L.splice(j,1);$("ch-msg").textContent=fecha(x)+" ya no está marcado."}
  else{if(MO=="l"&&L.length>=2){$("ch-msg").textContent="Ya marcaste 2 fiestas locales. Toca una de ellas para quitarla.";return}
   if(q>=0)O.splice(q,1);L.push(x);$("ch-msg").textContent=fecha(x)+" marcado como "+(MO=="l"?"fiesta local.":"día de vacaciones.")}
  guarda();pinta();calc()});
-[].forEach.call(document.querySelectorAll(".ch-modo"),function(b){b.addEventListener("click",function(){MO=b.getAttribute("data-m");
- [].forEach.call(document.querySelectorAll(".ch-modo"),function(x){x.setAttribute("aria-checked",x==b?"true":"false")});
- $("ch-msg").textContent="Ahora, al tocar un día lo marcas como "+(MO=="l"?"fiesta local.":"vacaciones.")})});
+function modo(m){MO=m;[].forEach.call(document.querySelectorAll(".ch-modo"),function(x){x.setAttribute("aria-checked",x.getAttribute("data-m")==m?"true":"false")});
+ $("ch-msg").textContent="Toca un día del calendario para marcarlo como "+(m=="l"?"fiesta local.":"vacaciones.")}
+[].forEach.call(document.querySelectorAll(".ch-modo"),function(b){b.addEventListener("click",function(){modo(b.getAttribute("data-m"))})});
+$("ch-planbtn").addEventListener("click",function(){var ab=$("ch-plan").hidden;$("ch-plan").hidden=!ab;this.setAttribute("aria-expanded",ab?"true":"false");
+ this.textContent=ab?"Terminar de planificar":"Planificar mis vacaciones";if(ab)modo("l");else{MO="";$("ch-msg").textContent="Toca cualquier día para ver qué es."}});
 $("ch-borrar").addEventListener("click",function(){E.l=[];E.v=[];guarda();pinta();calc();$("ch-msg").textContent="Marcas borradas."});
 $("ch-d1").addEventListener("change",calc);$("ch-d2").addEventListener("change",calc);
 [].forEach.call(document.querySelectorAll(".ch-dl"),function(a){a.addEventListener("click",function(e){if(!window.fetch||!window.URL)return;e.preventDefault();var t=a.textContent;a.textContent="Descargando...";
@@ -120,9 +135,10 @@ $("ch-d1").addEventListener("change",calc);$("ch-d2").addEventListener("change",
 $("ch-copiar").addEventListener("click",function(){var t=D.f.map(function(x,i){return fecha(x)+" "+D.n[i]}).join("\n");
  if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){$("ch-copiar").textContent="Fechas copiadas"})});
 function prox(){var h=iso(new Date()),p=D.f.filter(function(x){return x>=h})[0];if(!p)return;var n=Math.round((new Date(p+"T12:00:00Z")-new Date(h+"T12:00:00Z"))/864e5);
- $("ch-prox").textContent="Próximo festivo: "+D.n[D.f.indexOf(p)]+", el "+fecha(p)+(n?" (faltan "+n+" días).":" (es hoy).")}
+ $("ch-prox").textContent="Próximo festivo: "+D.n[D.f.indexOf(p)]+", el "+largo(p)+(n?" (faltan "+n+" días).":" (es hoy).")}
 var m0=new Date().getFullYear()==D.anio?new Date().getMonth():0,mes=document.querySelector('.ch-mes[data-m="'+m0+'"]');
 if(mes&&window.matchMedia("(max-width:719px)").matches)$("ch-anio").scrollLeft=mes.offsetLeft-$("ch-anio").offsetLeft;
+if(E.l.length||E.v.length)$("ch-planbtn").click();
 pinta();calc();prox();
 var ctl=window.AbortController?new AbortController():null;setTimeout(function(){ctl&&ctl.abort()},2500);
 fetch(D.cfg,ctl?{signal:ctl.signal}:{}).then(function(r){return r.ok?r.json():{}}).then(function(j){

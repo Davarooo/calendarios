@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 RAIZ = Path(__file__).resolve().parent.parent
 OUT = RAIZ / "out"
 IMG = RAIZ / "docs" / "img"  # GitHub Pages sirve /docs
-TEMPLATE_VERSION = "2"
+TEMPLATE_VERSION = "3"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
@@ -69,6 +69,7 @@ def datos_region(base, clave, cfg, regiones):
                                 "solo_aqui": sorted((f, mias[f]) for f in set(mias) - set(suyas)),
                                 "solo_alli": sorted((f, suyas[f]) for f in set(suyas) - set(mias))})
     totales = {r["slug"]: sum(1 for f in base["fiestas"] if k in f["marcas"]) for k, r in regiones.items()}
+    totales_es = sum(1 for f in base["fiestas"] if len(f["marcas"]) == len(base["regiones"]) and set(f["marcas"].values()) == {"*"})
     por_comunidad = {}
     if clave == "ES":
         por_comunidad = {r["nombre"]: [[f["fecha"], f["nombre"]] for f in base["fiestas"] if f["marcas"].get(k) == "***"]
@@ -88,7 +89,7 @@ def datos_region(base, clave, cfg, regiones):
         "en_sabado": [f["fecha"] for f in fiestas if date.fromisoformat(f["fecha"]).weekday() == 5],
         "meses": meses, "laborables_anio": sum(m["laborables"] for m in meses),
         "puentes": puentes, "nota": extras, "fuente": fuente,
-        "diferencias": diferencias, "por_comunidad": por_comunidad, "totales": totales,
+        "diferencias": diferencias, "por_comunidad": por_comunidad, "totales": totales, "totales_es": totales_es,
         "sitio": cfg["sitio"], "assets": cfg["assets"],
     }
 
@@ -164,7 +165,8 @@ MES3 = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'n
 def resumen_anio(d):
     """Frase con datos propios de la region: fiestas propias, mes mas cargado y puentes."""
     propias = [f for f in d["fiestas"] if f["tipo"] == "autonómica"]
-    top = max(d["meses"], key=lambda m: (m["festivos_entre_semana"], -m["mes"]))
+    maxfs = max(m["festivos_entre_semana"] for m in d["meses"])
+    tops = [MESES[m["mes"] - 1] for m in d["meses"] if m["festivos_entre_semana"] == maxfs]
     pts = [p for p in d["puentes"] if p["tipo"] == "puente"]
     largos = [p for p in d["puentes"] if p["tipo"] == "largo"]
     mayor = max(d["puentes"], key=lambda p: p["dias"]) if d["puentes"] else None
@@ -173,7 +175,11 @@ def resumen_anio(d):
         partes.append(f"Las fiestas propias de {html.escape(d['region'])} en {d['anio']} son: " + ", ".join(f"{fecha_larga(f['fecha'])} ({html.escape(f['nombre'])})" for f in propias) + ".")
     elif d["clave"] != "ES":
         partes.append(f"En {d['anio']}, {html.escape(d['region'])} no tiene fiestas autonómicas propias en día laborable: todos sus festivos son de ámbito nacional.")
-    partes.append(f"{MESES[top['mes'] - 1].capitalize()} es el mes con más festivos entre semana ({top['festivos_entre_semana']}).")
+    if len(tops) == 1:
+        partes.append(f"{tops[0].capitalize()} es el mes con más festivos entre semana ({maxfs}).")
+    else:
+        lista = ", ".join(tops[:-1]) + " y " + tops[-1]
+        partes.append(f"{lista.capitalize()} empatan como los meses con más festivos entre semana ({maxfs} cada uno).")
     if mayor:
         partes.append(f"Salen {len(largos)} fines de semana largos y {len(pts)} puentes posibles; el descanso más largo es de {mayor['dias']} días.")
     return "<p class=\"ch-resumen\">" + " ".join(partes) + "</p>"
@@ -185,7 +191,7 @@ def filas_festivos(d):
         x = date.fromisoformat(f["fecha"])
         c = "n" if f["tipo"] == "nacional" else "a"
         out.append(f'<li><span class="ch-baldosa {c}"><b>{x.day}</b>{MES3[x.month - 1]}</span>'
-                   f'<span class="ch-fx"><strong>{html.escape(f["nombre"])}</strong><em>{DIAS[x.weekday()]}, festivo {f["tipo"]}</em></span></li>')
+                   f'<span class="ch-fx"><strong>{html.escape(f["nombre"])}</strong><em>{DIAS[x.weekday()]}, festivo {"nacional" if f["tipo"] == "nacional" else "autonómico"}</em></span></li>')
     return "".join(out)
 
 
@@ -235,7 +241,7 @@ def bloque_diferencias(d):
         alli = ", ".join(f"{fecha_larga(f)} ({html.escape(n)})" for f, n in v["solo_alli"]) or "ninguno"
         out.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{v['slug']}@@\">{html.escape(v['vecina'])}</a>"
                    f"<p><span>Festivo aquí y laborable allí</span>{aqui}</p><p><span>Festivo allí y laborable aquí</span>{alli}</p></li>")
-    out.append("</ul></section>")
+    out.append("</ul><p class=\"ch-nota\">Comparación de festivos nacionales y autonómicos; las fiestas locales de cada municipio pueden cambiarla.</p></section>")
     return "".join(out)
 
 
@@ -262,6 +268,13 @@ def faq(d):
          f"El primero es el {fecha_larga(primero['fecha'])} ({primero['nombre']}) y el último el {fecha_larga(ultimo['fecha'])} ({ultimo['nombre']})."
          + (f" El {fecha_larga(sab[0])} cae en sábado." if sab else "")),
     ]
+    propias = [f for f in d["fiestas"] if f["tipo"] == "autonómica"]
+    if d["clave"] != "ES":
+        if propias:
+            r = "Además de los nacionales, " + reg + " celebra " + "; ".join(f"el {fecha_larga(f['fecha'])}, {f['nombre']} ({DIAS[date.fromisoformat(f['fecha']).weekday()]})" for f in propias) + "."
+        else:
+            r = f"En {a} no tiene fiestas autonómicas propias en día laborable: sus {d['total']} festivos son de ámbito nacional."
+        qs.append((f"¿Qué festivos propios tiene {reg} en {a}?", r))
     h = "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(r)}</p></details>" for q, r in qs)
     return h, qs
 
@@ -281,12 +294,12 @@ def jsonld(d, qs, url):
 
 
 def enlaces_vecinos(d, regiones):
-    """Lista uniforme de comunidades con su numero de festivos."""
+    """Mosaico de azulejos: cada comunidad con su numero de festivos."""
     por_slug = {r["slug"]: r for r in regiones.values()}
     slugs = list(por_slug) if d["clave"] == "ES" else d["vecinos"]
-    items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><span>Toda España</span><b>festivos comunes</b></a></li>"]
+    items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><b>{d['totales_es']}</b><small>festivos comunes</small><span>Toda España</span></a></li>"]
     for s_ in slugs:
-        items.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\"><span>{html.escape(por_slug[s_]['nombre'])}</span><b>{d['totales'][s_]} festivos</b></a></li>")
+        items.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\"><b>{d['totales'][s_]}</b><small>festivos</small><span>{html.escape(por_slug[s_]['nombre'])}</span></a></li>")
     return "".join(items)
 
 
@@ -443,6 +456,8 @@ def main():
         resp, sub = texto_respuesta(d)
         valores = {
             "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"], "slug": slug, "entre_semana": d["entre_semana"],
+            "etq_total": "festivos comunes a toda España" if clave == "ES" else "festivos nacionales y autonómicos",
+            "etq_laborables": "días laborables contando solo los festivos comunes" if clave == "ES" else "días laborables, sin contar las fiestas locales",
             "franja": franja((regiones.get(clave) or {}).get("colores") or ["#AA151B", "#F1BF00", "#AA151B"]), "region": html.escape(d["region"]),
             "respuesta": html.escape(resp), "subrespuesta": html.escape(sub),
             "img_png": f"{cfg['assets']}/img/{slug}.png", "img_pdf": f"{cfg['assets']}/img/{slug}.pdf",

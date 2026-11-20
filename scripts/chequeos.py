@@ -46,6 +46,23 @@ def leer(ruta):
     return re.sub(r"\s+", " ", " ".join(p.partes)).strip(), p.jsonld
 
 
+def bloques_interactivos(html):
+    """Devuelve el HTML completo de cada contenedor con botones o campos (respetando el anidado de <div>)."""
+    out = []
+    for clase in ("ch-barra", "ch-plan", "ch-botones", "ch-form", "ch-modos"):
+        i = html.find(f'<div class="{clase}"')
+        if i < 0:
+            continue
+        prof, j = 0, i
+        for m in re.finditer(r"<div\b|</div>", html[i:]):
+            prof += 1 if m.group(0) == "<div" else -1
+            if prof == 0:
+                j = i + m.end()
+                break
+        out.append(html[i:j])
+    return out
+
+
 def tejas(texto, n=5):
     w = re.findall(r"\w+", texto.lower())
     return {" ".join(w[i:i + n]) for i in range(len(w) - n + 1)}
@@ -108,7 +125,7 @@ def main():
         if '"f":["' not in html:
             fallos.append(f"{slug}: sin datos locales de respaldo")
         # 5. Anuncios fuera de la herramienta y de los botones
-        for bloque in re.findall(r'<div class="ch-barra">.*?</div>\s*</div>|<div class="ch-botones">.*?</div>|<div class="ch-form">.*?</div>|<div class="ch-estado">.*?</div>', html, re.S):
+        for bloque in bloques_interactivos(html):
             if "ANUNCIO" in bloque:
                 fallos.append(f"{slug}: anuncio dentro de la herramienta o junto a botones")
         # 6. Fuente oficial enlazada y aviso legal
@@ -118,7 +135,7 @@ def main():
         if not re.search(r'<div class="ch"[^>]*>\s*<section class="ch-hero">\s*<p class="ch-resp">', html):
             fallos.append(f"{slug}: la respuesta no es lo primero")
         # 8. Rejilla de 6 a 8 enlaces vecinos (el indice enlaza a todas)
-        n = len(re.findall(r"@@URL:", html.split('class="ch-regiones"')[1].split("</ul>")[0]))
+        n = len(re.findall(r"@@URL:", html.split('class="ch-mosaico"')[1].split("</ul>")[0]))
         if not slug.endswith("espana") and not 6 <= n <= 8:
             fallos.append(f"{slug}: {n} enlaces vecinos")
     # 9. Similitud de texto entre URLs
