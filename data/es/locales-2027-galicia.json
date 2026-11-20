@@ -1,0 +1,4571 @@
+{
+ "anio": 2027,
+ "region_clave": "Galicia",
+ "region_slug": "galicia",
+ "region_nombre": "Galicia",
+ "region_en": "Galicia",
+ "zona_tipo": "provincia",
+ "fuente": {
+  "id": "DOG n.º 204, de 26 de octubre de 2026",
+  "titulo": "Resolución de 15 de octubre de 2026, de la Secretaría General de Empleo y Relaciones Laborales, por la que se da publicidad a las fiestas laborales de carácter local para el año 2027, correspondientes a los ayuntamientos de las cuatro provincias de la Comunidad Autónoma de Galicia",
+  "boletin": "DOG n.º 204, de 26 de octubre de 2026",
+  "url": "https://www.xunta.gal/dog/Publicados/2026/20261026/AnuncioG0767-161026-0001_es.html"
+ },
+ "transcrito": "2026-11-20: versión HTML oficial del DOG en castellano convertida por script (313 concellos: A Coruña 93, Lugo 67, Ourense 92, Pontevedra 61). Cada fecha se localizó por su patrón 'D de mes' y el nombre es el texto que la sigue; 17 fechas no traen nombre en el boletín y se muestran como 'Fiesta local'.",
+ "destacados": [
+  "a-coruna",
+  "vigo",
+  "santiago-de-compostela",
+  "ourense",
+  "lugo",
+  "pontevedra",
+  "ferrol"
+ ],
+ "agrupar": {
+  "abegondo": "a-coruna",
+  "cabana-de-bergantinos": "a-coruna",
+  "cambre": "a-coruna",
+  "cerceda": "a-coruna",
+  "cerdido": "a-coruna",
+  "culleredo": "a-coruna",
+  "frades": "a-coruna",
+  "mazaricos": "a-coruna",
+  "mesia": "a-coruna",
+  "oleiros": "a-coruna",
+  "oza-cesuras": "a-coruna",
+  "tordoia": "a-coruna",
+  "guitiriz": "a-coruna",
+  "o-incio": "a-coruna",
+  "san-xoan-de-rio": "a-coruna",
+  "trasmiras": "a-coruna",
+  "a-bola": "aranga",
+  "melon": "aranga",
+  "cedeira": "arteixo",
+  "castroverde": "arteixo",
+  "o-rosal": "arteixo",
+  "arzua": "noia",
+  "bergondo": "viveiro",
+  "betanzos": "viveiro",
+  "ordes": "viveiro",
+  "paderne": "viveiro",
+  "sada": "viveiro",
+  "meira": "viveiro",
+  "negueira-de-muniz": "viveiro",
+  "trabada": "viveiro",
+  "o-irixo": "viveiro",
+  "montederramo": "viveiro",
+  "gondomar": "viveiro",
+  "chandrexa-de-queixa": "boimorto",
+  "a-estrada": "carballo",
+  "carral": "a-laracha",
+  "curtis": "a-laracha",
+  "neda": "a-laracha",
+  "cospeito": "a-laracha",
+  "ribadavia": "a-laracha",
+  "a-veiga": "a-laracha",
+  "illa-de-arousa": "coiros",
+  "corcubion": "melide",
+  "muros": "melide",
+  "maceda": "irixoa",
+  "sobrado": "mino",
+  "riotorto": "mino",
+  "quintela-de-leirado": "mino",
+  "ribeira-de-piquin": "moeche",
+  "vilarmaior": "monfero",
+  "as-pontes-de-garcia-rodriguez": "xinzo-de-limia",
+  "salceda-de-caselas": "xinzo-de-limia",
+  "santa-comba": "nigran",
+  "gomesende": "santiago-de-compostela",
+  "santiso": "becerrea",
+  "valdovino": "cuntis",
+  "vilasantar": "rabade",
+  "san-cristovo-de-cea": "abadin",
+  "o-vicedo": "alfoz",
+  "calvos-de-randin": "alfoz",
+  "entrimo": "alfoz",
+  "antas-de-ulla": "sarria",
+  "lobios": "baleira",
+  "a-pobra-do-brollon": "baralla",
+  "maside": "baralla",
+  "pol": "barreiros",
+  "boboras": "barreiros",
+  "muras": "begonte",
+  "monterrei": "carballedo",
+  "valga": "carballedo",
+  "taboada": "castro-de-rei",
+  "xermade": "castro-de-rei",
+  "avion": "castro-de-rei",
+  "manzaneda": "castro-de-rei",
+  "o-corgo": "lugo",
+  "tomillo": "a-fonsagrada",
+  "samos": "friol",
+  "outeiro-de-rei": "guntin-de-pallares",
+  "xunqueira-de-espadanedo": "guntin-de-pallares",
+  "lancara": "bande",
+  "cartelle": "bande",
+  "xove": "lourenza",
+  "pedrafita-do-cebreiro": "o-valadouro",
+  "ribas-de-sil": "vigo",
+  "sanxenxo": "vigo",
+  "amoeiro": "ourense",
+  "barbadas": "ourense",
+  "coles": "ourense",
+  "esgos": "ourense",
+  "muinos": "ourense",
+  "paderne-de-allariz": "ourense",
+  "o-pereiro-de-aguiar": "ourense",
+  "a-peroxa": "ourense",
+  "pinor": "ourense",
+  "ramiras": "ourense",
+  "san-cibrao-das-vinas": "ourense",
+  "taboadela": "ourense",
+  "toen": "ourense",
+  "vilamarin": "ourense",
+  "vilaboa": "ourense",
+  "carballeda-de-valdeorras": "tui",
+  "punxin": "tui",
+  "castrelo-do-val": "verin",
+  "cenlle": "cambados",
+  "porqueira": "cambados",
+  "rairiz-de-veiga": "poio",
+  "sandias": "meis",
+  "vilardevos": "viana-do-bolo",
+  "bueu": "moana",
+  "o-grove": "moana"
+ },
+ "agrupar_motivo": "Mismas fechas festivas en 2027: se publica una página por calendario, la del concello más poblado del grupo, y los demás enlazan a ella desde el listado.",
+ "municipios": [
+  {
+   "nombre": "Abegondo",
+   "slug": "abegondo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 1. Abegondo",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Ames",
+   "slug": "ames",
+   "zona": "A Coruña",
+   "borm": "A Coruña 2. Ames",
+   "fechas": [
+    "2027-05-06",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "La Ascensión",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Aranga",
+   "slug": "aranga",
+   "zona": "A Coruña",
+   "borm": "A Coruña 3. Aranga",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de Santa Cruz"
+   ]
+  },
+  {
+   "nombre": "Ares",
+   "slug": "ares",
+   "zona": "A Coruña",
+   "borm": "A Coruña 4. Ares",
+   "fechas": [
+    "2027-05-18",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Voto de Chanteiro",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Arteixo",
+   "slug": "arteixo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 5. Arteixo",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta patronal Santiago Apóstol"
+   ]
+  },
+  {
+   "nombre": "Arzúa",
+   "slug": "arzua",
+   "zona": "A Coruña",
+   "borm": "A Coruña 6. Arzúa",
+   "fechas": [
+    "2027-06-24",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "San Juan",
+    "Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "A Baña",
+   "slug": "a-bana",
+   "zona": "A Coruña",
+   "borm": "A Coruña 7. Baña, A",
+   "fechas": [
+    "2027-01-22",
+    "2027-09-09"
+   ],
+   "nombres": [
+    "San Vicente",
+    "Virgen de los Dolores"
+   ]
+  },
+  {
+   "nombre": "Bergondo",
+   "slug": "bergondo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 8. Bergondo",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta local de Bergondo"
+   ]
+  },
+  {
+   "nombre": "Betanzos",
+   "slug": "betanzos",
+   "zona": "A Coruña",
+   "borm": "A Coruña 9. Betanzos",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Boimorto",
+   "slug": "boimorto",
+   "zona": "A Coruña",
+   "borm": "A Coruña 10. Boimorto",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-06"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes del Rosario"
+   ]
+  },
+  {
+   "nombre": "Boiro",
+   "slug": "boiro",
+   "zona": "A Coruña",
+   "borm": "A Coruña 11. Boiro",
+   "fechas": [
+    "2027-07-16",
+    "2027-08-31"
+   ],
+   "nombres": [
+    "festividad del Carmen",
+    "festividad de San Ramón"
+   ]
+  },
+  {
+   "nombre": "Boqueixón",
+   "slug": "boqueixon",
+   "zona": "A Coruña",
+   "borm": "A Coruña 12. Boqueixón",
+   "fechas": [
+    "2027-01-22",
+    "2027-05-06"
+   ],
+   "nombres": [
+    "San Vicente",
+    "día de la Ascensión"
+   ]
+  },
+  {
+   "nombre": "Brión",
+   "slug": "brion",
+   "zona": "A Coruña",
+   "borm": "A Coruña 13. Brión",
+   "fechas": [
+    "2027-05-06",
+    "2027-09-27"
+   ],
+   "nombres": [
+    "día de la Ascensión",
+    "Santa Minia"
+   ]
+  },
+  {
+   "nombre": "Cabana de Bergantiños",
+   "slug": "cabana-de-bergantinos",
+   "zona": "A Coruña",
+   "borm": "A Coruña 14. Cabana de Bergantiños",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Cabanas",
+   "slug": "cabanas",
+   "zona": "A Coruña",
+   "borm": "A Coruña 15. Cabanas",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festividad de San Andrés"
+   ]
+  },
+  {
+   "nombre": "Camariñas",
+   "slug": "camarinas",
+   "zona": "A Coruña",
+   "borm": "A Coruña 16. Camariñas",
+   "fechas": [
+    "2027-04-23",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "San Jorge",
+    "Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Cambre",
+   "slug": "cambre",
+   "zona": "A Coruña",
+   "borm": "A Coruña 17. Cambre",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "A Capela",
+   "slug": "a-capela",
+   "zona": "A Coruña",
+   "borm": "A Coruña 18. Capela, A",
+   "fechas": [
+    "2027-08-05",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "fiestas patronales de A Capela",
+    "fiesta de Santa María de Cabalar"
+   ]
+  },
+  {
+   "nombre": "Carballo",
+   "slug": "carballo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 19. Carballo",
+   "fechas": [
+    "2027-06-24",
+    "2027-06-25"
+   ],
+   "nombres": [
+    "fiestas patronales de San Juan Bautista",
+    "fiestas patronales de San Juan Bautista"
+   ]
+  },
+  {
+   "nombre": "Cariño",
+   "slug": "carino",
+   "zona": "A Coruña",
+   "borm": "A Coruña 20. Cariño",
+   "fechas": [
+    "2027-07-16",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "fiesta del Carmen",
+    "fiesta local de Cariño"
+   ]
+  },
+  {
+   "nombre": "Carnota",
+   "slug": "carnota",
+   "zona": "A Coruña",
+   "borm": "A Coruña 21. Carnota",
+   "fechas": [
+    "2027-10-11",
+    "2027-12-07"
+   ],
+   "nombres": [
+    "fiesta local de Carnota",
+    "fiesta local de Carnota"
+   ]
+  },
+  {
+   "nombre": "Carral",
+   "slug": "carral",
+   "zona": "A Coruña",
+   "borm": "A Coruña 22. Carral",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen del Socorro"
+   ]
+  },
+  {
+   "nombre": "Cedeira",
+   "slug": "cedeira",
+   "zona": "A Coruña",
+   "borm": "A Coruña 23. Cedeira",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Cee",
+   "slug": "cee",
+   "zona": "A Coruña",
+   "borm": "A Coruña 24. Cee",
+   "fechas": [
+    "2027-06-16",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "fiesta de San Adrián",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Cerceda",
+   "slug": "cerceda",
+   "zona": "A Coruña",
+   "borm": "A Coruña 25. Cerceda",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Cerdido",
+   "slug": "cerdido",
+   "zona": "A Coruña",
+   "borm": "A Coruña 26. Cerdido",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Coirós",
+   "slug": "coiros",
+   "zona": "A Coruña",
+   "borm": "A Coruña 27. Coirós",
+   "fechas": [
+    "2027-01-07",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "San Julián",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Corcubión",
+   "slug": "corcubion",
+   "zona": "A Coruña",
+   "borm": "A Coruña 28. Corcubión",
+   "fechas": [
+    "2027-06-29",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "San Pedro",
+    "El Carmen"
+   ]
+  },
+  {
+   "nombre": "Coristanco",
+   "slug": "coristanco",
+   "zona": "A Coruña",
+   "borm": "A Coruña 29. Coristanco",
+   "fechas": [
+    "2027-02-09",
+    "2027-12-10"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Eulalia de Castro"
+   ]
+  },
+  {
+   "nombre": "A Coruña",
+   "slug": "a-coruna",
+   "zona": "A Coruña",
+   "borm": "A Coruña 30. Coruña, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festividad de San Juan"
+   ]
+  },
+  {
+   "nombre": "Culleredo",
+   "slug": "culleredo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 31. Culleredo",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Curtis",
+   "slug": "curtis",
+   "zona": "A Coruña",
+   "borm": "A Coruña 32. Curtis",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día de la Virgen de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Dodro",
+   "slug": "dodro",
+   "zona": "A Coruña",
+   "borm": "A Coruña 33. Dodro",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "festividad de San Campio"
+   ]
+  },
+  {
+   "nombre": "Dumbría",
+   "slug": "dumbria",
+   "zona": "A Coruña",
+   "borm": "A Coruña 34. Dumbría",
+   "fechas": [
+    "2027-11-29",
+    "2027-12-10"
+   ],
+   "nombres": [
+    "San Sadurniño del Ézaro",
+    "fiesta de Santa Baia de Dumbría"
+   ]
+  },
+  {
+   "nombre": "Fene",
+   "slug": "fene",
+   "zona": "A Coruña",
+   "borm": "A Coruña 35. Fene",
+   "fechas": [
+    "2027-02-10",
+    "2027-08-06"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "San Salvador"
+   ]
+  },
+  {
+   "nombre": "Ferrol",
+   "slug": "ferrol",
+   "zona": "A Coruña",
+   "borm": "A Coruña 36. Ferrol",
+   "fechas": [
+    "2027-01-07",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "San Xiao",
+    "Nuestra Señora de Chamorro"
+   ]
+  },
+  {
+   "nombre": "Fisterra",
+   "slug": "fisterra",
+   "zona": "A Coruña",
+   "borm": "A Coruña 37. Fisterra",
+   "fechas": [
+    "2027-03-29",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "fiesta local de Fisterra"
+   ]
+  },
+  {
+   "nombre": "Frades",
+   "slug": "frades",
+   "zona": "A Coruña",
+   "borm": "A Coruña 38. Frades",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de San Juan"
+   ]
+  },
+  {
+   "nombre": "Irixoa",
+   "slug": "irixoa",
+   "zona": "A Coruña",
+   "borm": "A Coruña 39. Irixoa",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día de San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "A Laracha",
+   "slug": "a-laracha",
+   "zona": "A Coruña",
+   "borm": "A Coruña 40. Laracha, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de los Milagros de Caión"
+   ]
+  },
+  {
+   "nombre": "Laxe",
+   "slug": "laxe",
+   "zona": "A Coruña",
+   "borm": "A Coruña 41. Laxe",
+   "fechas": [
+    "2027-08-16",
+    "2027-08-17"
+   ],
+   "nombres": [
+    "San Roque",
+    "fiesta local de Laxe"
+   ]
+  },
+  {
+   "nombre": "Lousame",
+   "slug": "lousame",
+   "zona": "A Coruña",
+   "borm": "A Coruña 42. Lousame",
+   "fechas": [
+    "2027-03-18",
+    "2027-10-01"
+   ],
+   "nombres": [
+    "día de Zernadas de Castro",
+    "San Roquiño"
+   ]
+  },
+  {
+   "nombre": "Malpica de Bergantiños",
+   "slug": "malpica-de-bergantinos",
+   "zona": "A Coruña",
+   "borm": "A Coruña 43. Malpica de Bergantiños",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-20"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del Mar"
+   ]
+  },
+  {
+   "nombre": "Mañón",
+   "slug": "manon",
+   "zona": "A Coruña",
+   "borm": "A Coruña 44. Mañón",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de la Patrona"
+   ]
+  },
+  {
+   "nombre": "Mazaricos",
+   "slug": "mazaricos",
+   "zona": "A Coruña",
+   "borm": "A Coruña 45. Mazaricos",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Melide",
+   "slug": "melide",
+   "zona": "A Coruña",
+   "borm": "A Coruña 46. Melide",
+   "fechas": [
+    "2027-06-29",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "día de San Pedro",
+    "día del Carmen"
+   ]
+  },
+  {
+   "nombre": "Mesía",
+   "slug": "mesia",
+   "zona": "A Coruña",
+   "borm": "A Coruña 47. Mesía",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Miño",
+   "slug": "mino",
+   "zona": "A Coruña",
+   "borm": "A Coruña 48. Miño",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Moeche",
+   "slug": "moeche",
+   "zona": "A Coruña",
+   "borm": "A Coruña 49. Moeche",
+   "fechas": [
+    "2027-02-09",
+    "2027-04-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Jorge"
+   ]
+  },
+  {
+   "nombre": "Monfero",
+   "slug": "monfero",
+   "zona": "A Coruña",
+   "borm": "A Coruña 50. Monfero",
+   "fechas": [
+    "2027-02-08",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Mugardos",
+   "slug": "mugardos",
+   "zona": "A Coruña",
+   "borm": "A Coruña 51. Mugardos",
+   "fechas": [
+    "2027-01-07",
+    "2027-05-18"
+   ],
+   "nombres": [
+    "fiesta de Mugardos",
+    "Voto de Chanteiro"
+   ]
+  },
+  {
+   "nombre": "Muros",
+   "slug": "muros",
+   "zona": "A Coruña",
+   "borm": "A Coruña 52. Muros",
+   "fechas": [
+    "2027-06-29",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "fiesta de San Pedro",
+    "fiesta del Carmen"
+   ]
+  },
+  {
+   "nombre": "Muxía",
+   "slug": "muxia",
+   "zona": "A Coruña",
+   "borm": "A Coruña 53. Muxía",
+   "fechas": [
+    "2027-03-29",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "Lunes de la Barca"
+   ]
+  },
+  {
+   "nombre": "Narón",
+   "slug": "naron",
+   "zona": "A Coruña",
+   "borm": "A Coruña 54. Narón",
+   "fechas": [
+    "2027-06-24",
+    "2027-11-23"
+   ],
+   "nombres": [
+    "San Juan",
+    "Día de Narón"
+   ]
+  },
+  {
+   "nombre": "Neda",
+   "slug": "neda",
+   "zona": "A Coruña",
+   "borm": "A Coruña 55. Neda",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta local de Neda"
+   ]
+  },
+  {
+   "nombre": "Negreira",
+   "slug": "negreira",
+   "zona": "A Coruña",
+   "borm": "A Coruña 56. Negreira",
+   "fechas": [
+    "2027-07-09",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "San Cristóbal",
+    "Santa Margarita"
+   ]
+  },
+  {
+   "nombre": "Noia",
+   "slug": "noia",
+   "zona": "A Coruña",
+   "borm": "A Coruña 57. Noia",
+   "fechas": [
+    "2027-06-24",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "San Juan",
+    "fiesta de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Oleiros",
+   "slug": "oleiros",
+   "zona": "A Coruña",
+   "borm": "A Coruña 58. Oleiros",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Ordes",
+   "slug": "ordes",
+   "zona": "A Coruña",
+   "borm": "A Coruña 59. Ordes",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Oroso",
+   "slug": "oroso",
+   "zona": "A Coruña",
+   "borm": "A Coruña 60. Oroso",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Eufemia"
+   ]
+  },
+  {
+   "nombre": "Ortigueira",
+   "slug": "ortigueira",
+   "zona": "A Coruña",
+   "borm": "A Coruña 61. Ortigueira",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día de Santa Marta"
+   ]
+  },
+  {
+   "nombre": "Outes",
+   "slug": "outes",
+   "zona": "A Coruña",
+   "borm": "A Coruña 62. Outes",
+   "fechas": [
+    "2027-02-10",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "San Miguel"
+   ]
+  },
+  {
+   "nombre": "Oza Cesuras",
+   "slug": "oza-cesuras",
+   "zona": "A Coruña",
+   "borm": "A Coruña 63. Oza Cesuras",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Paderne",
+   "slug": "paderne",
+   "zona": "A Coruña",
+   "borm": "A Coruña 64. Paderne",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta local de Paderne"
+   ]
+  },
+  {
+   "nombre": "Padrón",
+   "slug": "padron",
+   "zona": "A Coruña",
+   "borm": "A Coruña 65. Padrón",
+   "fechas": [
+    "2027-03-29",
+    "2027-05-06"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "San Xoán do Raio"
+   ]
+  },
+  {
+   "nombre": "O Pino",
+   "slug": "o-pino",
+   "zona": "A Coruña",
+   "borm": "A Coruña 66. Pino, O",
+   "fechas": [
+    "2027-06-29",
+    "2027-07-22"
+   ],
+   "nombres": [
+    "San Pedro",
+    "Nuestra Señora de la Magdalena"
+   ]
+  },
+  {
+   "nombre": "A Pobra do Caramiñal",
+   "slug": "a-pobra-do-caraminal",
+   "zona": "A Coruña",
+   "borm": "A Coruña 67. Pobra do Caramiñal, A",
+   "fechas": [
+    "2027-08-16",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "Lunes del Carmen de los Pincheiros",
+    "Lunes del Nazareno"
+   ]
+  },
+  {
+   "nombre": "Ponteceso",
+   "slug": "ponteceso",
+   "zona": "A Coruña",
+   "borm": "A Coruña 68. Ponteceso",
+   "fechas": [
+    "2027-09-08",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "El Faro",
+    "La Barquiña"
+   ]
+  },
+  {
+   "nombre": "Pontedeume",
+   "slug": "pontedeume",
+   "zona": "A Coruña",
+   "borm": "A Coruña 69. Pontedeume",
+   "fechas": [
+    "2027-09-08",
+    "2027-09-10"
+   ],
+   "nombres": [
+    "fiesta de las Peras",
+    "fiesta de las Peras"
+   ]
+  },
+  {
+   "nombre": "As Pontes de García Rodríguez",
+   "slug": "as-pontes-de-garcia-rodriguez",
+   "zona": "A Coruña",
+   "borm": "A Coruña 70. Pontes de García Rodríguez, As",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-19"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del Carmen"
+   ]
+  },
+  {
+   "nombre": "O Porto do Son",
+   "slug": "o-porto-do-son",
+   "zona": "A Coruña",
+   "borm": "A Coruña 71. Porto do Son, O",
+   "fechas": [
+    "2027-02-08",
+    "2027-09-09"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    "fiesta local de O Porto do Son"
+   ]
+  },
+  {
+   "nombre": "Rianxo",
+   "slug": "rianxo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 72. Rianxo",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-17"
+   ],
+   "nombres": [
+    "fiestas del Carmen",
+    "Viernes de Guadalupe"
+   ]
+  },
+  {
+   "nombre": "Ribeira",
+   "slug": "ribeira",
+   "zona": "A Coruña",
+   "borm": "A Coruña 73. Ribeira",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festividad de la Dorna"
+   ]
+  },
+  {
+   "nombre": "Rois",
+   "slug": "rois",
+   "zona": "A Coruña",
+   "borm": "A Coruña 74. Rois",
+   "fechas": [
+    "2027-03-29",
+    "2027-05-15"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "San Isidro Labrador"
+   ]
+  },
+  {
+   "nombre": "Sada",
+   "slug": "sada",
+   "zona": "A Coruña",
+   "borm": "A Coruña 75. Sada",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de San Roque"
+   ]
+  },
+  {
+   "nombre": "San Sadurniño",
+   "slug": "san-sadurnino",
+   "zona": "A Coruña",
+   "borm": "A Coruña 76. San Sadurniño",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festividad tradicional de Santa Isabel"
+   ]
+  },
+  {
+   "nombre": "Santa Comba",
+   "slug": "santa-comba",
+   "zona": "A Coruña",
+   "borm": "A Coruña 77. Santa Comba",
+   "fechas": [
+    "2027-06-24",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "San Juan",
+    "festividad de San Pedro"
+   ]
+  },
+  {
+   "nombre": "Santiago de Compostela",
+   "slug": "santiago-de-compostela",
+   "zona": "A Coruña",
+   "borm": "A Coruña 78. Santiago de Compostela",
+   "fechas": [
+    "2027-05-06",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "día de la Ascensión",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Santiso",
+   "slug": "santiso",
+   "zona": "A Coruña",
+   "borm": "A Coruña 79. Santiso",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "San Juan",
+    "fiesta local de Santiso"
+   ]
+  },
+  {
+   "nombre": "Sobrado",
+   "slug": "sobrado",
+   "zona": "A Coruña",
+   "borm": "A Coruña 80. Sobrado",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "As Somozas",
+   "slug": "as-somozas",
+   "zona": "A Coruña",
+   "borm": "A Coruña 81. Somozas, As",
+   "fechas": [
+    "2027-07-23",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "fiesta local de As Somozas",
+    "fiesta local de As Somozas"
+   ]
+  },
+  {
+   "nombre": "Teo",
+   "slug": "teo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 82. Teo",
+   "fechas": [
+    "2027-05-06",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "La Ascensión",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Toques",
+   "slug": "toques",
+   "zona": "A Coruña",
+   "borm": "A Coruña 83. Toques",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día de San Antolín"
+   ]
+  },
+  {
+   "nombre": "Tordoia",
+   "slug": "tordoia",
+   "zona": "A Coruña",
+   "borm": "A Coruña 84. Tordoia",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Touro",
+   "slug": "touro",
+   "zona": "A Coruña",
+   "borm": "A Coruña 85. Touro",
+   "fechas": [
+    "2027-03-29",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Trazo",
+   "slug": "trazo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 86. Trazo",
+   "fechas": [
+    "2027-08-16",
+    "2027-09-21"
+   ],
+   "nombres": [
+    "San Roque",
+    "festividad del San Mateo"
+   ]
+  },
+  {
+   "nombre": "Val do Dubra",
+   "slug": "val-do-dubra",
+   "zona": "A Coruña",
+   "borm": "A Coruña 87. Val do Dubra",
+   "fechas": [
+    "2027-05-06",
+    "2027-08-06"
+   ],
+   "nombres": [
+    "día de la Ascensión",
+    "fiesta del Emigrante"
+   ]
+  },
+  {
+   "nombre": "Valdoviño",
+   "slug": "valdovino",
+   "zona": "A Coruña",
+   "borm": "A Coruña 88. Valdoviño",
+   "fechas": [
+    "2027-06-24",
+    "2027-08-17"
+   ],
+   "nombres": [
+    "San Juan",
+    "día de San Mamede"
+   ]
+  },
+  {
+   "nombre": "Vedra",
+   "slug": "vedra",
+   "zona": "A Coruña",
+   "borm": "A Coruña 89. Vedra",
+   "fechas": [
+    "2027-09-20",
+    "2027-12-10"
+   ],
+   "nombres": [
+    "Día del Patio",
+    "Santa Baia"
+   ]
+  },
+  {
+   "nombre": "Vilarmaior",
+   "slug": "vilarmaior",
+   "zona": "A Coruña",
+   "borm": "A Coruña 90. Vilarmaior",
+   "fechas": [
+    "2027-02-08",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Vilasantar",
+   "slug": "vilasantar",
+   "zona": "A Coruña",
+   "borm": "A Coruña 91. Vilasantar",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Ponciano y San Hipólito"
+   ]
+  },
+  {
+   "nombre": "Vimianzo",
+   "slug": "vimianzo",
+   "zona": "A Coruña",
+   "borm": "A Coruña 92. Vimianzo",
+   "fechas": [
+    "2027-01-22",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "San Vicente",
+    "fiestas del verano"
+   ]
+  },
+  {
+   "nombre": "Zas",
+   "slug": "zas",
+   "zona": "A Coruña",
+   "borm": "A Coruña 93. Zas",
+   "fechas": [
+    "2027-07-16",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "El Carmen de Zas",
+    "Santa Margarita de O Muíño"
+   ]
+  },
+  {
+   "nombre": "Abadín",
+   "slug": "abadin",
+   "zona": "Lugo",
+   "borm": "Lugo 1. Abadín",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-27"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Cosme de la Montaña"
+   ]
+  },
+  {
+   "nombre": "Alfoz",
+   "slug": "alfoz",
+   "zona": "Lugo",
+   "borm": "Lugo 2. Alfoz",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de los Chóferes"
+   ]
+  },
+  {
+   "nombre": "Antas de Ulla",
+   "slug": "antas-de-ulla",
+   "zona": "Lugo",
+   "borm": "Lugo 3. Antas de Ulla",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Juan",
+    "Virgen de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Baleira",
+   "slug": "baleira",
+   "zona": "Lugo",
+   "borm": "Lugo 4. Baleira",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-12"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Cristóbal"
+   ]
+  },
+  {
+   "nombre": "Baralla",
+   "slug": "baralla",
+   "zona": "Lugo",
+   "borm": "Lugo 5. Baralla",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-27"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de San Victorio"
+   ]
+  },
+  {
+   "nombre": "Barreiros",
+   "slug": "barreiros",
+   "zona": "Lugo",
+   "borm": "Lugo 6. Barreiros",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Bartolo"
+   ]
+  },
+  {
+   "nombre": "Becerreá",
+   "slug": "becerrea",
+   "zona": "Lugo",
+   "borm": "Lugo 7. Becerreá",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "San Juan",
+    "Santo Ecce Homo"
+   ]
+  },
+  {
+   "nombre": "Begonte",
+   "slug": "begonte",
+   "zona": "Lugo",
+   "borm": "Lugo 8. Begonte",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-28"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Bóveda",
+   "slug": "boveda",
+   "zona": "Lugo",
+   "borm": "Lugo 9. Bóveda",
+   "fechas": [
+    "2027-09-01",
+    "2027-09-15"
+   ],
+   "nombres": [
+    "San Gil",
+    "Divino Ecce-Homo"
+   ]
+  },
+  {
+   "nombre": "Burela",
+   "slug": "burela",
+   "zona": "Lugo",
+   "borm": "Lugo 10. Burela",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-07"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de las fiestas patronales"
+   ]
+  },
+  {
+   "nombre": "Carballedo",
+   "slug": "carballedo",
+   "zona": "Lugo",
+   "borm": "Lugo 11. Carballedo",
+   "fechas": [
+    "2027-07-26",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "festivo local",
+    "festivo local"
+   ]
+  },
+  {
+   "nombre": "Castro de Rei",
+   "slug": "castro-de-rei",
+   "zona": "Lugo",
+   "borm": "Lugo 12. Castro de Rei",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes siguiente a San Roque y Dulce Nombre de María"
+   ]
+  },
+  {
+   "nombre": "Castroverde",
+   "slug": "castroverde",
+   "zona": "Lugo",
+   "borm": "Lugo 13. Castroverde",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "día posterior al Santiago Apóstol"
+   ]
+  },
+  {
+   "nombre": "Cervantes",
+   "slug": "cervantes",
+   "zona": "Lugo",
+   "borm": "Lugo 14. Cervantes",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-20"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Cervo",
+   "slug": "cervo",
+   "zona": "Lugo",
+   "borm": "Lugo 15. Cervo",
+   "fechas": [
+    "2027-07-16",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Nuestra Señora del Carmen",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Chantada",
+   "slug": "chantada",
+   "zona": "Lugo",
+   "borm": "Lugo 16. Chantada",
+   "fechas": [
+    "2027-08-24",
+    "2027-10-18"
+   ],
+   "nombres": [
+    "fiesta de la Empanada",
+    "San Lucas"
+   ]
+  },
+  {
+   "nombre": "O Corgo",
+   "slug": "o-corgo",
+   "zona": "Lugo",
+   "borm": "Lugo 17. Corgo, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Froilán"
+   ]
+  },
+  {
+   "nombre": "Cospeito",
+   "slug": "cospeito",
+   "zona": "Lugo",
+   "borm": "Lugo 18. Cospeito",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Nuestra Señora Virgen del Monte"
+   ]
+  },
+  {
+   "nombre": "Folgoso do Courel",
+   "slug": "folgoso-do-courel",
+   "zona": "Lugo",
+   "borm": "Lugo 19. Folgoso do Courel",
+   "fechas": [
+    "2027-08-19",
+    "2027-12-07"
+   ],
+   "nombres": [
+    "festivo local",
+    "festivo local"
+   ]
+  },
+  {
+   "nombre": "A Fonsagrada",
+   "slug": "a-fonsagrada",
+   "zona": "Lugo",
+   "borm": "Lugo 20. Fonsagrada, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas patronales de A Fonsagrada"
+   ]
+  },
+  {
+   "nombre": "Foz",
+   "slug": "foz",
+   "zona": "Lugo",
+   "borm": "Lugo 21. Foz",
+   "fechas": [
+    "2027-07-16",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "fiesta del Carmen",
+    "San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "Friol",
+   "slug": "friol",
+   "zona": "Lugo",
+   "borm": "Lugo 22. Friol",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-12"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes de Santa Isabel"
+   ]
+  },
+  {
+   "nombre": "Guitiriz",
+   "slug": "guitiriz",
+   "zona": "Lugo",
+   "borm": "Lugo 23. Guitiriz",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Guntín de Pallares",
+   "slug": "guntin-de-pallares",
+   "zona": "Lugo",
+   "borm": "Lugo 24. Guntín de Pallares",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de la fiesta"
+   ]
+  },
+  {
+   "nombre": "O Incio",
+   "slug": "o-incio",
+   "zona": "Lugo",
+   "borm": "Lugo 25. Incio, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Láncara",
+   "slug": "lancara",
+   "zona": "Lugo",
+   "borm": "Lugo 26. Láncara",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes de San Roque"
+   ]
+  },
+  {
+   "nombre": "Lourenzá",
+   "slug": "lourenza",
+   "zona": "Lugo",
+   "borm": "Lugo 27. Lourenzá",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes del Conde Santo"
+   ]
+  },
+  {
+   "nombre": "Lugo",
+   "slug": "lugo",
+   "zona": "Lugo",
+   "borm": "Lugo 28. Lugo",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Froilán"
+   ]
+  },
+  {
+   "nombre": "Meira",
+   "slug": "meira",
+   "zona": "Lugo",
+   "borm": "Lugo 29. Meira",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Mondoñedo",
+   "slug": "mondonedo",
+   "zona": "Lugo",
+   "borm": "Lugo 30. Mondoñedo",
+   "fechas": [
+    "2027-09-13",
+    "2027-10-18"
+   ],
+   "nombres": [
+    "Nuestra Señora de los Remedios",
+    "Las San Lucas"
+   ]
+  },
+  {
+   "nombre": "Monforte de Lemos",
+   "slug": "monforte-de-lemos",
+   "zona": "Lugo",
+   "borm": "Lugo 31. Monforte de Lemos",
+   "fechas": [
+    "2027-03-30",
+    "2027-06-14"
+   ],
+   "nombres": [
+    "Martes de Pascua",
+    "San Antonio"
+   ]
+  },
+  {
+   "nombre": "Monterroso",
+   "slug": "monterroso",
+   "zona": "Lugo",
+   "borm": "Lugo 32. Monterroso",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "San Juan",
+    "San Miguel"
+   ]
+  },
+  {
+   "nombre": "Muras",
+   "slug": "muras",
+   "zona": "Lugo",
+   "borm": "Lugo 33. Muras",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-28"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro de Muras"
+   ]
+  },
+  {
+   "nombre": "Navia de Suarna",
+   "slug": "navia-de-suarna",
+   "zona": "Lugo",
+   "borm": "Lugo 34. Navia de Suarna",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de los Dolores"
+   ]
+  },
+  {
+   "nombre": "Negueira de Muñiz",
+   "slug": "negueira-de-muniz",
+   "zona": "Lugo",
+   "borm": "Lugo 35. Negueira de Muñiz",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de A Veiga"
+   ]
+  },
+  {
+   "nombre": "As Nogais",
+   "slug": "as-nogais",
+   "zona": "Lugo",
+   "borm": "Lugo 36. Nogais, As",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del Emigrante de As Nogais"
+   ]
+  },
+  {
+   "nombre": "Ourol",
+   "slug": "ourol",
+   "zona": "Lugo",
+   "borm": "Lugo 37. Ourol",
+   "fechas": [
+    "2027-05-13",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Nuestra Señora de Fátima",
+    "Lunes de Naseiro"
+   ]
+  },
+  {
+   "nombre": "Outeiro de Rei",
+   "slug": "outeiro-de-rei",
+   "zona": "Lugo",
+   "borm": "Lugo 38. Outeiro de Rei",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes de Santa Isabel"
+   ]
+  },
+  {
+   "nombre": "Palas de Rei",
+   "slug": "palas-de-rei",
+   "zona": "Lugo",
+   "borm": "Lugo 39. Palas de Rei",
+   "fechas": [
+    "2027-01-28",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "San Tirso",
+    "Ecce Homo"
+   ]
+  },
+  {
+   "nombre": "Pantón",
+   "slug": "panton",
+   "zona": "Lugo",
+   "borm": "Lugo 40. Pantón",
+   "fechas": [
+    "2027-05-10",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "feria del Vino",
+    "Santa María de Ferreira"
+   ]
+  },
+  {
+   "nombre": "Paradela",
+   "slug": "paradela",
+   "zona": "Lugo",
+   "borm": "Lugo 41. Paradela",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Miguel"
+   ]
+  },
+  {
+   "nombre": "O Páramo",
+   "slug": "o-paramo",
+   "zona": "Lugo",
+   "borm": "Lugo 42. Páramo, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de la Primavera"
+   ]
+  },
+  {
+   "nombre": "A Pastoriza",
+   "slug": "a-pastoriza",
+   "zona": "Lugo",
+   "borm": "Lugo 43. Pastoriza, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-18"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Lucas"
+   ]
+  },
+  {
+   "nombre": "Pedrafita do Cebreiro",
+   "slug": "pedrafita-do-cebreiro",
+   "zona": "Lugo",
+   "borm": "Lugo 44. Pedrafita do Cebreiro",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "romería del Santo Milagro del Cebreiro"
+   ]
+  },
+  {
+   "nombre": "A Pobra do Brollón",
+   "slug": "a-pobra-do-brollon",
+   "zona": "Lugo",
+   "borm": "Lugo 45. Pobra do Brollón, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-27"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Victorio"
+   ]
+  },
+  {
+   "nombre": "Pol",
+   "slug": "pol",
+   "zona": "Lugo",
+   "borm": "Lugo 46. Pol",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del Emigrante"
+   ]
+  },
+  {
+   "nombre": "A Pontenova",
+   "slug": "a-pontenova",
+   "zona": "Lugo",
+   "borm": "Lugo 47. Pontenova, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-10-04"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de las Ferias"
+   ]
+  },
+  {
+   "nombre": "Portomarín",
+   "slug": "portomarin",
+   "zona": "Lugo",
+   "borm": "Lugo 48. Portomarín",
+   "fechas": [
+    "2027-06-29",
+    "2027-09-06"
+   ],
+   "nombres": [
+    "San Pedro",
+    "Santo Cristo de las Victorias"
+   ]
+  },
+  {
+   "nombre": "Quiroga",
+   "slug": "quiroga",
+   "zona": "Lugo",
+   "borm": "Lugo 49. Quiroga",
+   "fechas": [
+    "2027-03-29",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Rábade",
+   "slug": "rabade",
+   "zona": "Lugo",
+   "borm": "Lugo 50. Rábade",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Nuestra Señora de la Asunción"
+   ]
+  },
+  {
+   "nombre": "Ribadeo",
+   "slug": "ribadeo",
+   "zona": "Lugo",
+   "borm": "Lugo 51. Ribadeo",
+   "fechas": [
+    "2027-08-16",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Roque",
+    "Santa María del Campo"
+   ]
+  },
+  {
+   "nombre": "Ribas de Sil",
+   "slug": "ribas-de-sil",
+   "zona": "Lugo",
+   "borm": "Lugo 52. Ribas de Sil",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "fiestas patronales"
+   ]
+  },
+  {
+   "nombre": "Ribeira de Piquín",
+   "slug": "ribeira-de-piquin",
+   "zona": "Lugo",
+   "borm": "Lugo 53. Ribeira de Piquín",
+   "fechas": [
+    "2027-02-09",
+    "2027-04-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Jorge"
+   ]
+  },
+  {
+   "nombre": "Riotorto",
+   "slug": "riotorto",
+   "zona": "Lugo",
+   "borm": "Lugo 54. Riotorto",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Samos",
+   "slug": "samos",
+   "zona": "Lugo",
+   "borm": "Lugo 55. Samos",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-12"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de San Benito"
+   ]
+  },
+  {
+   "nombre": "Sarria",
+   "slug": "sarria",
+   "zona": "Lugo",
+   "borm": "Lugo 56. Sarria",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Juan",
+    "Virgen de los Remedios"
+   ]
+  },
+  {
+   "nombre": "O Saviñao",
+   "slug": "o-savinao",
+   "zona": "Lugo",
+   "borm": "Lugo 57. Saviñao, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas patronales de Escairón"
+   ]
+  },
+  {
+   "nombre": "Sober",
+   "slug": "sober",
+   "zona": "Lugo",
+   "borm": "Lugo 58. Sober",
+   "fechas": [
+    "2027-09-08",
+    "2027-09-20"
+   ],
+   "nombres": [
+    "romería de Cadeiras",
+    "fiesta del Carmen de Sober"
+   ]
+  },
+  {
+   "nombre": "Taboada",
+   "slug": "taboada",
+   "zona": "Lugo",
+   "borm": "Lugo 59. Taboada",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de la villa"
+   ]
+  },
+  {
+   "nombre": "Trabada",
+   "slug": "trabada",
+   "zona": "Lugo",
+   "borm": "Lugo 60. Trabada",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festivo local"
+   ]
+  },
+  {
+   "nombre": "Triacastela",
+   "slug": "triacastela",
+   "zona": "Lugo",
+   "borm": "Lugo 61. Triacastela",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-17"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festivo local"
+   ]
+  },
+  {
+   "nombre": "O Valadouro",
+   "slug": "o-valadouro",
+   "zona": "Lugo",
+   "borm": "Lugo 62. Valadouro, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del Ocho"
+   ]
+  },
+  {
+   "nombre": "O Vicedo",
+   "slug": "o-vicedo",
+   "zona": "Lugo",
+   "borm": "Lugo 63. Vicedo, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Esteban"
+   ]
+  },
+  {
+   "nombre": "Vilalba",
+   "slug": "vilalba",
+   "zona": "Lugo",
+   "borm": "Lugo 64. Vilalba",
+   "fechas": [
+    "2027-08-31",
+    "2027-09-01"
+   ],
+   "nombres": [
+    "San Ramón, Día del Patrón de Vilalba",
+    "Santa María, día de la patrona de Vilalba"
+   ]
+  },
+  {
+   "nombre": "Viveiro",
+   "slug": "viveiro",
+   "zona": "Lugo",
+   "borm": "Lugo 65. Viveiro",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Xermade",
+   "slug": "xermade",
+   "zona": "Lugo",
+   "borm": "Lugo 66. Xermade",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de Santa María"
+   ]
+  },
+  {
+   "nombre": "Xove",
+   "slug": "xove",
+   "zona": "Lugo",
+   "borm": "Lugo 67. Xove",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas patronales"
+   ]
+  },
+  {
+   "nombre": "Allariz",
+   "slug": "allariz",
+   "zona": "Ourense",
+   "borm": "Ourense 1. Allariz",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-28"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "viernes, fiesta del Buey"
+   ]
+  },
+  {
+   "nombre": "Amoeiro",
+   "slug": "amoeiro",
+   "zona": "Ourense",
+   "borm": "Ourense 2. Amoeiro",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "A Arnoia",
+   "slug": "a-arnoia",
+   "zona": "Ourense",
+   "borm": "Ourense 3. Arnoia, A",
+   "fechas": [
+    "2027-01-15",
+    "2027-07-30"
+   ],
+   "nombres": [
+    "San Amaro",
+    "fiesta del Pimiento"
+   ]
+  },
+  {
+   "nombre": "Avión",
+   "slug": "avion",
+   "zona": "Ourense",
+   "borm": "Ourense 4. Avión",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de San Roque"
+   ]
+  },
+  {
+   "nombre": "Baltar",
+   "slug": "baltar",
+   "zona": "Ourense",
+   "borm": "Ourense 5. Baltar",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-06"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "Bande",
+   "slug": "bande",
+   "zona": "Ourense",
+   "borm": "Ourense 6. Bande",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de San Roque"
+   ]
+  },
+  {
+   "nombre": "Baños de Molgas",
+   "slug": "banos-de-molgas",
+   "zona": "Ourense",
+   "borm": "Ourense 7. Baños de Molgas",
+   "fechas": [
+    "2027-08-06",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Salvador",
+    "Virgen de los Milagros"
+   ]
+  },
+  {
+   "nombre": "Barbadás",
+   "slug": "barbadas",
+   "zona": "Ourense",
+   "borm": "Ourense 8. Barbadás",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "O Barco de Valdeorras",
+   "slug": "o-barco-de-valdeorras",
+   "zona": "Ourense",
+   "borm": "Ourense 9. Barco de Valdeorras, O",
+   "fechas": [
+    "2027-05-24",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "Santa Rita",
+    "Día del Cristo"
+   ]
+  },
+  {
+   "nombre": "Beade",
+   "slug": "beade",
+   "zona": "Ourense",
+   "borm": "Ourense 10. Beade",
+   "fechas": [
+    "2027-07-02",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Santa Isabel",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Beariz",
+   "slug": "beariz",
+   "zona": "Ourense",
+   "borm": "Ourense 11. Beariz",
+   "fechas": [
+    "2027-02-08",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Os Blancos",
+   "slug": "os-blancos",
+   "zona": "Ourense",
+   "borm": "Ourense 12. Blancos, Os",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-15"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de los Dolores"
+   ]
+  },
+  {
+   "nombre": "Boborás",
+   "slug": "boboras",
+   "zona": "Ourense",
+   "borm": "Ourense 13. Boborás",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "A Bola",
+   "slug": "a-bola",
+   "zona": "Ourense",
+   "borm": "Ourense 14. Bola, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Cruz en Veiga"
+   ]
+  },
+  {
+   "nombre": "O Bolo",
+   "slug": "o-bolo",
+   "zona": "Ourense",
+   "borm": "Ourense 15. Bolo, O",
+   "fechas": [
+    "2027-08-16",
+    "2027-12-13"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Calvos de Randín",
+   "slug": "calvos-de-randin",
+   "zona": "Ourense",
+   "borm": "Ourense 16. Calvos de Randín",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "Carballeda de Avia",
+   "slug": "carballeda-de-avia",
+   "zona": "Ourense",
+   "borm": "Ourense 17. Carballeda de Avia",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-18"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lodairo"
+   ]
+  },
+  {
+   "nombre": "Carballeda de Valdeorras",
+   "slug": "carballeda-de-valdeorras",
+   "zona": "Ourense",
+   "borm": "Ourense 18. Carballeda de Valdeorras",
+   "fechas": [
+    "2027-02-09",
+    "2027-04-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Nuestra Señora de la Encarnación"
+   ]
+  },
+  {
+   "nombre": "O Carballiño",
+   "slug": "o-carballino",
+   "zona": "Ourense",
+   "borm": "Ourense 19. Carballiño, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-17"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Cibrán"
+   ]
+  },
+  {
+   "nombre": "Cartelle",
+   "slug": "cartelle",
+   "zona": "Ourense",
+   "borm": "Ourense 20. Cartelle",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Nuestra Señora del Mundil"
+   ]
+  },
+  {
+   "nombre": "Castrelo de Miño",
+   "slug": "castrelo-de-mino",
+   "zona": "Ourense",
+   "borm": "Ourense 21. Castrelo de Miño",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de las Nieves"
+   ]
+  },
+  {
+   "nombre": "Castrelo do Val",
+   "slug": "castrelo-do-val",
+   "zona": "Ourense",
+   "borm": "Ourense 22. Castrelo do Val",
+   "fechas": [
+    "2027-02-10",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "Nuestra Señora de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Castro Caldelas",
+   "slug": "castro-caldelas",
+   "zona": "Ourense",
+   "borm": "Ourense 23. Castro Caldelas",
+   "fechas": [
+    "2027-01-20",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Sebastián",
+    "Nuestra Señora de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Celanova",
+   "slug": "celanova",
+   "zona": "Ourense",
+   "borm": "Ourense 24. Celanova",
+   "fechas": [
+    "2027-03-01",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "San Rosendo",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Cenlle",
+   "slug": "cenlle",
+   "zona": "Ourense",
+   "borm": "Ourense 25. Cenlle",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Chandrexa de Queixa",
+   "slug": "chandrexa-de-queixa",
+   "zona": "Ourense",
+   "borm": "Ourense 26. Chandrexa de Queixa",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-06"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes posterior a la fiesta del Cordero"
+   ]
+  },
+  {
+   "nombre": "Coles",
+   "slug": "coles",
+   "zona": "Ourense",
+   "borm": "Ourense 27. Coles",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Cortegada",
+   "slug": "cortegada",
+   "zona": "Ourense",
+   "borm": "Ourense 28. Cortegada",
+   "fechas": [
+    "2027-07-09",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "previo a la romería de San Benito",
+    "Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Cualedro",
+   "slug": "cualedro",
+   "zona": "Ourense",
+   "borm": "Ourense 29. Cualedro",
+   "fechas": [
+    "2027-02-09",
+    "2027-02-10"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Miércoles de Ceniza"
+   ]
+  },
+  {
+   "nombre": "Entrimo",
+   "slug": "entrimo",
+   "zona": "Ourense",
+   "borm": "Ourense 30. Entrimo",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-02"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Félix"
+   ]
+  },
+  {
+   "nombre": "Esgos",
+   "slug": "esgos",
+   "zona": "Ourense",
+   "borm": "Ourense 31. Esgos",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Gomesende",
+   "slug": "gomesende",
+   "zona": "Ourense",
+   "borm": "Ourense 32. Gomesende",
+   "fechas": [
+    "2027-05-06",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "La Guía",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "A Gudiña",
+   "slug": "a-gudina",
+   "zona": "Ourense",
+   "borm": "Ourense 33. Gudiña, A",
+   "fechas": [
+    "2027-02-25",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "Beato Sebastián de Aparicio",
+    "San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "O Irixo",
+   "slug": "o-irixo",
+   "zona": "Ourense",
+   "borm": "Ourense 34. Irixo, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Larouco",
+   "slug": "larouco",
+   "zona": "Ourense",
+   "borm": "Ourense 35. Larouco",
+   "fechas": [
+    "2027-09-08",
+    "2027-12-13"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Laza",
+   "slug": "laza",
+   "zona": "Ourense",
+   "borm": "Ourense 36. Laza",
+   "fechas": [
+    "2027-02-10",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "Santo Cristo"
+   ]
+  },
+  {
+   "nombre": "Leiro",
+   "slug": "leiro",
+   "zona": "Ourense",
+   "borm": "Ourense 37. Leiro",
+   "fechas": [
+    "2027-05-03",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Santa Cruz",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Lobeira",
+   "slug": "lobeira",
+   "zona": "Ourense",
+   "borm": "Ourense 38. Lobeira",
+   "fechas": [
+    "2027-01-22",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Vicente",
+    "El Viso Pequeño"
+   ]
+  },
+  {
+   "nombre": "Lobios",
+   "slug": "lobios",
+   "zona": "Ourense",
+   "borm": "Ourense 39. Lobios",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-12"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiesta del verano"
+   ]
+  },
+  {
+   "nombre": "Maceda",
+   "slug": "maceda",
+   "zona": "Ourense",
+   "borm": "Ourense 40. Maceda",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas patronales de Maceda"
+   ]
+  },
+  {
+   "nombre": "Manzaneda",
+   "slug": "manzaneda",
+   "zona": "Ourense",
+   "borm": "Ourense 41. Manzaneda",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen de las Nieves"
+   ]
+  },
+  {
+   "nombre": "Maside",
+   "slug": "maside",
+   "zona": "Ourense",
+   "borm": "Ourense 42. Maside",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-27"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Victorio"
+   ]
+  },
+  {
+   "nombre": "Melón",
+   "slug": "melon",
+   "zona": "Ourense",
+   "borm": "Ourense 43. Melón",
+   "fechas": [
+    "2027-02-09",
+    "2027-05-03"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Cruz"
+   ]
+  },
+  {
+   "nombre": "A Merca",
+   "slug": "a-merca",
+   "zona": "Ourense",
+   "borm": "Ourense 44. Merca, A",
+   "fechas": [
+    "2027-05-24",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "fiesta del Espíritu Santo",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "A Mezquita",
+   "slug": "a-mezquita",
+   "zona": "Ourense",
+   "borm": "Ourense 45. Mezquita, A",
+   "fechas": [
+    "2027-08-05",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Virgen de las Nieves",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Montederramo",
+   "slug": "montederramo",
+   "zona": "Ourense",
+   "borm": "Ourense 46. Montederramo",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Monterrei",
+   "slug": "monterrei",
+   "zona": "Ourense",
+   "borm": "Ourense 47. Monterrei",
+   "fechas": [
+    "2027-07-26",
+    "2027-08-16"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Muíños",
+   "slug": "muinos",
+   "zona": "Ourense",
+   "borm": "Ourense 48. Muíños",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Nogueira de Ramuín",
+   "slug": "nogueira-de-ramuin",
+   "zona": "Ourense",
+   "borm": "Ourense 49. Nogueira de Ramuín",
+   "fechas": [
+    "2027-08-16",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "San Roque",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Oímbra",
+   "slug": "oimbra",
+   "zona": "Ourense",
+   "borm": "Ourense 50. Oímbra",
+   "fechas": [
+    "2027-02-10",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Ourense",
+   "slug": "ourense",
+   "zona": "Ourense",
+   "borm": "Ourense 51. Ourense",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Paderne de Allariz",
+   "slug": "paderne-de-allariz",
+   "zona": "Ourense",
+   "borm": "Ourense 52. Paderne de Allariz",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Padrenda",
+   "slug": "padrenda",
+   "zona": "Ourense",
+   "borm": "Ourense 53. Padrenda",
+   "fechas": [
+    "2027-01-15",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "San Amaro",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Parada de Sil",
+   "slug": "parada-de-sil",
+   "zona": "Ourense",
+   "borm": "Ourense 54. Parada de Sil",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-31"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Ramón"
+   ]
+  },
+  {
+   "nombre": "O Pereiro de Aguiar",
+   "slug": "o-pereiro-de-aguiar",
+   "zona": "Ourense",
+   "borm": "Ourense 55. Pereiro de Aguiar, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "A Peroxa",
+   "slug": "a-peroxa",
+   "zona": "Ourense",
+   "borm": "Ourense 56. Peroxa, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Petín",
+   "slug": "petin",
+   "zona": "Ourense",
+   "borm": "Ourense 57. Petín",
+   "fechas": [
+    "2027-01-18",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "San Antonio",
+    "Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Piñor",
+   "slug": "pinor",
+   "zona": "Ourense",
+   "borm": "Ourense 58. Piñor",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "A Pobra de Trives",
+   "slug": "a-pobra-de-trives",
+   "zona": "Ourense",
+   "borm": "Ourense 59. Pobra de Trives, A",
+   "fechas": [
+    "2027-08-24",
+    "2027-09-14"
+   ],
+   "nombres": [
+    "San Bartolomé",
+    "Santo Cristo de la Misericordia"
+   ]
+  },
+  {
+   "nombre": "Pontedeva",
+   "slug": "pontedeva",
+   "zona": "Ourense",
+   "borm": "Ourense 60. Pontedeva",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-22"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa María de Magdalena"
+   ]
+  },
+  {
+   "nombre": "Porqueira",
+   "slug": "porqueira",
+   "zona": "Ourense",
+   "borm": "Ourense 61. Porqueira",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Punxín",
+   "slug": "punxin",
+   "zona": "Ourense",
+   "borm": "Ourense 62. Punxín",
+   "fechas": [
+    "2027-02-09",
+    "2027-04-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Wintila"
+   ]
+  },
+  {
+   "nombre": "Quintela de Leirado",
+   "slug": "quintela-de-leirado",
+   "zona": "Ourense",
+   "borm": "Ourense 63. Quintela de Leirado",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Pedro y San Pablo"
+   ]
+  },
+  {
+   "nombre": "Rairiz de Veiga",
+   "slug": "rairiz-de-veiga",
+   "zona": "Ourense",
+   "borm": "Ourense 64. Rairiz de Veiga",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-24"
+   ],
+   "nombres": [
+    "San Juan",
+    "Nuestra Señora de la Merced-Romería de la Saínza"
+   ]
+  },
+  {
+   "nombre": "Ramirás",
+   "slug": "ramiras",
+   "zona": "Ourense",
+   "borm": "Ourense 65. Ramirás",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Ribadavia",
+   "slug": "ribadavia",
+   "zona": "Ourense",
+   "borm": "Ourense 66. Ribadavia",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Virgen del Portal"
+   ]
+  },
+  {
+   "nombre": "Riós",
+   "slug": "rios",
+   "zona": "Ourense",
+   "borm": "Ourense 67. Riós",
+   "fechas": [
+    "2027-08-16",
+    "2027-09-15"
+   ],
+   "nombres": [
+    "San Roque",
+    "romería de los Dolores"
+   ]
+  },
+  {
+   "nombre": "A Rúa de Valdeorras",
+   "slug": "a-rua-de-valdeorras",
+   "zona": "Ourense",
+   "borm": "Ourense 68. Rúa de Valdeorras, A",
+   "fechas": [
+    "2027-06-14",
+    "2027-08-23"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Rubiá",
+   "slug": "rubia",
+   "zona": "Ourense",
+   "borm": "Ourense 69. Rubiá",
+   "fechas": [
+    "2027-05-06",
+    "2027-08-24"
+   ],
+   "nombres": [
+    "La Ascensión",
+    "San Bartolomé"
+   ]
+  },
+  {
+   "nombre": "San Amaro",
+   "slug": "san-amaro",
+   "zona": "Ourense",
+   "borm": "Ourense 70. San Amaro",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-15"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "San Cibrao das Viñas",
+   "slug": "san-cibrao-das-vinas",
+   "zona": "Ourense",
+   "borm": "Ourense 71. San Cibrao das Viñas",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "San Cristovo de Cea",
+   "slug": "san-cristovo-de-cea",
+   "zona": "Ourense",
+   "borm": "Ourense 72. San Cristovo de Cea",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-27"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de la Saleta"
+   ]
+  },
+  {
+   "nombre": "San Xoán de Río",
+   "slug": "san-xoan-de-rio",
+   "zona": "Ourense",
+   "borm": "Ourense 73. San Xoán de Río",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "Sandiás",
+   "slug": "sandias",
+   "zona": "Ourense",
+   "borm": "Ourense 74. Sandiás",
+   "fechas": [
+    "2027-02-09",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes de Pascua"
+   ]
+  },
+  {
+   "nombre": "Sarreaus",
+   "slug": "sarreaus",
+   "zona": "Ourense",
+   "borm": "Ourense 75. Sarreaus",
+   "fechas": [
+    "2027-02-08",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "Taboadela",
+   "slug": "taboadela",
+   "zona": "Ourense",
+   "borm": "Ourense 76. Taboadela",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín de Tours"
+   ]
+  },
+  {
+   "nombre": "A Teixeira",
+   "slug": "a-teixeira",
+   "zona": "Ourense",
+   "borm": "Ourense 77. Teixeira, A",
+   "fechas": [
+    "2027-03-18",
+    "2027-05-18"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Toén",
+   "slug": "toen",
+   "zona": "Ourense",
+   "borm": "Ourense 78. Toén",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Trasmiras",
+   "slug": "trasmiras",
+   "zona": "Ourense",
+   "borm": "Ourense 79. Trasmiras",
+   "fechas": [
+    "2027-02-09",
+    "2027-06-24"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Juan"
+   ]
+  },
+  {
+   "nombre": "A Veiga",
+   "slug": "a-veiga",
+   "zona": "Ourense",
+   "borm": "Ourense 80. Veiga, A",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "Verea",
+   "slug": "verea",
+   "zona": "Ourense",
+   "borm": "Ourense 81. Verea",
+   "fechas": [
+    "2027-02-09",
+    "2027-12-07"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    null
+   ]
+  },
+  {
+   "nombre": "Verín",
+   "slug": "verin",
+   "zona": "Ourense",
+   "borm": "Ourense 82. Verín",
+   "fechas": [
+    "2027-02-10",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "Nuestra Señora de los Remedios"
+   ]
+  },
+  {
+   "nombre": "Viana do Bolo",
+   "slug": "viana-do-bolo",
+   "zona": "Ourense",
+   "borm": "Ourense 83. Viana do Bolo",
+   "fechas": [
+    "2027-02-10",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    null
+   ]
+  },
+  {
+   "nombre": "Vilamarín",
+   "slug": "vilamarin",
+   "zona": "Ourense",
+   "borm": "Ourense 84. Vilamarín",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Vilamartín de Valdeorras",
+   "slug": "vilamartin-de-valdeorras",
+   "zona": "Ourense",
+   "borm": "Ourense 85. Vilamartín de Valdeorras",
+   "fechas": [
+    "2027-04-23",
+    "2027-07-22"
+   ],
+   "nombres": [
+    "San Jorge",
+    "Santa María Magdalena"
+   ]
+  },
+  {
+   "nombre": "Vilar de Barrio",
+   "slug": "vilar-de-barrio",
+   "zona": "Ourense",
+   "borm": "Ourense 86. Vilar de Barrio",
+   "fechas": [
+    "2027-06-14",
+    "2027-08-02"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Vilar de Santos",
+   "slug": "vilar-de-santos",
+   "zona": "Ourense",
+   "borm": "Ourense 87. Vilar de Santos",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "Virgen de las Nieves"
+   ]
+  },
+  {
+   "nombre": "Vilardevós",
+   "slug": "vilardevos",
+   "zona": "Ourense",
+   "borm": "Ourense 88. Vilardevós",
+   "fechas": [
+    "2027-02-10",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Vilariño de Conso",
+   "slug": "vilarino-de-conso",
+   "zona": "Ourense",
+   "borm": "Ourense 89. Vilariño de Conso",
+   "fechas": [
+    "2027-02-08",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Lunes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Xinzo de Limia",
+   "slug": "xinzo-de-limia",
+   "zona": "Ourense",
+   "borm": "Ourense 90. Xinzo de Limia",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-19"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "fiestas de Santa Marina"
+   ]
+  },
+  {
+   "nombre": "Xunqueira de Ambía",
+   "slug": "xunqueira-de-ambia",
+   "zona": "Ourense",
+   "borm": "Ourense 91. Xunqueira de Ambía",
+   "fechas": [
+    "2027-04-29",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "San Pedro",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Xunqueira de Espadañedo",
+   "slug": "xunqueira-de-espadanedo",
+   "zona": "Ourense",
+   "borm": "Ourense 92. Xunqueira de Espadañedo",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de las fiestas patronales en la honra de Santa Isabel"
+   ]
+  },
+  {
+   "nombre": "Agolada",
+   "slug": "agolada",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 1. Agolada",
+   "fechas": [
+    "2027-06-29",
+    "2027-06-30"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Arbo",
+   "slug": "arbo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 2. Arbo",
+   "fechas": [
+    "2027-02-03",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "San Blas",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Baiona",
+   "slug": "baiona",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 3. Baiona",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-27"
+   ],
+   "nombres": [
+    "día de la festividad de la Virgen del Carmen",
+    "festividad de San Cosme y San Damián"
+   ]
+  },
+  {
+   "nombre": "Barro",
+   "slug": "barro",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 4. Barro",
+   "fechas": [
+    "2027-06-18",
+    "2027-10-01"
+   ],
+   "nombres": [
+    "fiesta del Vino",
+    "romería de San Breixo"
+   ]
+  },
+  {
+   "nombre": "Bueu",
+   "slug": "bueu",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 5. Bueu",
+   "fechas": [
+    "2027-07-16",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "día de la festividad de la Virgen del Carmen",
+    "festividad de San Martín"
+   ]
+  },
+  {
+   "nombre": "Caldas de Reis",
+   "slug": "caldas-de-reis",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 6. Caldas de Reis",
+   "fechas": [
+    "2027-06-24",
+    "2027-08-16"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Cambados",
+   "slug": "cambados",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 7. Cambados",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "festividad de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Campo Lameiro",
+   "slug": "campo-lameiro",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 8. Campo Lameiro",
+   "fechas": [
+    "2027-06-14",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "San Antonio",
+    "San Miguel"
+   ]
+  },
+  {
+   "nombre": "Cangas de Morrazo",
+   "slug": "cangas-de-morrazo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 9. Cangas de Morrazo",
+   "fechas": [
+    "2027-03-19",
+    "2027-08-30"
+   ],
+   "nombres": [
+    "viernes de los Dolores",
+    "lunes del Cristo"
+   ]
+  },
+  {
+   "nombre": "A Caniza",
+   "slug": "a-caniza",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 10. Caniza, A",
+   "fechas": [
+    "2027-09-21",
+    "2027-10-15"
+   ],
+   "nombres": [
+    "romería de Peña de Francia",
+    "Santa Teresa"
+   ]
+  },
+  {
+   "nombre": "Catoira",
+   "slug": "catoira",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 11. Catoira",
+   "fechas": [
+    "2027-08-02",
+    "2027-08-09"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Cerdedo Cotobade",
+   "slug": "cerdedo-cotobade",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 12. Cerdedo Cotobade",
+   "fechas": [
+    "2027-07-26",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "festividad del Ecce-Homo",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Covelo",
+   "slug": "covelo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 13. Covelo",
+   "fechas": [
+    "2027-06-24",
+    "2027-10-11"
+   ],
+   "nombres": [
+    null,
+    "fiesta de las Pascuillas"
+   ]
+  },
+  {
+   "nombre": "Crecente",
+   "slug": "crecente",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 14. Crecente",
+   "fechas": [
+    "2027-05-13",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "Nuestra Señora de Fátima",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Cuntis",
+   "slug": "cuntis",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 15. Cuntis",
+   "fechas": [
+    "2027-06-24",
+    "2027-08-17"
+   ],
+   "nombres": [
+    "San Juan",
+    "día de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Dozón",
+   "slug": "dozon",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 16. Dozón",
+   "fechas": [
+    "2027-07-19",
+    "2027-09-06"
+   ],
+   "nombres": [
+    "lunes de la Virgen del Carmen; fiesta de O Castro",
+    "lunes de la Pena de Francia"
+   ]
+  },
+  {
+   "nombre": "A Estrada",
+   "slug": "a-estrada",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 17. Estrada, A",
+   "fechas": [
+    "2027-06-24",
+    "2027-06-25"
+   ],
+   "nombres": [
+    "fiestas patronales de San Paio",
+    "fiestas patronales de San Paio"
+   ]
+  },
+  {
+   "nombre": "Forcarei",
+   "slug": "forcarei",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 18. Forcarei",
+   "fechas": [
+    "2027-08-30",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "lunes de los Dolores",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Fornelos de Montes",
+   "slug": "fornelos-de-montes",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 19. Fornelos de Montes",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "fiestas de San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "Gondomar",
+   "slug": "gondomar",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 20. Gondomar",
+   "fechas": [
+    "2027-02-09",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "O Grove",
+   "slug": "o-grove",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 21. Grove, O",
+   "fechas": [
+    "2027-07-16",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "festividad del Carmen",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "A Guarda",
+   "slug": "a-guarda",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 22. Guarda, A",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-23"
+   ],
+   "nombres": [
+    "virgen del Carmen",
+    "Santa Tecla"
+   ]
+  },
+  {
+   "nombre": "Illa de Arousa",
+   "slug": "illa-de-arousa",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 23. Illa de Arousa",
+   "fechas": [
+    "2027-01-07",
+    "2027-02-09"
+   ],
+   "nombres": [
+    "día de San Julián",
+    "Martes de Carnaval"
+   ]
+  },
+  {
+   "nombre": "Lalín",
+   "slug": "lalin",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 24. Lalín",
+   "fechas": [
+    "2027-09-20",
+    "2027-09-21"
+   ],
+   "nombres": [
+    "fiestas patronales de la Virgen de los Dolores",
+    "fiestas patronales de la Virgen de los Dolores"
+   ]
+  },
+  {
+   "nombre": "A Lama",
+   "slug": "a-lama",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 25. Lama, A",
+   "fechas": [
+    "2027-07-27",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "San Joaquín y Santa Ana",
+    "fiesta de las Ermitas"
+   ]
+  },
+  {
+   "nombre": "Marín",
+   "slug": "marin",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 26. Marín",
+   "fechas": [
+    "2027-07-16",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "festividad de la Virgen del Carmen",
+    "festividad de la Virgen del Puerto"
+   ]
+  },
+  {
+   "nombre": "Meaño",
+   "slug": "meano",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 27. Meaño",
+   "fechas": [
+    "2027-03-29",
+    "2027-12-13"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "Santa Lucía"
+   ]
+  },
+  {
+   "nombre": "Meis",
+   "slug": "meis",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 28. Meis",
+   "fechas": [
+    "2027-02-09",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes de Pascua (Nuestra Señora de las Cabezas)"
+   ]
+  },
+  {
+   "nombre": "Moaña",
+   "slug": "moana",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 29. Moaña",
+   "fechas": [
+    "2027-07-16",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "festividad del Carmen",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Mondariz",
+   "slug": "mondariz",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 30. Mondariz",
+   "fechas": [
+    "2027-05-18",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "día después de la festividad de A Franqueira",
+    "fiestas Mondariz"
+   ]
+  },
+  {
+   "nombre": "Mondariz Balneario",
+   "slug": "mondariz-balneario",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 31. Mondariz Balneario",
+   "fechas": [
+    "2027-02-11",
+    "2027-07-16"
+   ],
+   "nombres": [
+    "día de la festividad Nuestra Señora de Lourdes",
+    "festividad de la Virgen del Carmen"
+   ]
+  },
+  {
+   "nombre": "Moraña",
+   "slug": "morana",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 32. Moraña",
+   "fechas": [
+    "2027-07-19",
+    "2027-12-13"
+   ],
+   "nombres": [
+    "Santa Justa",
+    "Santa Lucía"
+   ]
+  },
+  {
+   "nombre": "Mos",
+   "slug": "mos",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 33. Mos",
+   "fechas": [
+    "2027-06-14",
+    "2027-08-09"
+   ],
+   "nombres": [
+    "fiesta de la Rosa",
+    "San Mamede"
+   ]
+  },
+  {
+   "nombre": "As Neves",
+   "slug": "as-neves",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 34. Neves, As",
+   "fechas": [
+    "2027-07-29",
+    "2027-08-05"
+   ],
+   "nombres": [
+    "festividad de Santa Marta",
+    "festividad de Nuestra Señora de las Nieves"
+   ]
+  },
+  {
+   "nombre": "Nigrán",
+   "slug": "nigran",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 35. Nigrán",
+   "fechas": [
+    "2027-06-24",
+    "2027-06-29"
+   ],
+   "nombres": [
+    "San Juan",
+    "San Pedro"
+   ]
+  },
+  {
+   "nombre": "Oia",
+   "slug": "oia",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 36. Oia",
+   "fechas": [
+    "2027-09-29",
+    "2027-12-27"
+   ],
+   "nombres": [
+    "festividad de San Miguel",
+    "festividad de Santa Uxía"
+   ]
+  },
+  {
+   "nombre": "Pazos de Borbén",
+   "slug": "pazos-de-borben",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 37. Pazos de Borbén",
+   "fechas": [
+    "2027-01-15",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "San Amaro",
+    "Lunes de Pascua"
+   ]
+  },
+  {
+   "nombre": "Poio",
+   "slug": "poio",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 38. Poio",
+   "fechas": [
+    "2027-06-24",
+    "2027-09-24"
+   ],
+   "nombres": [
+    "San Juan",
+    "día de la Virgen de la Merced"
+   ]
+  },
+  {
+   "nombre": "Ponteareas",
+   "slug": "ponteareas",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 39. Ponteareas",
+   "fechas": [
+    "2027-05-31",
+    "2027-09-29"
+   ],
+   "nombres": [
+    "lunes siguiente a la festividad del Corpus Christi",
+    "festividad de San Miguel Arcángel"
+   ]
+  },
+  {
+   "nombre": "Ponte Caldelas",
+   "slug": "ponte-caldelas",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 40. Ponte Caldelas",
+   "fechas": [
+    "2027-03-29",
+    "2027-09-01"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "miércoles de la fiesta de los Dolores"
+   ]
+  },
+  {
+   "nombre": "Pontecesures",
+   "slug": "pontecesures",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 41. Pontecesures",
+   "fechas": [
+    "2027-01-07",
+    "2027-07-05"
+   ],
+   "nombres": [
+    "fiesta de San Julián",
+    "lunes del Carmen"
+   ]
+  },
+  {
+   "nombre": "Pontevedra",
+   "slug": "pontevedra",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 42. Pontevedra",
+   "fechas": [
+    "2027-02-10",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "Miércoles de Ceniza",
+    "San Cibrán"
+   ]
+  },
+  {
+   "nombre": "O Porriño",
+   "slug": "o-porrino",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 43. Porriño, O",
+   "fechas": [
+    "2027-07-12",
+    "2027-09-27"
+   ],
+   "nombres": [
+    "San Benito",
+    "fiesta del Cristo"
+   ]
+  },
+  {
+   "nombre": "Portas",
+   "slug": "portas",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 44. Portas",
+   "fechas": [
+    "2027-02-03",
+    "2027-03-29"
+   ],
+   "nombres": [
+    "San Blas",
+    "Lunes de Pascua"
+   ]
+  },
+  {
+   "nombre": "Redondela",
+   "slug": "redondela",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 45. Redondela",
+   "fechas": [
+    "2027-04-05",
+    "2027-05-27"
+   ],
+   "nombres": [
+    "lunes del Cristo",
+    "jueves de la Coca"
+   ]
+  },
+  {
+   "nombre": "Ribadumia",
+   "slug": "ribadumia",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 46. Ribadumia",
+   "fechas": [
+    "2027-03-29",
+    "2027-06-04"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "fiesta del Vino Tinto"
+   ]
+  },
+  {
+   "nombre": "Rodeiro",
+   "slug": "rodeiro",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 47. Rodeiro",
+   "fechas": [
+    "2027-06-14",
+    "2027-09-08"
+   ],
+   "nombres": [
+    "San Antonio",
+    "Nuestra Señora del Faro"
+   ]
+  },
+  {
+   "nombre": "O Rosal",
+   "slug": "o-rosal",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 48. Rosal, O",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-26"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Santa Ana"
+   ]
+  },
+  {
+   "nombre": "Salceda de Caselas",
+   "slug": "salceda-de-caselas",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 49. Salceda de Caselas",
+   "fechas": [
+    "2027-02-09",
+    "2027-07-19"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes del Cristo"
+   ]
+  },
+  {
+   "nombre": "Salvaterra de Miño",
+   "slug": "salvaterra-de-mino",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 50. Salvaterra de Miño",
+   "fechas": [
+    "2027-06-14",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "festividad Santísimo Cristo de la Victoria",
+    "festividad de San Lorenzo"
+   ]
+  },
+  {
+   "nombre": "Sanxenxo",
+   "slug": "sanxenxo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 51. Sanxenxo",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "romería del Con",
+    "San Roque"
+   ]
+  },
+  {
+   "nombre": "Silleda",
+   "slug": "silleda",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 52. Silleda",
+   "fechas": [
+    "2027-07-09",
+    "2027-08-23"
+   ],
+   "nombres": [
+    "fiesta del Lacón",
+    "fiesta de la Empanada"
+   ]
+  },
+  {
+   "nombre": "Soutomaior",
+   "slug": "soutomaior",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 53. Soutomaior",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-06"
+   ],
+   "nombres": [
+    "Lunes de Pascua",
+    "fiesta del Patrón"
+   ]
+  },
+  {
+   "nombre": "Tomillo",
+   "slug": "tomillo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 54. Tomillo",
+   "fechas": [
+    "2027-02-09",
+    "2027-09-13"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "Lunes del Alivio"
+   ]
+  },
+  {
+   "nombre": "Tui",
+   "slug": "tui",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 55. Tui",
+   "fechas": [
+    "2027-02-09",
+    "2027-04-05"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "lunes de San Telmo"
+   ]
+  },
+  {
+   "nombre": "Valga",
+   "slug": "valga",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 56. Valga",
+   "fechas": [
+    "2027-07-26",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "festividad de Santa Ana",
+    "festividad de San Roque"
+   ]
+  },
+  {
+   "nombre": "Vigo",
+   "slug": "vigo",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 57. Vigo",
+   "fechas": [
+    "2027-03-29",
+    "2027-08-16"
+   ],
+   "nombres": [
+    null,
+    null
+   ]
+  },
+  {
+   "nombre": "Vilaboa",
+   "slug": "vilaboa",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 58. Vilaboa",
+   "fechas": [
+    "2027-02-09",
+    "2027-11-11"
+   ],
+   "nombres": [
+    "Martes de Carnaval",
+    "San Martín"
+   ]
+  },
+  {
+   "nombre": "Vila de Cruces",
+   "slug": "vila-de-cruces",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 59. Vila de Cruces",
+   "fechas": [
+    "2027-08-09",
+    "2027-08-10"
+   ],
+   "nombres": [
+    "festividad de Nuestra Señora de la Piedad",
+    "festividad de Nuestra Señora de la Piedad"
+   ]
+  },
+  {
+   "nombre": "Vilagarcía de Arousa",
+   "slug": "vilagarcia-de-arousa",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 60. Vilagarcía de Arousa",
+   "fechas": [
+    "2027-05-22",
+    "2027-08-16"
+   ],
+   "nombres": [
+    "festividad de Santa Rita",
+    "festividad de San Roque"
+   ]
+  },
+  {
+   "nombre": "Vilanova de Arousa",
+   "slug": "vilanova-de-arousa",
+   "zona": "Pontevedra",
+   "borm": "Pontevedra 61. Vilanova de Arousa",
+   "fechas": [
+    "2027-01-15",
+    "2027-09-16"
+   ],
+   "nombres": [
+    "San Mauro",
+    "San Cibrán"
+   ]
+  }
+ ],
+ "hub_por_zona": true,
+ "orden_paginas": [
+  "vigo",
+  "a-coruna",
+  "ourense",
+  "lugo",
+  "santiago-de-compostela",
+  "pontevedra",
+  "ferrol",
+  "naron",
+  "vilagarcia-de-arousa",
+  "carballo",
+  "arteixo",
+  "redondela",
+  "ames",
+  "cangas-de-morrazo",
+  "ribeira",
+  "marin",
+  "ponteareas",
+  "lalin",
+  "o-porrino",
+  "moana",
+  "a-estrada",
+  "monforte-de-lemos",
+  "teo",
+  "vilalba",
+  "viveiro",
+  "o-carballino",
+  "bueu",
+  "xinzo-de-limia",
+  "verin",
+  "sarria",
+  "nigran",
+  "cambados",
+  "burela",
+  "tui",
+  "boiro",
+  "noia",
+  "a-laracha",
+  "poio",
+  "foz",
+  "ribadeo",
+  "chantada",
+  "celanova",
+  "allariz",
+  "o-barco-de-valdeorras",
+  "melide",
+  "arzua",
+  "ribadavia"
+ ]
+}

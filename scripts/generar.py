@@ -119,7 +119,7 @@ def datos_municipio(base, cfg, regiones, loc, m, sin_pagina=()):
         fx, nom = base["notas"][loc["region_clave"]]["islas"][isla]
         regionales.append({"fecha": fx, "nombre": f"{nom} (fiesta insular)", "tipo": "insular"})
     por_fecha = {f["fecha"]: f for f in regionales}
-    nombres = m.get("nombres") or ["Fiesta local"] * len(m["fechas"])
+    nombres = [n or "Fiesta local" for n in (m.get("nombres") or [None] * len(m["fechas"]))]
     locales, coinciden = [], []
     for x, nm in zip(m["fechas"], nombres):
         if x in por_fecha:  # el boletin fija una fiesta local en un dia que ya es festivo comun
@@ -128,14 +128,16 @@ def datos_municipio(base, cfg, regiones, loc, m, sin_pagina=()):
             locales.append({"fecha": x, "nombre": nm, "tipo": "local"})
     fiestas = sorted(regionales + locales, key=lambda f: f["fecha"])
     otros = [o for o in loc["municipios"] if o["slug"] != m["slug"]]
+    zona = m.get("zona") or isla
+    zona_txt = f"la {loc.get('zona_tipo', 'isla')} de {zona}" if zona else ""
     comparten = []
     for x in m["fechas"]:
         mismos = [o for o in otros if x in o["fechas"]]
-        cerca = [o for o in mismos if o.get("isla") == isla]
+        cerca = [o for o in mismos if (o.get("zona") or o.get("isla")) == zona]
         comparten.append({"fecha": x, "municipios": [[o["slug"], nombre_pag(o)] for o in cerca],
                           "fuera": len(mismos) - len(cerca), "todos": len(mismos)})
     # Mosaico: misma isla primero (si la hay), compartiendo fecha; luego vecinos alfabeticos de la misma isla; luego el resto
-    grupo = [o for o in loc["municipios"] if o.get("isla") == isla] if isla else loc["municipios"]
+    grupo = [o for o in loc["municipios"] if (o.get("zona") or o.get("isla")) == zona] if zona else loc["municipios"]
     elegidos = []  # los que comparten fecha ya salen en su propio bloque: aqui, vecinos de lista
     for lista in (grupo, loc["municipios"]):
         i = next((k for k, o in enumerate(lista) if o["slug"] == m["slug"]), 0)
@@ -155,7 +157,7 @@ def datos_municipio(base, cfg, regiones, loc, m, sin_pagina=()):
     d.update({
         "clave": "MU:" + m["slug"], "region": nombre_pag(m), "slug": m["slug"], "municipio_borm": m["borm"],
         "comunidad": loc["region_nombre"], "comunidad_en": com_en, "comunidad_slug": loc["region_slug"], "vecinos": [],
-        "isla": isla, "base_txt": f"la isla de {isla}" if isla else com_en, "comunes_txt": comunes_txt,
+        "isla": isla, "zona": zona, "zona_txt": zona_txt, "base_txt": f"la isla de {isla}" if isla else com_en, "comunes_txt": comunes_txt,
         "fiestas": fiestas, "total": len(fiestas), "regionales": n_comunidad, "comunes": len(regionales),
         "locales": m["fechas"], "locales_efectivos": [f["fecha"] for f in locales], "coinciden": coinciden,
         "nacionales": sum(f["tipo"] == "nacional" for f in fiestas), "autonomicas": sum(f["tipo"] == "autonómica" for f in fiestas),
@@ -171,6 +173,10 @@ def datos_municipio(base, cfg, regiones, loc, m, sin_pagina=()):
         "miga": [[f"calendario-laboral-{anio}-{loc['region_slug']}", loc["region_nombre"]], [None, nombre_pag(m)]],
     })
     return d
+
+
+def lista_y(nombres):
+    return nombres[0] if len(nombres) == 1 else ", ".join(nombres[:-1]) + " y " + nombres[-1]
 
 
 def frase_locales(d, con_dia=True):
@@ -235,7 +241,7 @@ def titulo(d):
 def meta_desc(d):
     if es_mu(d):
         fx = " y el ".join(fecha_larga(x) for x in d["locales"])
-        return (f"{d['region']} tiene {d['total']} festivos en {d['anio']}: {d['comunes_txt']}, y sus fiestas locales del "
+        return (f"{d['region']} tiene {d['total']} festivos en {d['anio']}: {d['comunes_txt']}{',' if d.get('isla') else ''} y sus fiestas locales del "
                 f"{fx}. Calendario para imprimir y puentes.")
     if d["clave"] == "ES":
         return (f"Los {d['total']} festivos nacionales comunes de {d['anio']} y los de cada comunidad, "
@@ -250,7 +256,7 @@ def texto_respuesta(d):
         locs = f"{len(efe)} fiesta{'s' if len(efe) != 1 else ''} local{'es' if len(efe) != 1 else ''}, {frase_locales(d)}"
         extra = "".join(f" Su fiesta local del {fecha_larga(c['fecha'])} coincide con un festivo común ({c['comun']}), así que no suma un día más."
                         for c in d["coinciden"])
-        return (f"{d['region']} tiene {d['total']} festivos laborales en {d['anio']}: {d['comunes_txt']}, y {locs}.{extra}",
+        return (f"{d['region']} tiene {d['total']} festivos laborales en {d['anio']}: {d['comunes_txt']}{',' if d.get('isla') else ''} y {locs}.{extra}",
                 f"{d['entre_semana']} de esos festivos caen de lunes a viernes.")
     if d["clave"] == "ES":
         return (f"En {d['anio']} hay {d['total']} festivos nacionales comunes a toda España. "
@@ -287,7 +293,7 @@ def resumen_anio(d):
         intro = (f"Las fiestas locales de {html.escape(d['region'])} en {d['anio']} son" if len(locs) != 1
                  else f"La fiesta local de {html.escape(d['region'])} que añade un día libre en {d['anio']} es")
         partes.append(f"{intro} {html.escape(frase_locales(d))}"
-                      + (f", y se suman a {' y a '.join(suma)}." if suma else "."))
+                      + (f", y se {'suman' if len(locs) != 1 else 'suma'} a {' y a '.join(suma)}." if suma else "."))
         for c in d["coinciden"]:
             partes.append(f"La del {fecha_larga(c['fecha'])} ({html.escape(c['local'])}) cae el mismo día que un festivo común, "
                           f"{html.escape(c['comun'])}: el boletín la mantiene, pero no añade un día libre más.")
@@ -340,6 +346,9 @@ def filas_festivos(d):
 
 def nota_region(d, base, regiones):
     txt = _nota_region(d)
+    if d.get("hubs") and not es_mu(d):
+        links = ", ".join(f"<a href=\"@@URL:{h['slug']}@@\">{html.escape(h['titulo'])}</a> ({h['n']})" for h in d["hubs"])
+        return txt + (f"<p class=\"ch-nota\">Las {d['locales_por_municipio']} fiestas locales de cada uno de los {d['hub']['n']} concellos, por provincia: {links}.</p>")
     if d.get("hub") and not es_mu(d):
         txt += (f"<p class=\"ch-nota\">Las {d['locales_por_municipio']} fiestas locales de cada uno de los {d['hub']['n']} municipios están en "
                 f"<a href=\"@@URL:{d['hub']['slug']}@@\">{html.escape(d['hub']['titulo'])}</a>.</p>")
@@ -355,7 +364,7 @@ def _nota_region(d):
                 f"Sus nombres están en el calendario y en el <a href=\"@@URL:calendario-laboral-{d['anio']}-{d['comunidad_slug']}@@\">calendario laboral de {html.escape(d['comunidad'])}</a>.</p>"
                 f"<p class=\"ch-nota\">Las fiestas locales solo son festivas dentro del término municipal de {html.escape(d['region'])}. "
                 f"Cuentan las del municipio donde está tu centro de trabajo, no las del lugar donde vives.</p>"
-                + (f"<p class=\"ch-nota\">{html.escape(' y '.join(d['gemelos']))} tiene las mismas fechas festivas en {d['anio']}, así que este calendario también le sirve.</p>" if d["gemelos"] else ""))
+                + (f"<p class=\"ch-nota\">{html.escape(lista_y(d['gemelos']))} {'tienen' if len(d['gemelos']) > 1 else 'tiene'} las mismas fechas festivas en {d['anio']}, así que este calendario también {'les' if len(d['gemelos']) > 1 else 'le'} sirve.</p>" if d["gemelos"] else ""))
     if d["clave"] == "ES":
         return "<p class=\"ch-nota\">Las fiestas propias de cada comunidad están en el mosaico de comunidades, más abajo.</p>"
     if not n:
@@ -401,7 +410,7 @@ def lista_puentes(d):
 def bloque_comparten(d):
     out = [f"<section class=\"ch-bloque\"><h2>Municipios con la misma fiesta local</h2><ul class=\"ch-difs\">"]
     for c in d["comparten"]:
-        donde = f" de la isla de {html.escape(d['isla'])}" if d.get("isla") else ""
+        donde = f" de {html.escape(d['zona_txt'])}" if d.get("zona_txt") else ""
         if c["municipios"]:
             lista = ", ".join(f"<a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\">{html.escape(n)}</a>" for s_, n in c["municipios"])
             txt = f"También es fiesta local en {lista}{donde if donde else ''}."
@@ -463,7 +472,7 @@ def faq(d):
         b = d["locales"][-1]
         qs = [
             (f"¿Cuántos festivos hay en {reg} en {d['anio']}?",
-             f"{d['total']}: {d['comunes_txt']}, y {len(d['locales_efectivos'])} de fiesta local."
+             f"{d['total']}: {d['comunes_txt']}{',' if d.get('isla') else ''} y {len(d['locales_efectivos'])} de fiesta local."
              + (" Una de sus fiestas locales coincide con un festivo común." if d["coinciden"] else "")),
             (f"¿Cuáles son las fiestas locales de {reg} en {d['anio']}?",
              f"{frase_locales(d)[:1].upper() + frase_locales(d)[1:]}" + "".join(f", además del {fecha_larga(c['fecha'])} ({c['local']}), que coincide con un festivo común" for c in d["coinciden"])
@@ -681,8 +690,8 @@ def datos_hub(base, cfg, regiones, loc, datos_mu, igual=None):
     anio = loc["anio"]
     reg = datos_region(base, loc["region_clave"], cfg, regiones)
     igual = igual or {}
-    munis = [{"slug": m["slug"], "nombre": nombre_pag(m), "fechas": m["fechas"], "pagina": igual.get(m["slug"], m["slug"]), "isla": m.get("isla") or "",
-              "igual_que": nombre_pag(next(o for o in loc["municipios"] if o["slug"] == igual[m["slug"]])) if m["slug"] in igual else ""}
+    munis = [{"slug": m["slug"], "nombre": nombre_pag(m), "fechas": m["fechas"], "pagina": igual.get(m["slug"], m["slug"]), "isla": m.get("zona") or m.get("isla") or "",
+              "igual_que": nombre_pag(next(o for o in loc.get("todos", loc["municipios"]) if o["slug"] == igual[m["slug"]])) if m["slug"] in igual else ""}
              for m in loc["municipios"]]
     cuenta = {}
     for m in munis:
@@ -691,7 +700,7 @@ def datos_hub(base, cfg, regiones, loc, datos_mu, igual=None):
     repetidas = sorted(([x, v] for x, v in cuenta.items() if len(v) >= 3), key=lambda t: (-len(t[1]), t[0]))
     por_mes = [{"mes": k, "fiestas": sum(1 for m in munis for x in m["fechas"] if int(x[5:7]) == k)} for k in range(1, 13)]
     sabado = [[x, v] for x, v in sorted(cuenta.items()) if date.fromisoformat(x).weekday() == 5]
-    slug = hub_slug(loc)
+    slug = loc.get("hub_slug") or hub_slug(loc)
     nombre = loc["region_nombre"]
     en = loc.get("region_en", "la " + nombre)
     totales = {}
@@ -715,7 +724,7 @@ def valores_hub(d, cfg):
     filas = "".join(f'<li data-n="{sin_tildes(m["nombre"] + " " + m["isla"])}"><a href="@@URL:calendario-laboral-{a}-{m["pagina"]}@@">{html.escape(m["nombre"])}</a>'
                     f'<span>{dia_fecha(m["fechas"][0])} y {dia_fecha(m["fechas"][1])}'
                     + (f'. Mismas fiestas locales que {html.escape(m["igual_que"])}' if m["igual_que"] else "") + '</span>'
-                    + (f'<em>{html.escape(m["isla"])}</em>' if m["isla"] else "") + '</li>' for m in d["municipios"])
+                    + (f'<em>{html.escape(m["isla"])}</em>' if m["isla"] and len({x["isla"] for x in d["municipios"]}) > 1 else "") + '</li>' for m in d["municipios"])
     tot = d["totales_mu"]
     normal = max(tot, key=lambda k: len(tot[k]))
     excep = "".join(f" {', '.join(v[:-1]) + ' y ' + v[-1] if len(v) > 1 else v[0]} {'tienen' if len(v) > 1 else 'tiene'} {k}, porque una de sus fiestas locales coincide con un festivo común."
@@ -765,8 +774,22 @@ def valores_hub(d, cfg):
     }
 
 
-def hub_slug(loc):
+def hub_slug(loc, zona=None):
+    if zona:
+        return f"fiestas-locales-{loc['anio']}-{loc.get('zona_tipo', 'isla')}-de-{slug_txt(zona)}"
     return f"fiestas-locales-{loc['anio']}-{slug_region(loc)}"
+
+
+def slug_txt(t):
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", sin_tildes(t)).strip("-")
+
+
+def zonas_hub(loc):
+    """Comunidades con muchos municipios: un listado por provincia para que cada pagina sea manejable."""
+    if not loc.get("hub_por_zona"):
+        return []
+    return sorted({m["zona"] for m in loc["municipios"]})
 
 
 def slug_region(loc):
@@ -853,7 +876,10 @@ def main():
     for prioridad, clave in enumerate(["ES"] + list(regiones)):
         d = datos_region(base, clave, cfg, regiones)
         loc = loc_de.get(clave)
-        if loc:
+        if loc and zonas_hub(loc):
+            d["hubs"] = [{"slug": hub_slug(loc, z), "titulo": f"provincia de {z}", "n": sum(m["zona"] == z for m in loc["municipios"])} for z in zonas_hub(loc)]
+            d["hub"] = {"slug": d["hubs"][0]["slug"], "n": len(loc["municipios"]), "titulo": ""}
+        elif loc:
             d["hub"] = {"slug": hub_slug(loc), "n": len(loc["municipios"]), "titulo": f"Fiestas locales {anio} en {loc.get('region_en', 'la ' + loc['region_nombre'])}"}
         slug = slug_url(d)
         dibujar(d, IMG / f"{slug}.png", IMG / f"{slug}.pdf")
@@ -877,16 +903,30 @@ def main():
             if m["slug"] in sin_pagina:
                 continue
             d = datos_municipio(base, cfg, regiones, loc, m, sin_pagina)
-            d["hub_slug"] = hub_slug(loc)
+            d["hub_slug"] = hub_slug(loc, m.get("zona")) if zonas_hub(loc) else hub_slug(loc)
             slug = slug_url(d)
             dibujar(d, IMG / f"{slug}.png", IMG / f"{slug}.pdf")
             d["titulo"], d["meta_descripcion"] = titulo(d), meta_desc(d)
             guardar(d, slug, render(plantilla, valores_pagina(d, cfg, regiones, loc["region_clave"])))
             cola.append(fila_cola(d, slug, "municipio", 40))
             datos_mu.append(d)
-        d = datos_hub(base, cfg, regiones, loc, datos_mu, igual)
-        guardar(d, d["slug"], render(p_hub, valores_hub(d, cfg)))
-        cola.append(fila_cola(d, d["slug"], "listado_locales", 45))
+        partes = [(None, loc)]
+        if zonas_hub(loc):
+            rank = {s_: i for i, s_ in enumerate(loc.get("orden_paginas", []))}
+            partes = []
+            for z in zonas_hub(loc):
+                mz = [m for m in loc["municipios"] if m["zona"] == z]
+                con_pagina = [m["slug"] for m in mz if m["slug"] not in sin_pagina]
+                dest = sorted(con_pagina, key=lambda s_: (rank.get(s_, 999), s_))[:7]
+                partes.append((z, dict(loc, municipios=mz, todos=loc["municipios"], region_en=f"la {loc['zona_tipo']} de {z}",
+                                       hub_slug=hub_slug(loc, z), destacados=dest)))
+        for z, lz in partes:
+            dmz = [x for x in datos_mu if z is None or x.get("zona") == z]
+            d = datos_hub(base, cfg, regiones, lz, dmz, igual)
+            if z:
+                d["miga"] = [[f"calendario-laboral-{anio}-{loc['region_slug']}", loc["region_nombre"]], [None, f"Fiestas locales {anio}, {z}"]]
+            guardar(d, d["slug"], render(p_hub, valores_hub(d, cfg)))
+            cola.append(fila_cola(d, d["slug"], "listado_locales", 45))
     ruta_cola = RAIZ / "queue.csv"
     previa = {}
     if ruta_cola.exists():
