@@ -199,12 +199,7 @@ def filas_festivos(d):
 def nota_region(d, base, regiones):
     n = d["nota"]
     if d["clave"] == "ES":
-        filas = []
-        for clave, meta in regiones.items():
-            propias = [f for f in base["fiestas"] if f["marcas"].get(clave) == "***"]
-            chips = "".join(f"<span class=\"ch-chip\">{fecha_larga(f['fecha'])}: {html.escape(f['nombre'])}</span>" for f in propias) or "<span class=\"ch-chip ch-vacio\">sin fiestas autonómicas propias</span>"
-            filas.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{meta['slug']}@@\">{meta['nombre']}</a><div>{chips}</div></li>")
-        return "<h3 class=\"ch-sub\">Fiestas propias de cada comunidad</h3><ul class=\"ch-propias\">" + "".join(filas) + "</ul>"
+        return "<p class=\"ch-nota\">Las fiestas propias de cada comunidad están en el mosaico de comunidades, más abajo.</p>"
     if not n:
         return ""
     if "islas" in n:
@@ -301,7 +296,9 @@ def enlaces_vecinos(d, regiones):
     items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><span>Toda España</span><small>Los festivos comunes a todas las comunidades</small><b>{d['totales_es']} festivos</b></a></li>"]
     for s_ in slugs:
         pr = d["propias_slug"][s_]
-        if pr:
+        if pr and d["clave"] == "ES":
+            fiesta = "; ".join(f"{fecha_larga(x[0])}, {html.escape(x[1])}" for x in pr)
+        elif pr:
             fiesta = f"{fecha_larga(pr[0][0])}, {html.escape(pr[0][1])}" + (f", y {len(pr) - 1} más" if len(pr) > 1 else "")
         else:
             fiesta = "Sin fiesta propia en día laborable"
@@ -462,6 +459,7 @@ def main():
         resp, sub = texto_respuesta(d)
         valores = {
             "template_version": TEMPLATE_VERSION, "anio": anio, "total": d["total"], "slug": slug, "entre_semana": d["entre_semana"],
+            "titulo_mosaico": f"Festivos propios de cada comunidad en {anio}" if clave == "ES" else f"Calendario laboral {anio} de otras comunidades",
             "etq_total": "festivos comunes a toda España" if clave == "ES" else "festivos nacionales y autonómicos",
             "etq_laborables": "días laborables contando solo los festivos comunes" if clave == "ES" else "días laborables, sin contar las fiestas locales",
             "franja": franja((regiones.get(clave) or {}).get("colores") or ["#AA151B", "#F1BF00", "#AA151B"]), "region": html.escape(d["region"]),
