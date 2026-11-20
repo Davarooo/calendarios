@@ -69,6 +69,7 @@ def datos_region(base, clave, cfg, regiones):
                                 "solo_aqui": sorted((f, mias[f]) for f in set(mias) - set(suyas)),
                                 "solo_alli": sorted((f, suyas[f]) for f in set(suyas) - set(mias))})
     totales = {r["slug"]: sum(1 for f in base["fiestas"] if k in f["marcas"]) for k, r in regiones.items()}
+    propias_slug = {r["slug"]: [[f["fecha"], f["nombre"]] for f in base["fiestas"] if f["marcas"].get(k) == "***"] for k, r in regiones.items()}
     totales_es = sum(1 for f in base["fiestas"] if len(f["marcas"]) == len(base["regiones"]) and set(f["marcas"].values()) == {"*"})
     por_comunidad = {}
     if clave == "ES":
@@ -89,7 +90,7 @@ def datos_region(base, clave, cfg, regiones):
         "en_sabado": [f["fecha"] for f in fiestas if date.fromisoformat(f["fecha"]).weekday() == 5],
         "meses": meses, "laborables_anio": sum(m["laborables"] for m in meses),
         "puentes": puentes, "nota": extras, "fuente": fuente,
-        "diferencias": diferencias, "por_comunidad": por_comunidad, "totales": totales, "totales_es": totales_es,
+        "diferencias": diferencias, "por_comunidad": por_comunidad, "totales": totales, "totales_es": totales_es, "propias_slug": propias_slug,
         "sitio": cfg["sitio"], "assets": cfg["assets"],
     }
 
@@ -294,12 +295,17 @@ def jsonld(d, qs, url):
 
 
 def enlaces_vecinos(d, regiones):
-    """Mosaico de azulejos: cada comunidad con su numero de festivos."""
+    """Mosaico de azulejos: cada comunidad con su fiesta propia y su total."""
     por_slug = {r["slug"]: r for r in regiones.values()}
     slugs = list(por_slug) if d["clave"] == "ES" else d["vecinos"]
-    items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><b>{d['totales_es']}</b><small>festivos comunes</small><span>Toda España</span></a></li>"]
+    items = [] if d["clave"] == "ES" else [f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-espana@@\"><span>Toda España</span><small>Los festivos comunes a todas las comunidades</small><b>{d['totales_es']} festivos</b></a></li>"]
     for s_ in slugs:
-        items.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\"><b>{d['totales'][s_]}</b><small>festivos</small><span>{html.escape(por_slug[s_]['nombre'])}</span></a></li>")
+        pr = d["propias_slug"][s_]
+        if pr:
+            fiesta = f"{fecha_larga(pr[0][0])}, {html.escape(pr[0][1])}" + (f", y {len(pr) - 1} más" if len(pr) > 1 else "")
+        else:
+            fiesta = "Sin fiesta propia en día laborable"
+        items.append(f"<li><a href=\"@@URL:calendario-laboral-{d['anio']}-{s_}@@\"><span>{html.escape(por_slug[s_]['nombre'])}</span><small>{fiesta}</small><b>{d['totales'][s_]} festivos</b></a></li>")
     return "".join(items)
 
 

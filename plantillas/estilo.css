@@ -48,7 +48,7 @@ i.fs{background:var(--cal);box-shadow:inset 0 0 0 1px var(--junta)}i.n{backgroun
 .ch-anio{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:22px 26px}
 .ch-mes h3{font-size:1.1rem;color:var(--cob);margin-bottom:6px}
 .ch-dias{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
-.ch-dias b{font-size:.7rem;font-weight:600;color:var(--gris);text-align:center;padding-bottom:2px}
+.ch-dias span{aspect-ratio:1}.ch-dias b{font-size:.7rem;font-weight:600;color:var(--gris);text-align:center;padding-bottom:2px}
 .ch-dias button{aspect-ratio:1;border:0;border-radius:6px;background:none;color:var(--tinta);font:600 .82rem system-ui,sans-serif;cursor:pointer;padding:0}
 .ch-dias button.f{background:var(--cal);color:var(--gris);font-weight:500}
 .ch-dias button.n{background:var(--cob);color:#fff}
@@ -96,11 +96,11 @@ i.fs{background:var(--cal);box-shadow:inset 0 0 0 1px var(--junta)}i.n{backgroun
 .ch-faq details{border-bottom:1px solid var(--junta);padding:12px 0}
 .ch-faq summary{font-weight:600;cursor:pointer}
 .ch-faq p{margin:8px 0 0;color:var(--gris)}
-.ch-mosaico{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.ch-mosaico{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
 .ch-mosaico a{position:relative;display:flex;flex-direction:column;min-height:132px;padding:14px;border-radius:12px;text-decoration:none;color:var(--tinta);overflow:hidden;
 background:radial-gradient(circle at 0 0,transparent 30px,#DCE5FA 31px,#DCE5FA 33px,transparent 34px),radial-gradient(circle at 100% 100%,transparent 30px,#DCE5FA 31px,#DCE5FA 33px,transparent 34px),#F4F7FD;border:1px solid var(--junta)}
-.ch-mosaico b{font:700 2.2rem/1 var(--serif);color:var(--cob)}.ch-mosaico small{font-size:.78rem;color:var(--gris)}
-.ch-mosaico span{margin-top:auto;font-weight:600;line-height:1.25}
+.ch-mosaico span{font:700 1.1rem/1.2 var(--serif);color:var(--cob)}.ch-mosaico small{font-size:.82rem;color:var(--tinta);margin-top:6px;line-height:1.35}
+.ch-mosaico b{margin-top:auto;padding-top:10px;font-size:.8rem;font-weight:600;color:var(--gris)}
 .ch-mosaico a:hover{background-color:#fff;border-color:var(--cob)}
 .ch-propias li{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;padding:10px 0;border-bottom:1px solid var(--junta)}
 .ch-propias a{font-weight:600;text-decoration:none}.ch-propias div{display:flex;flex-wrap:wrap;gap:6px}.ch-vacio{color:var(--gris)}
