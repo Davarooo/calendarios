@@ -11,7 +11,7 @@ Sitio: https://davarooo.github.io/calendarios/
 | Fuente oficial 2027 | Ubicada y transcrita: **BOE-A-2026-21254** (BOE n.º 254, 13-10-2026). 35 fiestas, 19 territorios. Coherencia comprobada: 12 por comunidad, Canarias 11 + 1 insular. |
 | Prueba de fuente desde GitHub | Lista (`prueba-fuente.yml`). Vuelve a leer el XML del BOE y falla si no coincide con lo publicado. Falta ejecutarla en tu repo. |
 | Validación SERP | 7 búsquedas en tu Chrome (escritorio, gl=es). Resultados abajo. |
-| Diseño | Tema propio + imagen PNG/PDF + calendario interactivo |
+| Diseño | Concepto azulejo: festivos nacionales en cobalto, autonómicos en ocre, fiestas locales en verde. Calendario anual interactivo (consulta por defecto, planificador de vacaciones aparte), columna lateral con descarga y calculadora, mosaico de comunidades. |
 | Piloto | 20 URLs publicadas en GitHub Pages (España como portada + 19 territorios) y 5 páginas de confianza. 20/20 responden 200, 0 enlaces rotos. PageSpeed móvil (Madrid): rendimiento 100, LCP 1,4 s, CLS 0. |
 
 ## Validación SERP (19-11-2026, Chrome de escritorio, no incógnito móvil)
