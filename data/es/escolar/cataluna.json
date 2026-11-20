@@ -1,0 +1,50 @@
+{
+ "comunidad": "Cataluña (2)",
+ "nombre": "Cataluña",
+ "slug": "cataluna",
+ "curso": "2026-2027",
+ "fuente": {
+  "titulo": "Orden EDF/66/2026, de 22 de abril, por la que se establece el calendario escolar de los cursos 2026-2027, 2027-2028 y 2028-2029 para los centros educativos no universitarios de Cataluña",
+  "boletin": "DOGC núm. 9653, de 27 de abril de 2026",
+  "url": "https://cido.diba.cat/legislacio/21477110",
+  "cve": "CVE-DOGC-A-26113047-2026"
+ },
+ "etapas": [
+  {
+   "etapa": "Infantil (2.º ciclo) y Primaria",
+   "inicio": "2026-09-08",
+   "fin": "2027-06-21",
+   "ref": "art. 3.2"
+  },
+  {
+   "etapa": "ESO",
+   "inicio": "2026-09-08",
+   "fin": "2027-06-21",
+   "ref": "art. 4.2"
+  },
+  {
+   "etapa": "1.º de Bachillerato",
+   "inicio": "2026-09-08",
+   "fin": "2027-06-17",
+   "ref": "art. 6.2",
+   "nota": "2.º de Bachillerato termina según la programación del centro y el acceso a la universidad."
+  }
+ ],
+ "vacaciones": {
+  "navidad": [
+   "2026-12-22",
+   "2027-01-07"
+  ],
+  "semana_santa": [
+   "2027-03-20",
+   "2027-03-29"
+  ],
+  "ref": "art. 3.4"
+ },
+ "festivos_2026": "BOE2026",
+ "festivos_2027": "BOE",
+ "no_lectivos": [],
+ "libre_disposicion": 4,
+ "locales": "Más las 2 fiestas locales del municipio. Cada centro fija además 4 días de libre disposición repartidos en los tres trimestres.",
+ "transcrito": "2026-11-19: texto extraído del PDF del DOGC (copia publicada por el Ayuntamiento de Lleida, con CVE) y leído en los artículos 3, 4 y 6."
+}

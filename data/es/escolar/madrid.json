@@ -1,0 +1,55 @@
+{
+ "comunidad": "Com. de Madrid",
+ "nombre": "Comunidad de Madrid",
+ "slug": "madrid",
+ "curso": "2026-2027",
+ "fuente": {
+  "titulo": "Orden 2034/2026, de 25 de mayo, de la Consejera de Educación, Ciencia y Universidades, por la que se establece el calendario escolar para el curso 2026/2027",
+  "boletin": "BOCM núm. 131, de 4 de junio de 2026",
+  "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/06/04/BOCM-20260604-13.PDF"
+ },
+ "etapas": [
+  {
+   "etapa": "Infantil (2.º ciclo), Primaria y Educación Especial",
+   "inicio": "2026-09-07",
+   "fin": "2027-06-18",
+   "ref": "2.2.2"
+  },
+  {
+   "etapa": "ESO, Bachillerato y FP",
+   "inicio": "2026-09-08",
+   "fin": "2027-06-18",
+   "ref": "3.2.1",
+   "nota": "2.º de Bachillerato termina según las fechas de la prueba de acceso a la universidad."
+  }
+ ],
+ "vacaciones": {
+  "navidad": [
+   "2026-12-23",
+   "2027-01-06"
+  ],
+  "semana_santa": [
+   "2027-03-20",
+   "2027-03-28"
+  ],
+  "ref": "5.1"
+ },
+ "festivos_2026": [
+  "2026-10-12",
+  "2026-11-02",
+  "2026-12-07",
+  "2026-12-08"
+ ],
+ "festivos_2027": "BOE",
+ "no_lectivos": [
+  "2027-01-07",
+  "2027-01-08",
+  "2027-02-12",
+  "2027-02-15",
+  "2027-03-19",
+  "2027-03-29"
+ ],
+ "ref_no_lectivos": "5.2.2",
+ "locales": "Más las fiestas locales de cada municipio publicadas en el BOCM.",
+ "transcrito": "2026-11-19: texto extraído del PDF oficial del BOCM y leído completo."
+}

@@ -1,0 +1,481 @@
+{
+ "anio": 2026,
+ "regiones": [
+  "Andalucía",
+  "Aragón",
+  "Asturias",
+  "Illes Balears",
+  "Canarias (1)",
+  "Cantabria",
+  "Castilla-La Mancha",
+  "Castilla y León",
+  "Cataluña (2)",
+  "Extremadura",
+  "Galicia",
+  "Com. de Madrid",
+  "Región Murcia",
+  "C. Foral Navarra",
+  "País Vasco",
+  "La Rioja",
+  "Comunitat Valenciana",
+  "Ciudad de Ceuta",
+  "Ciudad de Melilla"
+ ],
+ "leyenda": {
+  "*": "Fiesta Nacional no sustituible",
+  "**": "Fiesta Nacional respecto de la que no se ha ejercido la facultad de sustitución",
+  "***": "Fiesta de Comunidad Autónoma"
+ },
+ "fiestas": [
+  {
+   "fecha": "2026-01-01",
+   "nombre": "Año Nuevo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-01-06",
+   "nombre": "Epifanía del Señor",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Illes Balears": "**",
+    "Canarias (1)": "**",
+    "Cantabria": "**",
+    "Castilla-La Mancha": "**",
+    "Castilla y León": "**",
+    "Cataluña (2)": "**",
+    "Extremadura": "**",
+    "Galicia": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "País Vasco": "**",
+    "La Rioja": "**",
+    "Comunitat Valenciana": "**",
+    "Ciudad de Ceuta": "**",
+    "Ciudad de Melilla": "**"
+   }
+  },
+  {
+   "fecha": "2026-02-28",
+   "nombre": "Día de Andalucía",
+   "marcas": {
+    "Andalucía": "***"
+   }
+  },
+  {
+   "fecha": "2026-03-02",
+   "nombre": "Lunes siguiente al Día de les Illes Balears",
+   "marcas": {
+    "Illes Balears": "***"
+   }
+  },
+  {
+   "fecha": "2026-03-19",
+   "nombre": "San José",
+   "marcas": {
+    "Galicia": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "País Vasco": "**",
+    "Comunitat Valenciana": "**"
+   }
+  },
+  {
+   "fecha": "2026-03-20",
+   "nombre": "Fiesta del Eid Fitr",
+   "marcas": {
+    "Ciudad de Melilla": "***"
+   }
+  },
+  {
+   "fecha": "2026-04-02",
+   "nombre": "Jueves Santo",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Illes Balears": "**",
+    "Canarias (1)": "**",
+    "Cantabria": "**",
+    "Castilla-La Mancha": "**",
+    "Castilla y León": "**",
+    "Extremadura": "**",
+    "Galicia": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "C. Foral Navarra": "**",
+    "País Vasco": "**",
+    "La Rioja": "**",
+    "Ciudad de Ceuta": "**",
+    "Ciudad de Melilla": "**"
+   }
+  },
+  {
+   "fecha": "2026-04-03",
+   "nombre": "Viernes Santo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-04-06",
+   "nombre": "Lunes de Pascua",
+   "marcas": {
+    "Illes Balears": "***",
+    "Castilla-La Mancha": "***",
+    "Cataluña (2)": "***",
+    "C. Foral Navarra": "***",
+    "País Vasco": "***",
+    "La Rioja": "***",
+    "Comunitat Valenciana": "***"
+   }
+  },
+  {
+   "fecha": "2026-04-23",
+   "nombre": "San Jorge/Día de Aragón",
+   "marcas": {
+    "Aragón": "***"
+   }
+  },
+  {
+   "fecha": "2026-04-23",
+   "nombre": "Fiesta de Castilla y León",
+   "marcas": {
+    "Castilla y León": "***"
+   }
+  },
+  {
+   "fecha": "2026-05-01",
+   "nombre": "Fiesta del Trabajo",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-05-02",
+   "nombre": "Fiesta de la Comunidad de Madrid",
+   "marcas": {
+    "Com. de Madrid": "***"
+   }
+  },
+  {
+   "fecha": "2026-05-27",
+   "nombre": "Fiesta Sacrificio-Eidul Adha",
+   "marcas": {
+    "Ciudad de Ceuta": "***"
+   }
+  },
+  {
+   "fecha": "2026-05-27",
+   "nombre": "Fiesta Sacrificio-Aid al Adha",
+   "marcas": {
+    "Ciudad de Melilla": "***"
+   }
+  },
+  {
+   "fecha": "2026-05-30",
+   "nombre": "Día de Canarias",
+   "marcas": {
+    "Canarias (1)": "***"
+   }
+  },
+  {
+   "fecha": "2026-06-04",
+   "nombre": "Corpus Christi",
+   "marcas": {
+    "Castilla-La Mancha": "***"
+   }
+  },
+  {
+   "fecha": "2026-06-09",
+   "nombre": "Día de la Región de Murcia",
+   "marcas": {
+    "Región Murcia": "***"
+   }
+  },
+  {
+   "fecha": "2026-06-09",
+   "nombre": "Día de la Rioja",
+   "marcas": {
+    "La Rioja": "***"
+   }
+  },
+  {
+   "fecha": "2026-06-24",
+   "nombre": "San Juan",
+   "marcas": {
+    "Cataluña (2)": "***",
+    "Galicia": "***",
+    "Comunitat Valenciana": "***"
+   }
+  },
+  {
+   "fecha": "2026-07-25",
+   "nombre": "Santiago Apóstol/Día Nacional de Galicia",
+   "marcas": {
+    "Galicia": "**",
+    "País Vasco": "**"
+   }
+  },
+  {
+   "fecha": "2026-07-28",
+   "nombre": "Día de las Instituciones de Cantabria",
+   "marcas": {
+    "Cantabria": "***"
+   }
+  },
+  {
+   "fecha": "2026-08-05",
+   "nombre": "Nuestra Señora de África",
+   "marcas": {
+    "Ciudad de Ceuta": "***"
+   }
+  },
+  {
+   "fecha": "2026-08-15",
+   "nombre": "Asunción de la Virgen",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-09-02",
+   "nombre": "Día de Ceuta",
+   "marcas": {
+    "Ciudad de Ceuta": "***"
+   }
+  },
+  {
+   "fecha": "2026-09-08",
+   "nombre": "Día de Asturias",
+   "marcas": {
+    "Asturias": "***"
+   }
+  },
+  {
+   "fecha": "2026-09-08",
+   "nombre": "Día de Extremadura",
+   "marcas": {
+    "Extremadura": "***"
+   }
+  },
+  {
+   "fecha": "2026-09-11",
+   "nombre": "Fiesta Nacional de Cataluña",
+   "marcas": {
+    "Cataluña (2)": "***"
+   }
+  },
+  {
+   "fecha": "2026-09-15",
+   "nombre": "La Bien Aparecida",
+   "marcas": {
+    "Cantabria": "***"
+   }
+  },
+  {
+   "fecha": "2026-10-09",
+   "nombre": "Día de la Comunitat Valenciana",
+   "marcas": {
+    "Comunitat Valenciana": "***"
+   }
+  },
+  {
+   "fecha": "2026-10-12",
+   "nombre": "Fiesta Nacional de España",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-11-02",
+   "nombre": "Día siguiente a Todos los Santos",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Canarias (1)": "**",
+    "Castilla-La Mancha": "**",
+    "Castilla y León": "**",
+    "Extremadura": "**",
+    "Com. de Madrid": "**",
+    "C. Foral Navarra": "**"
+   }
+  },
+  {
+   "fecha": "2026-12-07",
+   "nombre": "Lunes siguiente al Día de la Constitución Española",
+   "marcas": {
+    "Andalucía": "**",
+    "Aragón": "**",
+    "Asturias": "**",
+    "Cantabria": "**",
+    "Castilla y León": "**",
+    "Extremadura": "**",
+    "Com. de Madrid": "**",
+    "Región Murcia": "**",
+    "La Rioja": "**",
+    "Ciudad de Melilla": "**"
+   }
+  },
+  {
+   "fecha": "2026-12-08",
+   "nombre": "Inmaculada Concepción",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-12-25",
+   "nombre": "Natividad del Señor",
+   "marcas": {
+    "Andalucía": "*",
+    "Aragón": "*",
+    "Asturias": "*",
+    "Illes Balears": "*",
+    "Canarias (1)": "*",
+    "Cantabria": "*",
+    "Castilla-La Mancha": "*",
+    "Castilla y León": "*",
+    "Cataluña (2)": "*",
+    "Extremadura": "*",
+    "Galicia": "*",
+    "Com. de Madrid": "*",
+    "Región Murcia": "*",
+    "C. Foral Navarra": "*",
+    "País Vasco": "*",
+    "La Rioja": "*",
+    "Comunitat Valenciana": "*",
+    "Ciudad de Ceuta": "*",
+    "Ciudad de Melilla": "*"
+   }
+  },
+  {
+   "fecha": "2026-12-26",
+   "nombre": "San Esteban",
+   "marcas": {
+    "Illes Balears": "***",
+    "Cataluña (2)": "***"
+   }
+  }
+ ],
+ "fuente": {
+  "id": "BOE-A-2025-21667",
+  "titulo": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026",
+  "boe": "BOE núm. 259, de 28 de octubre de 2025",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-21667"
+ },
+ "transcrito": "2026-11-19: tabla leída de boe.es y convertida por script; Madrid 2 nov y 7 dic coinciden con la Orden 2034/2026."
+}
