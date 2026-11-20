@@ -12,6 +12,8 @@ Sitio: https://davarooo.github.io/calendarios/
 | Prueba de fuente desde GitHub | Lista (`prueba-fuente.yml`). Vuelve a leer el XML del BOE y falla si no coincide con lo publicado. Falta ejecutarla en tu repo. |
 | Validación SERP | 7 búsquedas en tu Chrome (escritorio, gl=es). Resultados abajo. |
 | Diseño | Concepto azulejo: festivos nacionales en cobalto, autonómicos en ocre, fiestas locales en verde. Calendario anual interactivo (consulta por defecto, planificador de vacaciones aparte), columna lateral con descarga y calculadora, mosaico de comunidades. |
+| Municipios de Murcia | 44 páginas municipales + listado de los 45 municipios con buscador. Fuente: BORM n.º 171 (27-07-2026, NPE A-270726-3718), anexo b). Día de la semana de las 90 fechas comprobado (0 discrepancias); los 12 festivos regionales del BORM coinciden con el BOE. Ulea no tiene página propia porque tiene las mismas fechas que Cieza (sería un duplicado): su fila del listado enlaza a Cieza. |
+| Search Console | Propiedad `https://davarooo.github.io/calendarios/` verificada con archivo HTML (`docs/google983d5cd5e361f55e.html`, no borrar). Sitemap enviado el 19-11-2026. |
 | Piloto | 20 URLs publicadas en GitHub Pages (España como portada + 19 territorios) y 5 páginas de confianza. 20/20 responden 200, 0 enlaces rotos. PageSpeed móvil (Madrid): rendimiento 100, LCP 1,4 s, CLS 0. |
 
 ## Validación SERP (19-11-2026, Chrome de escritorio, no incógnito móvil)
@@ -33,7 +35,9 @@ Lectura: el rival programático es **calendarios.ideal.es** (sale en las 6). En 
 ```
 data/es/festivos-2027.json   datos oficiales (BOE) + notas Canarias y Arán
 data/es/regiones.json        nombre, slug, vecinas y colores de cada comunidad
-plantillas/entrada.html      plantilla de la entrada (placeholders {var})
+data/es/locales-2027-*.json  fiestas locales por municipio (boletín autonómico), una por comunidad
+plantillas/entrada.html      plantilla de comunidad y de municipio (placeholders {var})
+plantillas/locales.html      listado de fiestas locales de todos los municipios de una comunidad
 scripts/boe_festivos.py      prueba de fuente: lee el XML del BOE y compara
 scripts/generar.py           genera HTML, PNG, PDF, fichas de datos y queue.csv
 scripts/chequeos.py          criterios de aceptación automatizables

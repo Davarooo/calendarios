@@ -14,12 +14,12 @@
 <section class="ch-bloque ch-cal" aria-labelledby="ch-t1">
 <h2 id="ch-t1">Calendario {anio}</h2>
 <div class="ch-barra">
-<ul class="ch-leyenda"><li><i class="n"></i>Festivo nacional</li><li><i class="a"></i>Festivo autonómico</li><li><i class="fs"></i>Fin de semana</li></ul>
+<ul class="ch-leyenda"><li><i class="n"></i>Festivo nacional</li><li><i class="a"></i>Festivo autonómico</li>{leyenda_extra}<li><i class="fs"></i>Fin de semana</li></ul>
 <button type="button" class="ch-planbtn" id="ch-planbtn" aria-expanded="false">Planificar mis vacaciones</button>
 </div>
 <div class="ch-plan" id="ch-plan" hidden>
 <p>Marca tus días y te calculo cuántos días de trabajo te quedan en el año. Se guarda solo en este dispositivo.</p>
-<div class="ch-modos" role="radiogroup" aria-label="Qué marcar al tocar un día"><button type="button" class="ch-modo" data-m="l" role="radio" aria-checked="true"><i class="l"></i>Mis 2 fiestas locales</button><button type="button" class="ch-modo" data-m="v" role="radio" aria-checked="false"><i class="v"></i>Mis vacaciones</button></div>
+{modos}
 <p id="ch-cuenta"></p>
 <button type="button" class="ch-borrar" id="ch-borrar">Borrar mis marcas</button>
 </div>
@@ -35,7 +35,7 @@ var hoy=new Date(),hi=hoy.getFullYear()+"-"+z(hoy.getMonth()+1)+"-"+z(hoy.getDat
 for(var m=0;m<12;m++){var o=(new Date(Date.UTC(D.anio,m,1)).getUTCDay()+6)%7,u=new Date(Date.UTC(D.anio,m+1,0)).getUTCDate(),fm="";
 s+='<div class="ch-mes" data-m="'+m+'"><h3>'+MS[m]+'</h3><div class="ch-dias"><b>L</b><b>M</b><b>X</b><b>J</b><b>V</b><b>S</b><b>D</b>';
 for(var c=0;c<42;c++){var d=c-o+1;if(d<1||d>u){s+="<span></span>";continue}var iso=D.anio+"-"+z(m+1)+"-"+z(d),k=D.f.indexOf(iso);
-if(k>=0)fm+='<li><i class="'+(D.t[k]?"n":"a")+'"></i>'+d+" "+D.n[k]+"</li>";
+if(k>=0)fm+='<li><i class="'+(D.t[k]==1?"n":D.t[k]==2?"l":"a")+'"></i>'+d+" "+D.n[k]+"</li>";
 s+='<button type="button" data-d="'+iso+'" class="'+((c%7)>4?"f":"")+(iso==hi?" hoy":"")+'">'+d+"</button>"}
 s+='</div><ul class="ch-mfest">'+(fm||"<li class=\"ch-sin\">Sin festivos</li>")+"</ul></div>"}
 document.getElementById("ch-anio").innerHTML=s})();
@@ -51,7 +51,7 @@ document.getElementById("ch-anio").innerHTML=s})();
 <section class="ch-tarjeta" aria-labelledby="ch-t3">
 <h2 id="ch-t3">Calcular días laborables</h2>
 <div class="ch-form"><label>Desde<input type="date" id="ch-d1" value="{anio}-01-01" min="{anio}-01-01" max="{anio}-12-31"></label><label>Hasta<input type="date" id="ch-d2" value="{anio}-12-31" min="{anio}-01-01" max="{anio}-12-31"></label></div>
-<p class="ch-res" id="ch-res" aria-live="polite">{laborables_anio} días laborables de lunes a viernes, sin contar las fiestas locales.</p>
+<p class="ch-res" id="ch-res" aria-live="polite">{laborables_anio} días laborables de lunes a viernes, {calc_txt}.</p>
 <p class="ch-nota" id="ch-aviso" hidden></p>
 </section>
 <!-- ANUNCIO 1 (zona segura: columna lateral, debajo de la calculadora y a mas de 150 px de sus campos) -->
@@ -91,7 +91,7 @@ document.getElementById("ch-anio").innerHTML=s})();
 </section>
 
 <footer class="ch-pie">
-<p>Fuente oficial: <a href="{fuente_url}" rel="noopener">{fuente_titulo}</a> ({fuente_boe}). Las fiestas locales de cada municipio las publica su comunidad autónoma o su provincia.</p>
+<p>Fuente oficial: {pie_fuente}</p>
 <p>Calendario informativo elaborado a partir de datos oficiales. Si una fecha no coincide con el boletín oficial, prevalece el boletín. <a href="{sitio}/metodologia/">Metodología</a>. <a href="{sitio}/aviso-legal/">Aviso legal</a>.</p>
 </footer>
 </div>
@@ -107,13 +107,13 @@ function largo(x){var d=new Date(x+"T12:00:00Z");return DS[d.getUTCDay()]+" "+d.
 function lab(a,b,conVac){var n=0,d=new Date(a+"T12:00:00Z"),f=new Date(b+"T12:00:00Z"),fx=D.f.concat(C.festivos_extra[D.r]||[],E.l,conVac?E.v:[]);
  for(;d<=f;d.setUTCDate(d.getUTCDate()+1)){var w=d.getUTCDay();if(w&&w<6&&fx.indexOf(iso(d))<0)n++}return n}
 function pinta(){[].forEach.call(document.querySelectorAll("#ch-anio button"),function(b){var x=b.getAttribute("data-d"),k=D.f.indexOf(x);
- b.classList.remove("n","a","l","v");if(k>=0){b.classList.add(D.t[k]?"n":"a");b.title=D.n[k]}else if(E.l.indexOf(x)>=0)b.classList.add("l");else if(E.v.indexOf(x)>=0)b.classList.add("v")});
- $("ch-cuenta").innerHTML="<span>Fiestas locales: <b>"+E.l.length+" de 2</b></span><span>Vacaciones: <b>"+E.v.length+" días</b></span><span>Días de trabajo en "+D.anio+": <b>"+lab(D.anio+"-01-01",D.anio+"-12-31",1)+"</b></span>"}
+ b.classList.remove("n","a","l","v");if(k>=0){b.classList.add(D.t[k]==1?"n":D.t[k]==2?"l":"a");b.title=D.n[k]}else if(E.l.indexOf(x)>=0)b.classList.add("l");else if(E.v.indexOf(x)>=0)b.classList.add("v")});
+ $("ch-cuenta").innerHTML=(D.mu?"":"<span>Fiestas locales: <b>"+E.l.length+" de 2</b></span>")+"<span>Vacaciones: <b>"+E.v.length+" días</b></span><span>Días de trabajo en "+D.anio+": <b>"+lab(D.anio+"-01-01",D.anio+"-12-31",1)+"</b></span>"}
 function calc(){var a=$("ch-d1").value,b=$("ch-d2").value;if(!a||!b||a>b){$("ch-res").textContent="La fecha de inicio tiene que ser anterior a la final.";return}
- $("ch-res").textContent=lab(a,b)+" días laborables de lunes a viernes"+(E.l.length?", descontando tus fiestas locales.":", sin contar las fiestas locales.")}
+ $("ch-res").textContent=lab(a,b)+" días laborables de lunes a viernes"+(D.mu?", con las fiestas locales de "+D.mn+" ya descontadas.":E.l.length?", descontando tus fiestas locales.":", sin contar las fiestas locales.")}
 function guarda(){try{localStorage.setItem(D.K,JSON.stringify(E))}catch(e){}}
 function info(x,b){var k=D.f.indexOf(x),t=largo(x);t=t.charAt(0).toUpperCase()+t.slice(1);
- if(k>=0)return t+": "+D.n[k]+" (festivo "+(D.t[k]?"nacional":"autonómico")+").";
+ if(k>=0)return t+": "+D.n[k]+(D.t[k]==2?" de "+D.mn+".":" (festivo "+(D.t[k]?"nacional":"autonómico")+").");
  if(E.l.indexOf(x)>=0)return t+": tu fiesta local.";if(E.v.indexOf(x)>=0)return t+": día de vacaciones.";
  return t+(b.classList.contains("f")?": fin de semana.":": día laborable.")}
 $("ch-anio").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var x=b.getAttribute("data-d");
@@ -128,7 +128,7 @@ function modo(m){MO=m;[].forEach.call(document.querySelectorAll(".ch-modo"),func
  $("ch-msg").textContent="Toca un día del calendario para marcarlo como "+(m=="l"?"fiesta local.":"vacaciones.")}
 [].forEach.call(document.querySelectorAll(".ch-modo"),function(b){b.addEventListener("click",function(){modo(b.getAttribute("data-m"))})});
 $("ch-planbtn").addEventListener("click",function(){var ab=$("ch-plan").hidden;$("ch-plan").hidden=!ab;this.setAttribute("aria-expanded",ab?"true":"false");
- this.textContent=ab?"Terminar de planificar":"Planificar mis vacaciones";if(ab)modo("l");else{MO="";$("ch-msg").textContent="Toca cualquier día para ver qué es."}});
+ this.textContent=ab?"Terminar de planificar":"Planificar mis vacaciones";if(ab)modo(D.mu?"v":"l");else{MO="";$("ch-msg").textContent="Toca cualquier día para ver qué es."}});
 $("ch-borrar").addEventListener("click",function(){E.l=[];E.v=[];guarda();pinta();calc();$("ch-msg").textContent="Marcas borradas."});
 $("ch-d1").addEventListener("change",calc);$("ch-d2").addEventListener("change",calc);
 [].forEach.call(document.querySelectorAll(".ch-dl"),function(a){a.addEventListener("click",function(e){if(!window.fetch||!window.URL)return;e.preventDefault();var t=a.textContent;a.textContent="Descargando...";

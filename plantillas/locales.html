@@ -1,0 +1,54 @@
+<!-- plantilla: listado de fiestas locales v4 | generado por scripts/generar.py | no editar a mano -->
+<div class="ch" id="ch" data-anio="{anio}">
+<section class="ch-hero">
+<p class="ch-resp">{respuesta}</p>
+<ul class="ch-fichas">
+<li><b>{n}</b><span>municipios</span></li>
+<li><b>{regionales}</b><span>festivos comunes a toda la región</span></li>
+<li><b>{fechas_distintas}</b><span>fechas distintas de fiesta local</span></li>
+</ul>
+</section>
+
+<section class="ch-bloque" aria-labelledby="ch-t1">
+<h2 id="ch-t1">Busca tu municipio</h2>
+<div class="ch-form ch-busca"><label>Municipio<input type="search" id="ch-q" placeholder="Escribe su nombre" autocomplete="off"></label></div>
+<ul class="ch-munis" id="ch-munis">{filas}</ul>
+<p class="ch-nota" id="ch-nada" hidden>Ningún municipio de la {region} coincide con esa búsqueda.</p>
+<p class="ch-nota">Las fiestas locales solo son festivas dentro de cada término municipal. Cuentan las del municipio donde está tu centro de trabajo.</p>
+</section>
+
+<!-- ANUNCIO 1 (zona segura: despues de la lista, lejos del buscador) -->
+<div class="ch-ad" aria-hidden="true"></div>
+
+<section class="ch-bloque" aria-labelledby="ch-t2">
+<h2 id="ch-t2">Los días con más fiestas locales</h2>
+<ul class="ch-puentes">{repetidas}</ul>
+</section>
+
+<section class="ch-bloque" aria-labelledby="ch-t3">
+<h2 id="ch-t3">Fiestas locales por mes</h2>
+<ul class="ch-meses">{meses}</ul>
+</section>
+
+<section class="ch-bloque" aria-labelledby="ch-t4">
+<h2 id="ch-t4">Preguntas frecuentes</h2>
+<div class="ch-faq">{faq_html}</div>
+</section>
+
+<section class="ch-bloque" aria-labelledby="ch-t5">
+<h2 id="ch-t5">Calendarios laborales de la {region}</h2>
+<ul class="ch-mosaico">{mosaico}</ul>
+</section>
+
+<footer class="ch-pie">
+<p>Fuentes oficiales: {pie}</p>
+<p>Listado informativo elaborado a partir de datos oficiales. Si una fecha no coincide con el boletín oficial, prevalece el boletín. <a href="{sitio}/metodologia/">Metodología</a>. <a href="{sitio}/aviso-legal/">Aviso legal</a>.</p>
+</footer>
+</div>
+<script type="application/ld+json">{jsonld}</script>
+<script>
+var CH={datos_js};
+(function(){var q=document.getElementById("ch-q"),li=document.querySelectorAll("#ch-munis li"),nada=document.getElementById("ch-nada");
+function n(t){return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+q.addEventListener("input",function(){var v=n(q.value.trim()),k=0;[].forEach.call(li,function(x){var ok=!v||x.getAttribute("data-n").indexOf(v)>=0;x.hidden=!ok;if(ok)k++});nada.hidden=k>0})})();
+</script>

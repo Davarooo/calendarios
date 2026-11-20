@@ -98,7 +98,11 @@ def main():
         destino = ruta_de(f["slug"])
         destino.parent.mkdir(parents=True, exist_ok=True)
         imagen = f"{sitio}/img/{f['slug']}.png"
-        miga = "" if f["slug"] == INDICE else f'<p class="miga"><a href="{sitio}/">España</a> / {html.escape(f["region"])}</p>'
+        ficha = RAIZ / "out/fichas" / f"{f['slug']}.json"
+        pasos = json.loads(ficha.read_text(encoding="utf-8")).get("miga") if ficha.exists() else None
+        pasos = pasos or [[None, f["region"]]]
+        miga = "" if f["slug"] == INDICE else (f'<p class="miga"><a href="{sitio}/">España</a> / '
+                + " / ".join(f'<a href="{urls[s_]}">{html.escape(n)}</a>' if s_ in urls else html.escape(n) for s_, n in pasos) + "</p>")
         destino.write_text(pagina(css, sitio, f["titulo"], f["meta_descripcion"], urls[f["slug"]], cuerpo, imagen, miga=miga), encoding="utf-8")
         f["url_publicada"], f["estado"] = urls[f["slug"]], "publicado"
         f["enlaces_pendientes"] = str(cuerpo.count("@@URL:"))

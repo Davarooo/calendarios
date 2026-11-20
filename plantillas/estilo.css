@@ -78,7 +78,7 @@ i.fs{background:var(--cal);box-shadow:inset 0 0 0 1px var(--junta)}i.n{backgroun
 .ch-festivos li{display:flex;align-items:center;gap:12px;padding:8px;border:1px solid var(--junta);border-radius:12px}
 .ch-baldosa{flex:0 0 54px;height:54px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.72rem;line-height:1}
 .ch-baldosa b{font:700 1.45rem/1 var(--serif)}
-.ch-baldosa.n{background:var(--cob);color:#fff}.ch-baldosa.a{background:var(--ocre);color:var(--tinta)}
+.ch-baldosa.n{background:var(--cob);color:#fff}.ch-baldosa.a{background:var(--ocre);color:var(--tinta)}.ch-baldosa.l{background:var(--verde);color:#fff}
 .ch-fx{display:flex;flex-direction:column;line-height:1.3}.ch-fx em{font-style:normal;font-size:.85rem;color:var(--gris)}
 .ch-islas,.ch-difs,.ch-puentes,.ch-meses,.ch-regiones,.ch-propias{list-style:none;margin:0;padding:0}
 .ch-islas{display:flex;flex-wrap:wrap;gap:6px}.ch-islas li,.ch-chip{background:var(--cal);border-radius:999px;padding:3px 12px;font-size:.88rem;display:inline-block}
@@ -115,3 +115,13 @@ background:radial-gradient(circle at 0 0,transparent 30px,#DCE5FA 31px,#DCE5FA 3
 .ch-anio{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:8px}
 .ch-mes{flex:0 0 86%;scroll-snap-align:start}.ch-dias button{font-size:.95rem}.ch-propias li{grid-template-columns:1fr}.ch-mosaico{grid-template-columns:1fr 1fr;gap:8px}.ch-mosaico a{min-height:112px;padding:12px}.ch-mosaico span{font-size:1rem}.ch-desliza{display:block}.ch-borrar{margin-left:0}}
 @media print{.top::before,.barra nav,.pie,.ch-ad,.ch-lat,.ch-barra,.ch-estado{display:none}main.w{margin-top:0}}
+
+/* Listado de fiestas locales por municipio */
+.ch-busca{margin:4px 0 14px}.ch-busca label{display:flex;flex-direction:column;gap:6px;font-weight:600;max-width:420px}
+.ch-busca input{font:inherit;padding:11px 14px;border:1.5px solid var(--junta);border-radius:10px;background:#fff}
+.ch-busca input:focus{outline:3px solid #B9C9F3;border-color:var(--cob)}
+.ch-munis{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+.ch-munis li{background:#fff;border:1px solid var(--junta);border-left:4px solid var(--verde);border-radius:10px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}
+.ch-munis a{font-weight:700;color:var(--cob);text-decoration:none}.ch-munis a:hover{text-decoration:underline}
+.ch-munis span{font-size:.9rem;color:var(--gris)}
+.ch-difs li>strong{display:block;color:var(--tinta);margin-bottom:4px}

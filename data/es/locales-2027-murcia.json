@@ -1,0 +1,466 @@
+{
+ "anio": 2027,
+ "region_clave": "Región Murcia",
+ "region_slug": "murcia",
+ "region_nombre": "Región de Murcia",
+ "fuente": {
+  "id": "NPE A-270726-3718",
+  "titulo": "Resolución de la Dirección General de Trabajo por la que se publica el calendario de fiestas laborales para el año 2027",
+  "boletin": "BORM núm. 171, de 27 de julio de 2026",
+  "url": "https://www.borm.es/#/home/anuncio/27-07-2026/3718",
+  "pdf": "https://www.borm.es/services/anuncio/844400/pdf"
+ },
+ "transcrito": "2026-11-19: tabla del anexo b) copiada del PDF oficial; día de la semana de cada fecha comprobado contra el calendario (0 discrepancias). Los 12 festivos regionales del apartado a) coinciden con BOE-A-2026-21254.",
+ "municipios": [
+  {
+   "nombre": "Abanilla",
+   "slug": "abanilla",
+   "borm": "ABANILLA",
+   "n_borm": 1,
+   "fechas": [
+    "2027-05-03",
+    "2027-09-14"
+   ]
+  },
+  {
+   "nombre": "Abarán",
+   "slug": "abaran",
+   "borm": "ABARAN",
+   "n_borm": 2,
+   "fechas": [
+    "2027-03-30",
+    "2027-09-27"
+   ]
+  },
+  {
+   "nombre": "Águilas",
+   "slug": "aguilas",
+   "borm": "AGUILAS",
+   "n_borm": 3,
+   "fechas": [
+    "2027-02-09",
+    "2027-04-30"
+   ]
+  },
+  {
+   "nombre": "Albudeite",
+   "slug": "albudeite",
+   "borm": "ALBUDEITE",
+   "n_borm": 4,
+   "fechas": [
+    "2027-08-30",
+    "2027-09-08"
+   ]
+  },
+  {
+   "nombre": "Alcantarilla",
+   "slug": "alcantarilla",
+   "borm": "ALCANTARILLA",
+   "n_borm": 5,
+   "fechas": [
+    "2027-05-14",
+    "2027-09-14"
+   ]
+  },
+  {
+   "nombre": "Los Alcázares",
+   "slug": "los-alcazares",
+   "borm": "ALCAZARES, LOS",
+   "n_borm": 6,
+   "fechas": [
+    "2027-03-29",
+    "2027-10-13"
+   ]
+  },
+  {
+   "nombre": "Aledo",
+   "slug": "aledo",
+   "borm": "ALEDO",
+   "n_borm": 7,
+   "fechas": [
+    "2027-08-26",
+    "2027-08-27"
+   ]
+  },
+  {
+   "nombre": "Alguazas",
+   "slug": "alguazas",
+   "borm": "ALGUAZAS",
+   "n_borm": 8,
+   "fechas": [
+    "2027-03-30",
+    "2027-07-16"
+   ]
+  },
+  {
+   "nombre": "Alhama de Murcia",
+   "slug": "alhama-de-murcia",
+   "borm": "ALHAMA DE MURCIA",
+   "n_borm": 9,
+   "fechas": [
+    "2027-02-02",
+    "2027-10-07"
+   ]
+  },
+  {
+   "nombre": "Archena",
+   "slug": "archena",
+   "borm": "ARCHENA",
+   "n_borm": 10,
+   "fechas": [
+    "2027-05-27",
+    "2027-09-01"
+   ]
+  },
+  {
+   "nombre": "Beniel",
+   "slug": "beniel",
+   "borm": "BENIEL",
+   "n_borm": 11,
+   "fechas": [
+    "2027-02-02",
+    "2027-08-24"
+   ]
+  },
+  {
+   "nombre": "Blanca",
+   "slug": "blanca",
+   "borm": "BLANCA",
+   "n_borm": 12,
+   "fechas": [
+    "2027-04-02",
+    "2027-08-16"
+   ]
+  },
+  {
+   "nombre": "Bullas",
+   "slug": "bullas",
+   "borm": "BULLAS",
+   "n_borm": 13,
+   "fechas": [
+    "2027-10-04",
+    "2027-10-05"
+   ]
+  },
+  {
+   "nombre": "Calasparra",
+   "slug": "calasparra",
+   "borm": "CALASPARRA",
+   "n_borm": 14,
+   "fechas": [
+    "2027-07-30",
+    "2027-09-08"
+   ]
+  },
+  {
+   "nombre": "Campos del Río",
+   "slug": "campos-del-rio",
+   "borm": "CAMPOS DEL RIO",
+   "n_borm": 15,
+   "fechas": [
+    "2027-06-24",
+    "2027-06-25"
+   ]
+  },
+  {
+   "nombre": "Caravaca de la Cruz",
+   "slug": "caravaca-de-la-cruz",
+   "borm": "CARAVACA DE LA CRUZ",
+   "n_borm": 16,
+   "fechas": [
+    "2027-05-03",
+    "2027-05-04"
+   ]
+  },
+  {
+   "nombre": "Cartagena",
+   "slug": "cartagena",
+   "borm": "CARTAGENA",
+   "n_borm": 17,
+   "fechas": [
+    "2027-01-07",
+    "2027-09-24"
+   ]
+  },
+  {
+   "nombre": "Cehegín",
+   "slug": "cehegin",
+   "borm": "CEHEGIN",
+   "n_borm": 18,
+   "fechas": [
+    "2027-09-10",
+    "2027-09-14"
+   ]
+  },
+  {
+   "nombre": "Ceutí",
+   "slug": "ceuti",
+   "borm": "CEUTI",
+   "n_borm": 19,
+   "fechas": [
+    "2027-07-22",
+    "2027-08-16"
+   ]
+  },
+  {
+   "nombre": "Cieza",
+   "slug": "cieza",
+   "borm": "CIEZA",
+   "n_borm": 20,
+   "fechas": [
+    "2027-05-03",
+    "2027-08-24"
+   ]
+  },
+  {
+   "nombre": "Fortuna",
+   "slug": "fortuna",
+   "borm": "FORTUNA",
+   "n_borm": 21,
+   "fechas": [
+    "2027-03-29",
+    "2027-08-16"
+   ]
+  },
+  {
+   "nombre": "Fuente Álamo",
+   "slug": "fuente-alamo",
+   "borm": "FUENTE ALAMO",
+   "n_borm": 22,
+   "fechas": [
+    "2027-07-20",
+    "2027-08-28"
+   ]
+  },
+  {
+   "nombre": "Jumilla",
+   "slug": "jumilla",
+   "borm": "JUMILLA",
+   "n_borm": 23,
+   "fechas": [
+    "2027-03-29",
+    "2027-07-26"
+   ]
+  },
+  {
+   "nombre": "Librilla",
+   "slug": "librilla",
+   "borm": "LIBRILLA",
+   "n_borm": 24,
+   "fechas": [
+    "2027-08-24",
+    "2027-08-25"
+   ]
+  },
+  {
+   "nombre": "Lorca",
+   "slug": "lorca",
+   "borm": "LORCA",
+   "n_borm": 25,
+   "fechas": [
+    "2027-09-08",
+    "2027-11-23"
+   ]
+  },
+  {
+   "nombre": "Lorquí",
+   "slug": "lorqui",
+   "borm": "LORQUI",
+   "n_borm": 26,
+   "fechas": [
+    "2027-01-18",
+    "2027-07-23"
+   ]
+  },
+  {
+   "nombre": "Mazarrón",
+   "slug": "mazarron",
+   "borm": "MAZARRON",
+   "n_borm": 27,
+   "fechas": [
+    "2027-06-14",
+    "2027-11-17"
+   ]
+  },
+  {
+   "nombre": "Molina de Segura",
+   "slug": "molina-de-segura",
+   "borm": "MOLINA DE SEGURA",
+   "n_borm": 28,
+   "fechas": [
+    "2027-01-22",
+    "2027-09-20"
+   ]
+  },
+  {
+   "nombre": "Moratalla",
+   "slug": "moratalla",
+   "borm": "MORATALLA",
+   "n_borm": 29,
+   "fechas": [
+    "2027-04-19",
+    "2027-06-15"
+   ]
+  },
+  {
+   "nombre": "Mula",
+   "slug": "mula",
+   "borm": "MULA",
+   "n_borm": 30,
+   "fechas": [
+    "2027-09-21",
+    "2027-09-23"
+   ]
+  },
+  {
+   "nombre": "Murcia",
+   "slug": "murcia-capital",
+   "borm": "MURCIA",
+   "n_borm": 31,
+   "fechas": [
+    "2027-03-30",
+    "2027-09-14"
+   ]
+  },
+  {
+   "nombre": "Ojós",
+   "slug": "ojos",
+   "borm": "OJÓS",
+   "n_borm": 32,
+   "fechas": [
+    "2027-08-27",
+    "2027-08-28"
+   ]
+  },
+  {
+   "nombre": "Pliego",
+   "slug": "pliego",
+   "borm": "PLIEGO",
+   "n_borm": 33,
+   "fechas": [
+    "2027-02-02",
+    "2027-09-08"
+   ]
+  },
+  {
+   "nombre": "Puerto Lumbreras",
+   "slug": "puerto-lumbreras",
+   "borm": "PUERTO LUMBRERAS",
+   "n_borm": 34,
+   "fechas": [
+    "2027-07-07",
+    "2027-10-07"
+   ]
+  },
+  {
+   "nombre": "Ricote",
+   "slug": "ricote",
+   "borm": "RICOTE",
+   "n_borm": 35,
+   "fechas": [
+    "2027-01-20",
+    "2027-01-22"
+   ]
+  },
+  {
+   "nombre": "San Javier",
+   "slug": "san-javier",
+   "borm": "SAN JAVIER",
+   "n_borm": 36,
+   "fechas": [
+    "2027-02-03",
+    "2027-12-03"
+   ]
+  },
+  {
+   "nombre": "San Pedro del Pinatar",
+   "slug": "san-pedro-del-pinatar",
+   "borm": "SAN PEDRO DEL PINATAR",
+   "n_borm": 37,
+   "fechas": [
+    "2027-06-29",
+    "2027-07-16"
+   ]
+  },
+  {
+   "nombre": "Santomera",
+   "slug": "santomera",
+   "borm": "SANTOMERA",
+   "n_borm": 38,
+   "fechas": [
+    "2027-09-29",
+    "2027-10-07"
+   ]
+  },
+  {
+   "nombre": "Torre Pacheco",
+   "slug": "torre-pacheco",
+   "borm": "TORRE PACHECO",
+   "n_borm": 39,
+   "fechas": [
+    "2027-10-07",
+    "2027-12-27"
+   ]
+  },
+  {
+   "nombre": "Las Torres de Cotillas",
+   "slug": "las-torres-de-cotillas",
+   "borm": "TORRES DE COTILLAS, LAS",
+   "n_borm": 40,
+   "fechas": [
+    "2027-03-30",
+    "2027-08-27"
+   ]
+  },
+  {
+   "nombre": "Totana",
+   "slug": "totana",
+   "borm": "TOTANA",
+   "n_borm": 41,
+   "fechas": [
+    "2027-01-07",
+    "2027-12-10"
+   ]
+  },
+  {
+   "nombre": "Ulea",
+   "slug": "ulea",
+   "borm": "ULEA",
+   "n_borm": 42,
+   "fechas": [
+    "2027-05-03",
+    "2027-08-24"
+   ]
+  },
+  {
+   "nombre": "La Unión",
+   "slug": "la-union",
+   "borm": "UNION, LA",
+   "n_borm": 43,
+   "fechas": [
+    "2027-07-26",
+    "2027-10-07"
+   ]
+  },
+  {
+   "nombre": "Villanueva del Río Segura",
+   "slug": "villanueva-del-rio-segura",
+   "borm": "VILLANUEVA DEL RÍO SEGURA",
+   "n_borm": 44,
+   "fechas": [
+    "2027-07-16",
+    "2027-08-16"
+   ]
+  },
+  {
+   "nombre": "Yecla",
+   "slug": "yecla",
+   "borm": "YECLA",
+   "n_borm": 45,
+   "fechas": [
+    "2027-09-13",
+    "2027-12-07"
+   ]
+  }
+ ]
+}
