@@ -28,3 +28,14 @@ Pendiente, en este orden:
    - Andalucía: un calendario por provincia (8 resoluciones de delegación territorial).
    - Falta: plantilla de página escolar y las otras 13 comunidades.
    - Método de lectura de PDF oficiales: pdf.js en una pestaña del propio dominio del boletín y lectura del texto con get_page_text.
+
+
+## Avance del 20-11-2026
+
+- Canarias: 85 páginas municipales + listado (BOC n.º 168, 21-08-2026). Fiesta insular por isla; Firgas, La Guancha y Tinajo tienen 13 festivos (fiesta local el 16 de agosto, que ya es común). Agrupados por tener el mismo calendario: Arucas→Las Palmas, Moya→Santa Brígida, Arafo→La Victoria.
+- Galicia: 203 páginas de concello + 4 listados por provincia (DOG n.º 204, 26-10-2026). 110 concellos con las mismas fechas que otro enlazan a la página del más poblado del grupo. Cangas: fiesta local el 19 de marzo, que ya es San José.
+- Verificado en vivo: Canarias 85/85 y Galicia 313/313 concellos contra el boletín, 0 errores.
+- Imágenes: docs/img/huellas.json evita redibujarlas si no cambian sus datos (antes se subían cientos al día).
+- Search Console: portada y Madrid indexadas el 20-11. La Pizarra del Campo: Google tiene la versión http antigua ("No hay nada aquí"); pedir indexación de https://pizarradelcampo.blogspot.com/ en cuanto haya cuota.
+
+Siguiente: comunidades con fiestas locales 2027 ya publicadas (revisar Euskadi por territorio, Baleares, Castilla y León por provincia, Extremadura, Navarra, Aragón, Asturias, Cantabria, La Rioja, C. Valenciana, Andalucía, Madrid en diciembre). Ojo con el tamaño del repo: cada página suma unos 300 KB entre PNG y PDF.

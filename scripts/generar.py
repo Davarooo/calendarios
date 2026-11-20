@@ -744,7 +744,7 @@ def valores_hub(d, cfg):
     a, nom, en = d["anio"], d["region"], d["region_en"]
     filas = "".join(f'<li data-n="{sin_tildes(m["nombre"] + " " + m["isla"])}"><a href="@@URL:calendario-laboral-{a}-{m["pagina"]}@@">{html.escape(m["nombre"])}</a>'
                     f'<span>{dia_fecha(m["fechas"][0])} y {dia_fecha(m["fechas"][1])}'
-                    + (f'. Mismas fiestas locales que {html.escape(m["igual_que"])}' if m["igual_que"] else "") + '</span>'
+                    + (f'. Mismas fechas festivas que {html.escape(m["igual_que"])}' if m["igual_que"] else "") + '</span>'
                     + (f'<em>{html.escape(m["isla"])}</em>' if m["isla"] and len({x["isla"] for x in d["municipios"]}) > 1 else "") + '</li>' for m in d["municipios"])
     tot = d["totales_mu"]
     normal = max(tot, key=lambda k: len(tot[k]))
