@@ -7,7 +7,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-andalucia",
@@ -17,7 +17,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-aragon",
@@ -27,7 +27,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-asturias",
@@ -37,7 +37,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-baleares",
@@ -47,17 +47,17 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-canarias",
   "http": 200,
-  "enlaces": 15,
+  "enlaces": 16,
   "rotos": [],
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-cantabria",
@@ -67,7 +67,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-castilla-la-mancha",
@@ -77,7 +77,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-castilla-y-leon",
@@ -87,7 +87,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-cataluna",
@@ -97,7 +97,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-extremadura",
@@ -107,17 +107,17 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-galicia",
   "http": 200,
-  "enlaces": 15,
+  "enlaces": 19,
   "rotos": [],
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-madrid",
@@ -127,17 +127,17 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-murcia",
   "http": 200,
-  "enlaces": 15,
+  "enlaces": 16,
   "rotos": [],
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-navarra",
@@ -147,7 +147,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-pais-vasco",
@@ -157,7 +157,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-la-rioja",
@@ -167,7 +167,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-comunitat-valenciana",
@@ -177,7 +177,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-ceuta",
@@ -187,7 +187,7 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
  },
  {
   "slug": "calendario-laboral-2027-melilla",
@@ -197,6 +197,3386 @@
   "metadatos_visibles": [],
   "lcp_s": null,
   "cls": null,
-  "ok": false
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-adeje",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-agaete",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-aguimes",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-agulo",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-alajero",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-antigua",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-arico",
+  "http": 200,
+  "enlaces": 26,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-arona",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-arrecife",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-artenara",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-barlovento",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-betancuria",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-brena-alta",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-brena-baja",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-buenavista-del-norte",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-candelaria",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-el-paso",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-el-pinar-de-el-hierro",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-el-rosario",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-el-sauzal",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-el-tanque",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fasnia",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-firgas",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fuencaliente-de-la-palma",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-galdar",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-garachico",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-garafia",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-granadilla-de-abona",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-guia-de-isora",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-guimar",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-haria",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-hermigua",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-icod-de-los-vinos",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ingenio",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-aldea-de-san-nicolas",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-frontera",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-guancha",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-matanza-de-acentejo",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-oliva",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-orotava",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-victoria-de-acentejo",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-las-palmas-de-gran-canaria",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-los-llanos-de-aridane",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-los-realejos",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-los-silos",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mogan",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pajara",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-puerto-de-la-cruz",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-puerto-del-rosario",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-puntagorda",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-puntallana",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-andres-y-sauces",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-bartolome",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-bartolome-de-tirajana",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-cristobal-de-la-laguna",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-juan-de-la-rambla",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-miguel-de-abona",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-sebastian-de-la-gomera",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-brigida",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-cruz-de-la-palma",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-cruz-de-tenerife",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-lucia-de-tirajana",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-maria-de-guia-de-gran-canaria",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santa-ursula",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santiago-del-teide",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tacoronte",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tazacorte",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tegueste",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-teguise",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tejeda",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-telde",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-teror",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tias",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tijarafe",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tinajo",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tuineje",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-valle-gran-rey",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vallehermoso",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-valleseco",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-valsequillo-de-gran-canaria",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-valverde",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vega-de-san-mateo",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilaflor-de-chasna",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-villa-de-mazo",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-yaiza",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-canarias",
+  "http": 200,
+  "enlaces": 93,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ames",
+  "http": 200,
+  "enlaces": 28,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-aranga",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ares",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-arteixo",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-bana",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-boimorto",
+  "http": 200,
+  "enlaces": 33,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-boiro",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-boqueixon",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-brion",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cabanas",
+  "http": 200,
+  "enlaces": 35,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-camarinas",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-capela",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-carballo",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-carino",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-carnota",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cee",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-coiros",
+  "http": 200,
+  "enlaces": 35,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-coristanco",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-coruna",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-dodro",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-dumbria",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fene",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ferrol",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fisterra",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-irixoa",
+  "http": 200,
+  "enlaces": 33,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-laracha",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-laxe",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lousame",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-malpica-de-bergantinos",
+  "http": 200,
+  "enlaces": 32,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-manon",
+  "http": 200,
+  "enlaces": 32,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-melide",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mino",
+  "http": 200,
+  "enlaces": 33,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-moeche",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-monfero",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mugardos",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-muxia",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-naron",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-negreira",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-noia",
+  "http": 200,
+  "enlaces": 28,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-oroso",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ortigueira",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-outes",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-padron",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-pino",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-pobra-do-caraminal",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ponteceso",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pontedeume",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-porto-do-son",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rianxo",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ribeira",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rois",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-sadurnino",
+  "http": 200,
+  "enlaces": 34,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santiago-de-compostela",
+  "http": 200,
+  "enlaces": 27,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-as-somozas",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-teo",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-toques",
+  "http": 200,
+  "enlaces": 35,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-touro",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-trazo",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-val-do-dubra",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vedra",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vimianzo",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-zas",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-abadin",
+  "http": 200,
+  "enlaces": 36,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-alfoz",
+  "http": 200,
+  "enlaces": 36,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-baleira",
+  "http": 200,
+  "enlaces": 36,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-baralla",
+  "http": 200,
+  "enlaces": 37,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-barreiros",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-becerrea",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-begonte",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-boveda",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-burela",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-carballedo",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-castro-de-rei",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cervantes",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cervo",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-chantada",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-folgoso-do-courel",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-fonsagrada",
+  "http": 200,
+  "enlaces": 40,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-foz",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-friol",
+  "http": 200,
+  "enlaces": 37,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-guntin-de-pallares",
+  "http": 200,
+  "enlaces": 37,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lourenza",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lugo",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mondonedo",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-monforte-de-lemos",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-monterroso",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-navia-de-suarna",
+  "http": 200,
+  "enlaces": 41,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-as-nogais",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ourol",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-palas-de-rei",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-panton",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-paradela",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-paramo",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-pastoriza",
+  "http": 200,
+  "enlaces": 40,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-pontenova",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-portomarin",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-quiroga",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rabade",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ribadeo",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-sarria",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-savinao",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-sober",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-triacastela",
+  "http": 200,
+  "enlaces": 38,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-valadouro",
+  "http": 200,
+  "enlaces": 37,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilalba",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-viveiro",
+  "http": 200,
+  "enlaces": 39,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-allariz",
+  "http": 200,
+  "enlaces": 27,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-arnoia",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-baltar",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-bande",
+  "http": 200,
+  "enlaces": 30,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-banos-de-molgas",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-barco-de-valdeorras",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-beade",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-beariz",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-os-blancos",
+  "http": 200,
+  "enlaces": 30,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-bolo",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-carballeda-de-avia",
+  "http": 200,
+  "enlaces": 28,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-carballino",
+  "http": 200,
+  "enlaces": 27,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-castrelo-de-mino",
+  "http": 200,
+  "enlaces": 30,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-castro-caldelas",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-celanova",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cortegada",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cualedro",
+  "http": 200,
+  "enlaces": 33,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-gudina",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-larouco",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-laza",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-leiro",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lobeira",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-merca",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-mezquita",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-nogueira-de-ramuin",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-oimbra",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ourense",
+  "http": 200,
+  "enlaces": 31,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-padrenda",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-parada-de-sil",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-petin",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-pobra-de-trives",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pontedeva",
+  "http": 200,
+  "enlaces": 30,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rios",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-rua-de-valdeorras",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rubia",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-amaro",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-sarreaus",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-teixeira",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-verea",
+  "http": 200,
+  "enlaces": 30,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-verin",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-viana-do-bolo",
+  "http": 200,
+  "enlaces": 27,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilamartin-de-valdeorras",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilar-de-barrio",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilar-de-santos",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilarino-de-conso",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-xinzo-de-limia",
+  "http": 200,
+  "enlaces": 29,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-xunqueira-de-ambia",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-agolada",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-arbo",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-baiona",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-barro",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-caldas-de-reis",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cambados",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-campo-lameiro",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cangas-de-morrazo",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-caniza",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-catoira",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cerdedo-cotobade",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-covelo",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-crecente",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cuntis",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-dozon",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-forcarei",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fornelos-de-montes",
+  "http": 200,
+  "enlaces": 28,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-guarda",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lalin",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-a-lama",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-marin",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-meano",
+  "http": 200,
+  "enlaces": 26,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-meis",
+  "http": 200,
+  "enlaces": 27,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-moana",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mondariz",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mondariz-balneario",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-morana",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mos",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-as-neves",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-nigran",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-oia",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pazos-de-borben",
+  "http": 200,
+  "enlaces": 26,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-poio",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ponteareas",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ponte-caldelas",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pontecesures",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pontevedra",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-o-porrino",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-portas",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-redondela",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ribadumia",
+  "http": 200,
+  "enlaces": 24,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-rodeiro",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-salvaterra-de-mino",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-silleda",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-soutomaior",
+  "http": 200,
+  "enlaces": 25,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-tui",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vigo",
+  "http": 200,
+  "enlaces": 28,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vila-de-cruces",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilagarcia-de-arousa",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-vilanova-de-arousa",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-provincia-de-a-coruna",
+  "http": 200,
+  "enlaces": 76,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-provincia-de-lugo",
+  "http": 200,
+  "enlaces": 59,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-provincia-de-ourense",
+  "http": 200,
+  "enlaces": 75,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-provincia-de-pontevedra",
+  "http": 200,
+  "enlaces": 66,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-abanilla",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-abaran",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-aguilas",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-albudeite",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-alcantarilla",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-los-alcazares",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-aledo",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-alguazas",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-alhama-de-murcia",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-archena",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-beniel",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-blanca",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-bullas",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-calasparra",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-campos-del-rio",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-caravaca-de-la-cruz",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cartagena",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cehegin",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ceuti",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-cieza",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fortuna",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-fuente-alamo",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-jumilla",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-librilla",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lorca",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-lorqui",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mazarron",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-molina-de-segura",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-moratalla",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-mula",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-murcia-capital",
+  "http": 200,
+  "enlaces": 23,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ojos",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-pliego",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-puerto-lumbreras",
+  "http": 200,
+  "enlaces": 21,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-ricote",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-javier",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-san-pedro-del-pinatar",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-santomera",
+  "http": 200,
+  "enlaces": 20,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-torre-pacheco",
+  "http": 200,
+  "enlaces": 19,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-las-torres-de-cotillas",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-totana",
+  "http": 200,
+  "enlaces": 18,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-la-union",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-villanueva-del-rio-segura",
+  "http": 200,
+  "enlaces": 22,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "calendario-laboral-2027-yecla",
+  "http": 200,
+  "enlaces": 17,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
+ },
+ {
+  "slug": "fiestas-locales-2027-region-de-murcia",
+  "http": 200,
+  "enlaces": 52,
+  "rotos": [],
+  "metadatos_visibles": [],
+  "lcp_s": null,
+  "cls": null,
+  "ok": true
  }
 ]
